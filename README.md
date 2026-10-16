@@ -1,26 +1,3 @@
----
-AIGC:
-    Label: "1"
-    ContentProducer: 001191440300708461136T1XGW3
-    ProduceID: 257c07a97525093c65a112a601161c42_bf6030aec98411f18b7f525400393706
-    ReservedCode1: xSiMQN1He/zCNK83UI/UPVWkoDQB+QdygX4KD53UlgP0ihL9euS1ZCE3oh+ppJtuzmRZ7qkcAOcnrETHv/31O3PQh119YnZfaJ6ORa7bjm0wPlp/zJ4G1a2pqL8qNS/kX7R40ixbMbwaXE/xLQhcba019QWdxBeT3BDDCItppDlhz+hxgaZosK/4hvw=
-    ContentPropagator: 001191440300708461136T1XGW3
-    PropagateID: 257c07a97525093c65a112a601161c42_bf6030aec98411f18b7f525400393706
-    ReservedCode2: xSiMQN1He/zCNK83UI/UPVWkoDQB+QdygX4KD53UlgP0ihL9euS1ZCE3oh+ppJtuzmRZ7qkcAOcnrETHv/31O3PQh119YnZfaJ6ORa7bjm0wPlp/zJ4G1a2pqL8qNS/kX7R40ixbMbwaXE/xLQhcba019QWdxBeT3BDDCItppDlhz+hxgaZosK/4hvw=
----
-
----
-AIGC:
-    Label: "1"
-    ContentProducer: 001191440300708461136T1XGW3
-    ProduceID: 257c07a97525093c65a112a601161c42_24c2cf9dc91011f18b7f525400393706
-    ReservedCode1: A7i421u+ZG81jzABiR6bB3hKneh7L3ZBolEDYQnnuLz/WzUiothBjyEs4DxHAmW1VS8ez/ECDdr8hwG+UgbIdwR9ZBdsOD6St1qUJzXeXsl0c8xJMEEtQhxa3IfDLX+GSZ16ilwipue1lpANteq08hjQ56ezH+6Xan7NHklndlc0k9oGZDyNrJaaf8c=
-    ContentPropagator: 001191440300708461136T1XGW3
-    PropagateID: 257c07a97525093c65a112a601161c42_24c2cf9dc91011f18b7f525400393706
-    ReservedCode2: A7i421u+ZG81jzABiR6bB3hKneh7L3ZBolEDYQnnuLz/WzUiothBjyEs4DxHAmW1VS8ez/ECDdr8hwG+UgbIdwR9ZBdsOD6St1qUJzXeXsl0c8xJMEEtQhxa3IfDLX+GSZ16ilwipue1lpANteq08hjQ56ezH+6Xan7NHklndlc0k9oGZDyNrJaaf8c=
----
-
-
 # 飞牛 fnOS 应用收录源（fnthird）
 
 本项目是 **FnUnify 聚合源的子源**，作为飞牛 fnOS 第三方应用源，可为第三方应用商店（如 FnDepot）直接收录。
@@ -76,5 +53,3 @@ fnpack.json        # 源文件（商店收录入口）
 - 脚本：`scripts/check_updates.py`（依据 `fnpack.json` 中每个 app 的 `_src` 定位上游仓库，查询最新 release，重新下载资产并核算 sha256/size）
 - 发现新版本时自动更新 `fnpack.json` 的 releases 字段并推送（仅保留最新版本）
 - 可手动触发：Actions 页面 Run workflow
-*（内容由AI生成，仅供参考）*
-*（内容由AI生成，仅供参考）*
