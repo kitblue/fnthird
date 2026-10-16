@@ -25,7 +25,7 @@ AIGC:
 
 - 源名：`fnthird`
 - 源文件：`fnpack.json`（FnDepot V2 schema）
-- 收录应用：**32 条**（31 个原生 manifest 应用 + FanTune 等独立应用）
+- 收录应用：**32 条**（均为带 `_src` 溯源的上游应用条目，含承接的 FanTune 独立应用）
 
 第三方应用商店添加本仓库为源后，即可安装其中收录的应用。
 
