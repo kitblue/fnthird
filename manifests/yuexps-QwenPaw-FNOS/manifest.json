@@ -1,0 +1,14 @@
+{
+ "appname": "qwenpaw_yuexps",
+ "display_name": "QwenPaw",
+ "version": "v26.9.11",
+ "maintainer": "yuexps",
+ "distributor": "yuexps",
+ "distributor_url": "https://github.com/yuexps",
+ "platform": "all",
+ "source": "thirdparty",
+ "run_as": "package",
+ "desc": "QwenPaw 的 fnOS 打包版（yuexps 维护）：面向 Qwen 的 AI 桌面助手应用。",
+ "upstream": "https://github.com/yuexps/QwenPaw-FNOS",
+ "_note": "来自 yuexps/QwenPaw-FNOS release v26.9.11，sha256 取自 GitHub Release API digest，未下载 fpk"
+}
