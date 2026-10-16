@@ -1,635 +1,746 @@
 {
-  "schema_version": "2",
-  "source_info": {
-    "name": "fnos-apps-manifests",
-    "author": "kitblue",
-    "homepage": "https://github.com/kitblue/fnos-apps-manifests",
-    "description": "飞牛 fnOS 第三方应用源：收录原生 manifest 格式（无 fnpack.json）的第三方 app 项目，为其提供被第三方应用商店收录的路径。"
-  },
-  "apps": {
-    "clouddl": {
-      "display_name": "多网盘下载器",
-      "desc": "原生多网盘下载工具，支持百度网盘与夸克网盘文件及文件夹递归下载、可调分片与并发、实时速度和预计剩余时间、本机 Aria2 RPC、磁盘保护、定时下载、日志诊断和首次使用引导，无需 Docker",
-      "platform": [
-        "x86",
-        "arm"
-      ],
-      "categories": [
-        "系统工具"
-      ],
-      "icon_url": "https://raw.githubusercontent.com/xiaocheng154/nas-cloud-downloader/main/ICON.PNG",
-      "distributor": "xiaocheng154",
-      "distributor_url": "https://github.com/xiaocheng154",
-      "author": "xiaocheng154",
-      "author_url": "https://github.com/xiaocheng154",
-      "developer": "",
-      "publisher": "",
-      "publisher_url": "",
-      "run_as": "package",
-      "install_type": "",
-      "is_docker": false,
-      "service_port": "8686",
-      "releases": {
-        "1.5.9": {
-          "packages": {
-            "x86": {
-              "download_url": "https://github.com/xiaocheng154/nas-cloud-downloader/releases/download/v1.5.9/clouddl_x86_1.5.9.fpk",
-              "sha256": "beb13c8a5614394cbdd4371a0878693fd5fd8af23e00907722d729921993ce6e",
-              "size": 64591083
-            },
-            "arm": {
-              "download_url": "https://github.com/xiaocheng154/nas-cloud-downloader/releases/download/v1.5.9/clouddl_arm64_1.5.9.fpk",
-              "sha256": "36416687176c5d45ddece792a98019f44b4471f3ee2a4bab0fe8e7c89d1a83ac",
-              "size": 65961390
-            }
-          }
-        }
+ "schema_version": "2",
+ "source_info": {
+  "name": "fnos-apps-manifests",
+  "author": "kitblue",
+  "homepage": "https://github.com/kitblue/fnos-apps-manifests",
+  "description": "飞牛 fnOS 第三方应用源：收录原生 manifest 格式（无 fnpack.json）的第三方 app 项目，为其提供被第三方应用商店收录的路径。"
+ },
+ "apps": {
+  "clouddl": {
+   "display_name": "多网盘下载器",
+   "desc": "原生多网盘下载工具，支持百度网盘与夸克网盘文件及文件夹递归下载、可调分片与并发、实时速度和预计剩余时间、本机 Aria2 RPC、磁盘保护、定时下载、日志诊断和首次使用引导，无需 Docker",
+   "platform": [
+    "x86",
+    "arm"
+   ],
+   "categories": [
+    "系统工具"
+   ],
+   "icon_url": "https://raw.githubusercontent.com/xiaocheng154/nas-cloud-downloader/main/ICON.PNG",
+   "distributor": "xiaocheng154",
+   "distributor_url": "https://github.com/xiaocheng154",
+   "author": "xiaocheng154",
+   "author_url": "https://github.com/xiaocheng154",
+   "developer": "",
+   "publisher": "",
+   "publisher_url": "",
+   "run_as": "package",
+   "install_type": "",
+   "is_docker": false,
+   "service_port": "8686",
+   "releases": {
+    "1.5.9": {
+     "packages": {
+      "x86": {
+       "download_url": "https://github.com/xiaocheng154/nas-cloud-downloader/releases/download/v1.5.9/clouddl_x86_1.5.9.fpk",
+       "sha256": "beb13c8a5614394cbdd4371a0878693fd5fd8af23e00907722d729921993ce6e",
+       "size": 64591083
       },
-      "appname": "clouddl",
-      "_src": "xiaocheng154/nas-cloud-downloader"
-    },
-    "fnnas.iptv": {
-      "display_name": "飞牛IPTV",
-      "desc": "飞牛IPTV：集成央视频播放源，支持 PHP 一键安装/卸载；V2.1.0 新增独立 Web 登录页面；V2.1.1 新增 M3U8 订阅；V2.1.2 新增 PID 持久化驻存；V2.1.3 新增多线程访问。",
-      "platform": [
-        "all"
-      ],
-      "categories": [
-        "影音娱乐"
-      ],
-      "icon_url": "https://raw.githubusercontent.com/fj199409/fnos-iptv/master/ICON.PNG",
-      "distributor": "冰糖葫芦",
-      "distributor_url": "https://github.com/fj199409",
-      "author": "最北的北",
-      "author_url": "https://github.com/fj199409",
-      "developer": "",
-      "publisher": "",
-      "publisher_url": "",
-      "run_as": "package",
-      "install_type": "",
-      "is_docker": false,
-      "releases": {
-        "2.1.3": {
-          "packages": {
-            "all": {
-              "download_url": "https://github.com/fj199409/fnos-iptv/releases/download/v2.1.3/fnos_iptv_v2.1.3_web.fpk",
-              "sha256": "3742660eb1c877f32eab2ffb217ab69859222e6defc7b46872e83906e8a87eb8",
-              "size": 519091
-            }
-          }
-        }
-      },
-      "appname": "fnnas.iptv",
-      "_src": "fj199409/fnos-iptv"
-    },
-    "qnap8528-kmod": {
-      "display_name": "qnap8528 驱动",
-      "desc": "QNAP IT8528 EC 内核驱动，支持风扇控制、温度传感器、LED、按键和 VPD 读取。",
-      "platform": [
-        "x86"
-      ],
-      "categories": [
-        "系统工具"
-      ],
-      "icon_url": "https://raw.githubusercontent.com/iamiao/8528/master/fnos/ICON.PNG",
-      "distributor": "iamiao",
-      "distributor_url": "https://github.com/iamiao",
-      "author": "iamiao",
-      "author_url": "https://github.com/iamiao",
-      "developer": "",
-      "publisher": "",
-      "publisher_url": "",
-      "run_as": "package",
-      "install_type": "",
-      "is_docker": false,
-      "service_port": "",
-      "releases": {
-        "1.24.3": {
-          "packages": {
-            "x86": {
-              "download_url": "https://github.com/iamiao/8528/releases/download/%E9%A3%9E%E7%89%9Bqnap8528/qnap8528-kmod_1.24.3_x86.fpk",
-              "sha256": "e34a6b153fbf1bdca2a73834447343d3c62a092a7ea376682e1d415e2562a12f",
-              "size": 33457
-            }
-          }
-        }
-      },
-      "appname": "qnap8528-kmod",
-      "_src": "iamiao/8528"
-    },
-    "yinqiao": {
-      "display_name": "音桥",
-      "desc": "面向 fnOS 飞牛音乐的第三方播放协议桥：让手机和桌面音乐客户端通过常见协议访问飞牛音乐中的歌手、专辑、歌曲、封面、歌词、收藏、歌单和音频流，支持 API 桥及多种播放协议。",
-      "platform": [
-        "x86"
-      ],
-      "categories": [
-        "影音娱乐"
-      ],
-      "icon_url": "https://raw.githubusercontent.com/qianlipp/fn-music-bridge/main/package-src/ICON.PNG",
-      "distributor": "qianlipp",
-      "distributor_url": "https://github.com/qianlipp",
-      "author": "qianlipp",
-      "author_url": "https://github.com/qianlipp",
-      "developer": "",
-      "publisher": "",
-      "publisher_url": "",
-      "run_as": "root",
-      "install_type": "root",
-      "is_docker": false,
-      "service_port": "14040",
-      "releases": {
-        "1.0.7": {
-          "packages": {
-            "x86": {
-              "download_url": "https://github.com/qianlipp/fn-music-bridge/releases/download/3-%E4%BF%AE%E5%A4%8D%E7%AB%AF%E5%8F%A3%E8%AF%86%E5%88%AB%EF%BC%8C%E6%94%AF%E6%8C%81%E6%89%8B%E5%8A%A8%E8%B0%83%E6%95%B4/yinqiao-1.0.7.fpk",
-              "sha256": "d8351409985af25ef432f5dcd8d665559a9c15cbd7945c458fe92bdc19d76675",
-              "size": 6659826
-            }
-          }
-        }
-      },
-      "appname": "yinqiao",
-      "_src": "qianlipp/fn-music-bridge"
-    },
-    "FnMusicEnhance": {
-      "display_name": "飞牛音乐增强",
-      "desc": "通过 nginx 提供飞牛音乐不存在的接口增强手机 APP 功能，需配合飞牛音乐（trim.music）使用。",
-      "platform": [
-        "all"
-      ],
-      "categories": [
-        "影音娱乐"
-      ],
-      "icon_url": "https://raw.githubusercontent.com/kuilei0926/FnMusicEnhance/master/ICON.PNG",
-      "distributor": "kuilei0926",
-      "distributor_url": "https://github.com/kuilei0926",
-      "author": "kuilei0926",
-      "author_url": "https://github.com/kuilei0926",
-      "developer": "",
-      "publisher": "",
-      "publisher_url": "",
-      "run_as": "root",
-      "install_type": "root",
-      "is_docker": false,
-      "service_port": "",
-      "releases": {
-        "2.0.3": {
-          "packages": {
-            "all": {
-              "download_url": "https://github.com/kuilei0926/FnMusicEnhance/releases/download/v2.0.3/FnMusicEnhance-2.0.3.fpk",
-              "sha256": "16b3a5a3a439221b3022e8429dcfde346a081eade5eb07e466850557ed8317a3",
-              "size": 169341
-            }
-          }
-        }
-      },
-      "appname": "FnMusicEnhance",
-      "_src": "kuilei0926/FnMusicEnhance"
-    },
-    "micam": {
-      "display_name": "MiCam (非官方社区版)",
-      "desc": "智能家居摄像头本地监控桥接套件（非官方社区适配）：扫码登录、低延迟预览、24小时本地录像、时间轴回放、云台控制、AI识别与离线备份。",
-      "platform": [
-        "x86"
-      ],
-      "categories": [
-        "系统工具"
-      ],
-      "icon_url": "https://raw.githubusercontent.com/AmigaMeow/micam/master/assets/icon.svg",
-      "distributor": "AmigaMeow",
-      "distributor_url": "https://github.com/AmigaMeow",
-      "author": "AmigaMeow",
-      "author_url": "https://github.com/AmigaMeow",
-      "developer": "",
-      "publisher": "",
-      "publisher_url": "",
-      "run_as": "package",
-      "install_type": "",
-      "is_docker": false,
-      "service_port": "",
-      "releases": {
-        "0.41.5": {
-          "packages": {
-            "x86": {
-              "download_url": "https://github.com/AmigaMeow/micam/releases/download/v0.41.5/micam_0.41.5_amd64.fpk",
-              "sha256": "c38225e21dad3c1327d7bd82b2165e718046049f3ef6c52ec7ff99d951ad9a9a",
-              "size": 5152814
-            }
-          }
-        }
-      },
-      "appname": "micam",
-      "_src": "AmigaMeow/micam"
-    },
-    "node-space": {
-      "display_name": "知间笔记",
-      "desc": "私有化 Markdown 笔记管理应用，数据全部保存在本地 NAS，无需外部云服务。",
-      "platform": [
-        "all"
-      ],
-      "categories": [
-        "效率办公"
-      ],
-      "icon_url": "https://raw.githubusercontent.com/hulupi/notespace/main/fpk/ICON.PNG",
-      "distributor": "NoteSpace",
-      "distributor_url": "https://github.com/hulupi/notespace",
-      "author": "NoteSpace",
-      "author_url": "https://github.com/hulupi/notespace",
-      "developer": "",
-      "publisher": "",
-      "publisher_url": "",
-      "run_as": "package",
-      "install_type": "",
-      "is_docker": false,
-      "service_port": "",
-      "releases": {
-        "1.2.2": {
-          "packages": {
-            "all": {
-              "download_url": "https://github.com/hulupi/notespace/releases/download/v1.2.2/node-space-1.2.2.fpk",
-              "sha256": "26aa3c42f10747b89c5d759a122727a950df4e73d9b8873edaf5430e7791d2be",
-              "size": 1487613
-            }
-          }
-        }
-      },
-      "appname": "node-space",
-      "_src": "hulupi/notespace"
-    },
-    "fnterminal": {
-      "display_name": "FnTerminal",
-      "desc": "原生 SSH 终端（独立应用服务账户，NAS 用户二次认证）。",
-      "platform": [
-        "x86",
-        "arm"
-      ],
-      "categories": [
-        "开发工具"
-      ],
-      "icon_url": "https://raw.githubusercontent.com/BeeThor/FnTerminal/main/logo.png",
-      "distributor": "community",
-      "distributor_url": "https://github.com/BeeThor/FnTerminal",
-      "author": "community",
-      "author_url": "https://github.com/BeeThor/FnTerminal",
-      "developer": "",
-      "publisher": "",
-      "publisher_url": "",
-      "run_as": "package",
-      "install_type": "",
-      "is_docker": false,
-      "service_port": "",
-      "releases": {
-        "0.9.0": {
-          "packages": {
-            "x86": {
-              "download_url": "https://github.com/BeeThor/FnTerminal/releases/download/v0.9.0/FnTerminal-0.9.0-x86.fpk",
-              "sha256": "5137396ad1494ea32a9c82860ce09d6b36d86b013fec58bb2564f6629ba24163",
-              "size": 3687077
-            },
-            "arm": {
-              "download_url": "https://github.com/BeeThor/FnTerminal/releases/download/v0.9.0/FnTerminal-0.9.0-arm.fpk",
-              "sha256": "b9803331e88262a4d31839991c15c82c758010c1ab11f7d4174016b1da232333",
-              "size": 3387295
-            }
-          }
-        }
-      },
-      "appname": "fnterminal",
-      "_src": "BeeThor/FnTerminal"
-    },
-    "ps5pack": {
-      "display_name": "PS5游戏压缩工具",
-      "desc": "基于 AMPR LZ4 协议的 PS5 游戏资产高速压缩工具：多线程并发、4-Lane 资产分流、完整性校验与 NAS 目录树选择。",
-      "platform": [
-        "all"
-      ],
-      "categories": [
-        "系统工具"
-      ],
-      "icon_url": "https://raw.githubusercontent.com/foxhound1227/ps5pack_fnos/main/assets/logo.png",
-      "distributor": "Nazky & ps5pack-team",
-      "distributor_url": "https://github.com/Nazky/Lazy_AMPR",
-      "author": "Nazky & ps5pack-team",
-      "author_url": "https://github.com/foxhound1227",
-      "developer": "",
-      "publisher": "",
-      "publisher_url": "",
-      "run_as": "package",
-      "install_type": "",
-      "is_docker": false,
-      "service_port": "",
-      "releases": {
-        "1.2.6": {
-          "packages": {
-            "all": {
-              "download_url": "https://github.com/foxhound1227/ps5pack_fnos/releases/download/v1.2.6/ps5pack.fpk",
-              "sha256": "33511cd92a217c0fcaeaf2fbe15faae75c7c862032c6751c6d57c458971c139e",
-              "size": 514643
-            }
-          }
-        }
-      },
-      "appname": "ps5pack",
-      "_src": "foxhound1227/ps5pack_fnos"
-    },
-    "caesium": {
-      "display_name": "Caesium",
-      "desc": "基于 Caesium 引擎的图片压缩工具，支持 JPG/PNG/WebP/GIF/TIFF，网页压缩、批量处理，文件在 NAS 本机完成。",
-      "platform": [
-        "x86",
-        "arm"
-      ],
-      "categories": [
-        "效率办公"
-      ],
-      "icon_url": "",
-      "distributor": "Caesium Community",
-      "distributor_url": "",
-      "author": "ffvz",
-      "author_url": "",
-      "developer": "",
-      "publisher": "",
-      "publisher_url": "",
-      "run_as": "root",
-      "install_type": "root",
-      "is_docker": false,
-      "service_port": "",
-      "releases": {
-        "1.7.0": {
-          "packages": {
-            "x86": {
-              "download_url": "https://github.com/ffvz7850/caesium-fnos/releases/download/v1.7.0/caesium_1.7.0_x86_64.fpk",
-              "sha256": "2092f5ef1de97ad1700509d0cbfed5184aade87fbef553a92badbed4ae40c7b5",
-              "size": 2690741
-            },
-            "arm": {
-              "download_url": "https://github.com/ffvz7850/caesium-fnos/releases/download/v1.7.0/caesium_1.7.0_arm64.fpk",
-              "sha256": "06614e26aa54c31ee9b3b35fd657402fddbd611e8bb793d845612665edc70d87",
-              "size": 2548136
-            }
-          }
-        }
-      },
-      "appname": "caesium",
-      "_src": "ffvz7850/caesium-fnos"
-    },
-    "creditdaddy": {
-      "display_name": "CreditDaddy",
-      "desc": "Qoder/WorkBuddy/ZCode/妙手/Trae/MiniMax/ModelScope 多账号本地管理 + 每日积分自动签到 + 10Router 集成与网页会话捕获（面板端口 47860）。",
-      "platform": [
-        "x86",
-        "arm"
-      ],
-      "categories": [
-        "效率办公"
-      ],
-      "icon_url": "https://raw.githubusercontent.com/techysy/CreditDaddy/main/fnos-packaging/ICON.PNG",
-      "distributor": "techysy",
-      "distributor_url": "https://github.com/techysy",
-      "author": "techysy",
-      "author_url": "https://github.com/techysy",
-      "developer": "",
-      "publisher": "",
-      "publisher_url": "",
-      "run_as": "package",
-      "install_type": "",
-      "is_docker": false,
-      "service_port": "47860",
-      "releases": {
-        "1.5.0": {
-          "packages": {
-            "x86": {
-              "download_url": "https://github.com/techysy/CreditDaddy/releases/download/v1.5.0/CreditDaddy-FnOS-1.5.0-x86.fpk",
-              "sha256": "fb7e0dd4129e0c1a15f10f27f36073cbc3d0ee9110f000d118d1a4674a3ae617",
-              "size": 588073
-            },
-            "arm": {
-              "download_url": "https://github.com/techysy/CreditDaddy/releases/download/v1.5.0/CreditDaddy-FnOS-1.5.0-arm.fpk",
-              "sha256": "8767390d624a9548e020d65bc57683692dce2166c7dab066e4cc18e76902a7b9",
-              "size": 588074
-            }
-          }
-        }
-      },
-      "appname": "creditdaddy",
-      "_src": "techysy/CreditDaddy"
-    },
-    "fpk-update": {
-      "display_name": "FPK更新",
-      "desc": "GitHub 上 fpk 的下载更新器：识别版本、后台下载、校验 sha256，点一下即装；只更新本机已安装的应用，安装始终由用户确认。",
-      "platform": [
-        "all"
-      ],
-      "categories": [
-        "系统工具"
-      ],
-      "icon_url": "https://raw.githubusercontent.com/mickeyttsc/fpk-update/main/ICON.PNG",
-      "distributor": "Mickey",
-      "distributor_url": "https://github.com/mickeyttsc",
-      "author": "Mickey",
-      "author_url": "https://github.com/mickeyttsc",
-      "developer": "",
-      "publisher": "",
-      "publisher_url": "",
-      "run_as": "package",
-      "install_type": "",
-      "is_docker": false,
-      "service_port": "18600",
-      "releases": {
-        "1.0.0": {
-          "packages": {
-            "all": {
-              "download_url": "https://github.com/mickeyttsc/fpk-update/releases/download/v1.0.0/fpk-update-1.0.0.fpk",
-              "sha256": "c0da9ee87b24cfdd837d32f50b6f9ce152c5ea30eb6e745a60dec1cea424c406",
-              "size": 88785
-            }
-          }
-        }
-      },
-      "appname": "fpk-update",
-      "_src": "mickeyttsc/fpk-update"
-    },
-    "fonu": {
-      "display_name": "Fonu",
-      "desc": "飞牛 fnOS 公网访问管理：反代、DDNS、HTTPS 证书、内网穿透。",
-      "platform": [
-        "x86",
-        "arm"
-      ],
-      "categories": [
-        "网络工具"
-      ],
-      "icon_url": "https://raw.githubusercontent.com/O96u/Fonu/main/packaging/fonu-fpk/ICON.PNG",
-      "distributor": "muxui",
-      "distributor_url": "https://github.com/O96u/Fonu",
-      "author": "muxui",
-      "author_url": "https://github.com/O96u/Fonu",
-      "developer": "",
-      "publisher": "",
-      "publisher_url": "",
-      "run_as": "package",
-      "install_type": "",
-      "is_docker": false,
-      "service_port": "6893",
-      "releases": {
-        "1.1.9": {
-          "packages": {
-            "x86": {
-              "download_url": "https://github.com/O96u/Fonu/releases/download/v1.1.9/fonu_1.1.9_amd64.fpk",
-              "sha256": "af84d10b3a7124b1f2587343d614aa297122e6dfe03458391c21ac227e0deb32",
-              "size": 37782131
-            },
-            "arm": {
-              "download_url": "https://github.com/O96u/Fonu/releases/download/v1.1.9/fonu_1.1.9_arm64.fpk",
-              "sha256": "f5396db2e1302925d614bf34a67835dece5d7ccfca44ddd4b73437b5e777e884",
-              "size": 35826361
-            }
-          }
-        }
-      },
-      "appname": "fonu",
-      "_src": "O96u/Fonu"
-    },
-    "cmccyun": {
-      "display_name": "移动云盘",
-      "desc": "将中国移动云盘（139 云盘）挂载为飞牛 fnOS 本地文件系统，可直接浏览、下载、上传、重命名、删除云盘文件；内置授权管理界面。",
-      "platform": [
-        "all"
-      ],
-      "categories": [
-        "网络工具"
-      ],
-      "icon_url": "https://raw.githubusercontent.com/vincent-jia253/fnos-cmccyun/main/ICON.PNG",
-      "distributor": "vincent-jia253",
-      "distributor_url": "https://github.com/vincent-jia253",
-      "author": "vincent-jia253",
-      "author_url": "https://github.com/vincent-jia253",
-      "developer": "",
-      "publisher": "",
-      "publisher_url": "",
-      "run_as": "package",
-      "install_type": "",
-      "is_docker": false,
-      "service_port": "19898",
-      "releases": {
-        "1.3.2": {
-          "packages": {
-            "all": {
-              "download_url": "https://github.com/vincent-jia253/fnos-cmccyun/releases/download/v1.3.2/cmccyun-1.3.2.fpk",
-              "sha256": "7c52c45805dc00347a744f213af709870a7deab7959f02f0f402e03d08b61994",
-              "size": 6791237
-            }
-          }
-        }
-      },
-      "appname": "cmccyun",
-      "_src": "vincent-jia253/fnos-cmccyun"
-    },
-    "basemetas-fileview": {
-      "display_name": "FileView 预览",
-      "desc": "BaseMetas Fileview 全格式在线预览：OFD、Office、三维模型、压缩包等，经飞牛统一网关接入。",
-      "platform": [
-        "all"
-      ],
-      "categories": [
-        "效率办公"
-      ],
-      "icon_url": "https://raw.githubusercontent.com/bug-yu/fnos-basemetas-fileview/main/fpk/basemetas-fileview/ICON.PNG",
-      "distributor": "BaseMetas",
-      "distributor_url": "https://fileview.basemetas.cn",
-      "author": "bug-yu",
-      "author_url": "https://github.com/bug-yu",
-      "developer": "",
-      "publisher": "",
-      "publisher_url": "",
-      "run_as": "package",
-      "install_type": "",
-      "is_docker": false,
-      "service_port": "",
-      "releases": {
-        "0.5.59": {
-          "packages": {
-            "all": {
-              "download_url": "https://github.com/bug-yu/fnos-basemetas-fileview/releases/download/v0.5.59/basemetas-fileview-0.5.59-desktop.fpk",
-              "sha256": "de70fd4f4de61d0469be6a7bdb2d504719914a1c10ecbedf53e7d2d9f2ed7b6c",
-              "size": 236238
-            }
-          }
-        }
-      },
-      "appname": "basemetas-fileview",
-      "_src": "bug-yu/fnos-basemetas-fileview"
-    },
-    "hermes-agent": {
-      "display_name": "Hermes Agent",
-      "desc": "开源 AI Agent：多平台消息网关（微信 ClawBot/QQ/飞书/WhatsApp/Telegram）、内置学习循环、技能系统与 MCP 扩展。",
-      "platform": [
-        "all"
-      ],
-      "categories": [
-        "效率办公"
-      ],
-      "icon_url": "https://raw.githubusercontent.com/haibo8023/fnos-hermes-agent/main/fpk/ICON.PNG",
-      "distributor": "veenyi",
-      "distributor_url": "https://github.com/veenyi/fnos-hermes-agent-web",
-      "author": "Nous Research",
-      "author_url": "https://github.com/NousResearch/hermes-agent",
-      "developer": "",
-      "publisher": "",
-      "publisher_url": "",
-      "run_as": "package",
-      "install_type": "",
-      "is_docker": false,
-      "service_port": "",
-      "releases": {
-        "0.22.2.02": {
-          "packages": {
-            "all": {
-              "download_url": "https://github.com/haibo8023/fnos-hermes-agent/releases/download/v0.22.2.02/fnos-hermes-agent_v0.22.2.02.fpk",
-              "sha256": "f5b8b87053c2d05c2e6f2c2a3ab1a131a9ce92f74f2cc9c1ba6fab1e94d40d93",
-              "size": 382522291
-            }
-          }
-        }
-      },
-      "appname": "hermes-agent",
-      "_src": "haibo8023/fnos-hermes-agent"
-    },
-    "pigeonbox": {
-      "display_name": "PigeonBox",
-      "desc": "匿名口令分享文本与文件（文件快递柜）：粘贴文本或拖拽上传即得取件码与二维码，支持取件密码与到期自动销毁，数据落在 NAS 共享目录。",
-      "platform": [
-        "all"
-      ],
-      "categories": [
-        "网络工具"
-      ],
-      "icon_url": "https://raw.githubusercontent.com/pigeonbox/fnos/master/fnos/ICON.PNG",
-      "distributor": "zhangyi",
-      "distributor_url": "https://github.com/pigeonbox/fnos",
-      "author": "zhangyi",
-      "author_url": "https://github.com/pigeonbox/fnos",
-      "developer": "",
-      "publisher": "",
-      "publisher_url": "",
-      "run_as": "package",
-      "install_type": "",
-      "is_docker": false,
-      "service_port": "12345",
-      "releases": {
-        "2.0.2": {
-          "packages": {
-            "all": {
-              "download_url": "https://github.com/pigeonbox/fnos/releases/download/v2.0.2/pigeonbox.fpk",
-              "sha256": "a2e0b954de5342186b980a24f07239206dc431f9d3890f87b2e27993ecad7caa",
-              "size": 43532282
-            }
-          }
-        }
-      },
-      "appname": "pigeonbox",
-      "_src": "pigeonbox/fnos"
+      "arm": {
+       "download_url": "https://github.com/xiaocheng154/nas-cloud-downloader/releases/download/v1.5.9/clouddl_arm64_1.5.9.fpk",
+       "sha256": "36416687176c5d45ddece792a98019f44b4471f3ee2a4bab0fe8e7c89d1a83ac",
+       "size": 65961390
+      }
+     }
     }
+   },
+   "appname": "clouddl",
+   "_src": "xiaocheng154/nas-cloud-downloader"
+  },
+  "fnnas.iptv": {
+   "display_name": "飞牛IPTV",
+   "desc": "飞牛IPTV：集成央视频播放源，支持 PHP 一键安装/卸载；V2.1.0 新增独立 Web 登录页面；V2.1.1 新增 M3U8 订阅；V2.1.2 新增 PID 持久化驻存；V2.1.3 新增多线程访问。",
+   "platform": [
+    "all"
+   ],
+   "categories": [
+    "影音娱乐"
+   ],
+   "icon_url": "https://raw.githubusercontent.com/fj199409/fnos-iptv/master/ICON.PNG",
+   "distributor": "冰糖葫芦",
+   "distributor_url": "https://github.com/fj199409",
+   "author": "最北的北",
+   "author_url": "https://github.com/fj199409",
+   "developer": "",
+   "publisher": "",
+   "publisher_url": "",
+   "run_as": "package",
+   "install_type": "",
+   "is_docker": false,
+   "releases": {
+    "2.1.3": {
+     "packages": {
+      "all": {
+       "download_url": "https://github.com/fj199409/fnos-iptv/releases/download/v2.1.3/fnos_iptv_v2.1.3_web.fpk",
+       "sha256": "3742660eb1c877f32eab2ffb217ab69859222e6defc7b46872e83906e8a87eb8",
+       "size": 519091
+      }
+     }
+    }
+   },
+   "appname": "fnnas.iptv",
+   "_src": "fj199409/fnos-iptv"
+  },
+  "qnap8528-kmod": {
+   "display_name": "qnap8528 驱动",
+   "desc": "QNAP IT8528 EC 内核驱动，支持风扇控制、温度传感器、LED、按键和 VPD 读取。",
+   "platform": [
+    "x86"
+   ],
+   "categories": [
+    "系统工具"
+   ],
+   "icon_url": "https://raw.githubusercontent.com/iamiao/8528/master/fnos/ICON.PNG",
+   "distributor": "iamiao",
+   "distributor_url": "https://github.com/iamiao",
+   "author": "iamiao",
+   "author_url": "https://github.com/iamiao",
+   "developer": "",
+   "publisher": "",
+   "publisher_url": "",
+   "run_as": "package",
+   "install_type": "",
+   "is_docker": false,
+   "service_port": "",
+   "releases": {
+    "1.24.3": {
+     "packages": {
+      "x86": {
+       "download_url": "https://github.com/iamiao/8528/releases/download/%E9%A3%9E%E7%89%9Bqnap8528/qnap8528-kmod_1.24.3_x86.fpk",
+       "sha256": "e34a6b153fbf1bdca2a73834447343d3c62a092a7ea376682e1d415e2562a12f",
+       "size": 33457
+      }
+     }
+    }
+   },
+   "appname": "qnap8528-kmod",
+   "_src": "iamiao/8528"
+  },
+  "yinqiao": {
+   "display_name": "音桥",
+   "desc": "面向 fnOS 飞牛音乐的第三方播放协议桥：让手机和桌面音乐客户端通过常见协议访问飞牛音乐中的歌手、专辑、歌曲、封面、歌词、收藏、歌单和音频流，支持 API 桥及多种播放协议。",
+   "platform": [
+    "x86"
+   ],
+   "categories": [
+    "影音娱乐"
+   ],
+   "icon_url": "https://raw.githubusercontent.com/qianlipp/fn-music-bridge/main/package-src/ICON.PNG",
+   "distributor": "qianlipp",
+   "distributor_url": "https://github.com/qianlipp",
+   "author": "qianlipp",
+   "author_url": "https://github.com/qianlipp",
+   "developer": "",
+   "publisher": "",
+   "publisher_url": "",
+   "run_as": "root",
+   "install_type": "root",
+   "is_docker": false,
+   "service_port": "14040",
+   "releases": {
+    "1.0.7": {
+     "packages": {
+      "x86": {
+       "download_url": "https://github.com/qianlipp/fn-music-bridge/releases/download/3-%E4%BF%AE%E5%A4%8D%E7%AB%AF%E5%8F%A3%E8%AF%86%E5%88%AB%EF%BC%8C%E6%94%AF%E6%8C%81%E6%89%8B%E5%8A%A8%E8%B0%83%E6%95%B4/yinqiao-1.0.7.fpk",
+       "sha256": "d8351409985af25ef432f5dcd8d665559a9c15cbd7945c458fe92bdc19d76675",
+       "size": 6659826
+      }
+     }
+    }
+   },
+   "appname": "yinqiao",
+   "_src": "qianlipp/fn-music-bridge"
+  },
+  "FnMusicEnhance": {
+   "display_name": "飞牛音乐增强",
+   "desc": "通过 nginx 提供飞牛音乐不存在的接口增强手机 APP 功能，需配合飞牛音乐（trim.music）使用。",
+   "platform": [
+    "all"
+   ],
+   "categories": [
+    "影音娱乐"
+   ],
+   "icon_url": "https://raw.githubusercontent.com/kuilei0926/FnMusicEnhance/master/ICON.PNG",
+   "distributor": "kuilei0926",
+   "distributor_url": "https://github.com/kuilei0926",
+   "author": "kuilei0926",
+   "author_url": "https://github.com/kuilei0926",
+   "developer": "",
+   "publisher": "",
+   "publisher_url": "",
+   "run_as": "root",
+   "install_type": "root",
+   "is_docker": false,
+   "service_port": "",
+   "releases": {
+    "2.0.3": {
+     "packages": {
+      "all": {
+       "download_url": "https://github.com/kuilei0926/FnMusicEnhance/releases/download/v2.0.3/FnMusicEnhance-2.0.3.fpk",
+       "sha256": "16b3a5a3a439221b3022e8429dcfde346a081eade5eb07e466850557ed8317a3",
+       "size": 169341
+      }
+     }
+    }
+   },
+   "appname": "FnMusicEnhance",
+   "_src": "kuilei0926/FnMusicEnhance"
+  },
+  "micam": {
+   "display_name": "MiCam (非官方社区版)",
+   "desc": "智能家居摄像头本地监控桥接套件（非官方社区适配）：扫码登录、低延迟预览、24小时本地录像、时间轴回放、云台控制、AI识别与离线备份。",
+   "platform": [
+    "x86"
+   ],
+   "categories": [
+    "系统工具"
+   ],
+   "icon_url": "https://raw.githubusercontent.com/AmigaMeow/micam/master/assets/icon.svg",
+   "distributor": "AmigaMeow",
+   "distributor_url": "https://github.com/AmigaMeow",
+   "author": "AmigaMeow",
+   "author_url": "https://github.com/AmigaMeow",
+   "developer": "",
+   "publisher": "",
+   "publisher_url": "",
+   "run_as": "package",
+   "install_type": "",
+   "is_docker": false,
+   "service_port": "",
+   "releases": {
+    "0.41.5": {
+     "packages": {
+      "x86": {
+       "download_url": "https://github.com/AmigaMeow/micam/releases/download/v0.41.5/micam_0.41.5_amd64.fpk",
+       "sha256": "c38225e21dad3c1327d7bd82b2165e718046049f3ef6c52ec7ff99d951ad9a9a",
+       "size": 5152814
+      }
+     }
+    }
+   },
+   "appname": "micam",
+   "_src": "AmigaMeow/micam"
+  },
+  "node-space": {
+   "display_name": "知间笔记",
+   "desc": "私有化 Markdown 笔记管理应用，数据全部保存在本地 NAS，无需外部云服务。",
+   "platform": [
+    "all"
+   ],
+   "categories": [
+    "效率办公"
+   ],
+   "icon_url": "https://raw.githubusercontent.com/hulupi/notespace/main/fpk/ICON.PNG",
+   "distributor": "NoteSpace",
+   "distributor_url": "https://github.com/hulupi/notespace",
+   "author": "NoteSpace",
+   "author_url": "https://github.com/hulupi/notespace",
+   "developer": "",
+   "publisher": "",
+   "publisher_url": "",
+   "run_as": "package",
+   "install_type": "",
+   "is_docker": false,
+   "service_port": "",
+   "releases": {
+    "1.2.2": {
+     "packages": {
+      "all": {
+       "download_url": "https://github.com/hulupi/notespace/releases/download/v1.2.2/node-space-1.2.2.fpk",
+       "sha256": "26aa3c42f10747b89c5d759a122727a950df4e73d9b8873edaf5430e7791d2be",
+       "size": 1487613
+      }
+     }
+    }
+   },
+   "appname": "node-space",
+   "_src": "hulupi/notespace"
+  },
+  "fnterminal": {
+   "display_name": "FnTerminal",
+   "desc": "原生 SSH 终端（独立应用服务账户，NAS 用户二次认证）。",
+   "platform": [
+    "x86",
+    "arm"
+   ],
+   "categories": [
+    "开发工具"
+   ],
+   "icon_url": "https://raw.githubusercontent.com/BeeThor/FnTerminal/main/logo.png",
+   "distributor": "community",
+   "distributor_url": "https://github.com/BeeThor/FnTerminal",
+   "author": "community",
+   "author_url": "https://github.com/BeeThor/FnTerminal",
+   "developer": "",
+   "publisher": "",
+   "publisher_url": "",
+   "run_as": "package",
+   "install_type": "",
+   "is_docker": false,
+   "service_port": "",
+   "releases": {
+    "0.9.0": {
+     "packages": {
+      "x86": {
+       "download_url": "https://github.com/BeeThor/FnTerminal/releases/download/v0.9.0/FnTerminal-0.9.0-x86.fpk",
+       "sha256": "5137396ad1494ea32a9c82860ce09d6b36d86b013fec58bb2564f6629ba24163",
+       "size": 3687077
+      },
+      "arm": {
+       "download_url": "https://github.com/BeeThor/FnTerminal/releases/download/v0.9.0/FnTerminal-0.9.0-arm.fpk",
+       "sha256": "b9803331e88262a4d31839991c15c82c758010c1ab11f7d4174016b1da232333",
+       "size": 3387295
+      }
+     }
+    }
+   },
+   "appname": "fnterminal",
+   "_src": "BeeThor/FnTerminal"
+  },
+  "ps5pack": {
+   "display_name": "PS5游戏压缩工具",
+   "desc": "基于 AMPR LZ4 协议的 PS5 游戏资产高速压缩工具：多线程并发、4-Lane 资产分流、完整性校验与 NAS 目录树选择。",
+   "platform": [
+    "all"
+   ],
+   "categories": [
+    "系统工具"
+   ],
+   "icon_url": "https://raw.githubusercontent.com/foxhound1227/ps5pack_fnos/main/assets/logo.png",
+   "distributor": "Nazky & ps5pack-team",
+   "distributor_url": "https://github.com/Nazky/Lazy_AMPR",
+   "author": "Nazky & ps5pack-team",
+   "author_url": "https://github.com/foxhound1227",
+   "developer": "",
+   "publisher": "",
+   "publisher_url": "",
+   "run_as": "package",
+   "install_type": "",
+   "is_docker": false,
+   "service_port": "",
+   "releases": {
+    "1.2.6": {
+     "packages": {
+      "all": {
+       "download_url": "https://github.com/foxhound1227/ps5pack_fnos/releases/download/v1.2.6/ps5pack.fpk",
+       "sha256": "33511cd92a217c0fcaeaf2fbe15faae75c7c862032c6751c6d57c458971c139e",
+       "size": 514643
+      }
+     }
+    }
+   },
+   "appname": "ps5pack",
+   "_src": "foxhound1227/ps5pack_fnos"
+  },
+  "caesium": {
+   "display_name": "Caesium",
+   "desc": "基于 Caesium 引擎的图片压缩工具，支持 JPG/PNG/WebP/GIF/TIFF，网页压缩、批量处理，文件在 NAS 本机完成。",
+   "platform": [
+    "x86",
+    "arm"
+   ],
+   "categories": [
+    "效率办公"
+   ],
+   "icon_url": "",
+   "distributor": "Caesium Community",
+   "distributor_url": "",
+   "author": "ffvz",
+   "author_url": "",
+   "developer": "",
+   "publisher": "",
+   "publisher_url": "",
+   "run_as": "root",
+   "install_type": "root",
+   "is_docker": false,
+   "service_port": "",
+   "releases": {
+    "1.7.0": {
+     "packages": {
+      "x86": {
+       "download_url": "https://github.com/ffvz7850/caesium-fnos/releases/download/v1.7.0/caesium_1.7.0_x86_64.fpk",
+       "sha256": "2092f5ef1de97ad1700509d0cbfed5184aade87fbef553a92badbed4ae40c7b5",
+       "size": 2690741
+      },
+      "arm": {
+       "download_url": "https://github.com/ffvz7850/caesium-fnos/releases/download/v1.7.0/caesium_1.7.0_arm64.fpk",
+       "sha256": "06614e26aa54c31ee9b3b35fd657402fddbd611e8bb793d845612665edc70d87",
+       "size": 2548136
+      }
+     }
+    }
+   },
+   "appname": "caesium",
+   "_src": "ffvz7850/caesium-fnos"
+  },
+  "creditdaddy": {
+   "display_name": "CreditDaddy",
+   "desc": "Qoder/WorkBuddy/ZCode/妙手/Trae/MiniMax/ModelScope 多账号本地管理 + 每日积分自动签到 + 10Router 集成与网页会话捕获（面板端口 47860）。",
+   "platform": [
+    "x86",
+    "arm"
+   ],
+   "categories": [
+    "效率办公"
+   ],
+   "icon_url": "https://raw.githubusercontent.com/techysy/CreditDaddy/main/fnos-packaging/ICON.PNG",
+   "distributor": "techysy",
+   "distributor_url": "https://github.com/techysy",
+   "author": "techysy",
+   "author_url": "https://github.com/techysy",
+   "developer": "",
+   "publisher": "",
+   "publisher_url": "",
+   "run_as": "package",
+   "install_type": "",
+   "is_docker": false,
+   "service_port": "47860",
+   "releases": {
+    "1.5.0": {
+     "packages": {
+      "x86": {
+       "download_url": "https://github.com/techysy/CreditDaddy/releases/download/v1.5.0/CreditDaddy-FnOS-1.5.0-x86.fpk",
+       "sha256": "fb7e0dd4129e0c1a15f10f27f36073cbc3d0ee9110f000d118d1a4674a3ae617",
+       "size": 588073
+      },
+      "arm": {
+       "download_url": "https://github.com/techysy/CreditDaddy/releases/download/v1.5.0/CreditDaddy-FnOS-1.5.0-arm.fpk",
+       "sha256": "8767390d624a9548e020d65bc57683692dce2166c7dab066e4cc18e76902a7b9",
+       "size": 588074
+      }
+     }
+    }
+   },
+   "appname": "creditdaddy",
+   "_src": "techysy/CreditDaddy"
+  },
+  "fpk-update": {
+   "display_name": "FPK更新",
+   "desc": "GitHub 上 fpk 的下载更新器：识别版本、后台下载、校验 sha256，点一下即装；只更新本机已安装的应用，安装始终由用户确认。",
+   "platform": [
+    "all"
+   ],
+   "categories": [
+    "系统工具"
+   ],
+   "icon_url": "https://raw.githubusercontent.com/mickeyttsc/fpk-update/main/ICON.PNG",
+   "distributor": "Mickey",
+   "distributor_url": "https://github.com/mickeyttsc",
+   "author": "Mickey",
+   "author_url": "https://github.com/mickeyttsc",
+   "developer": "",
+   "publisher": "",
+   "publisher_url": "",
+   "run_as": "package",
+   "install_type": "",
+   "is_docker": false,
+   "service_port": "18600",
+   "releases": {
+    "1.0.0": {
+     "packages": {
+      "all": {
+       "download_url": "https://github.com/mickeyttsc/fpk-update/releases/download/v1.0.0/fpk-update-1.0.0.fpk",
+       "sha256": "c0da9ee87b24cfdd837d32f50b6f9ce152c5ea30eb6e745a60dec1cea424c406",
+       "size": 88785
+      }
+     }
+    }
+   },
+   "appname": "fpk-update",
+   "_src": "mickeyttsc/fpk-update"
+  },
+  "fonu": {
+   "display_name": "Fonu",
+   "desc": "飞牛 fnOS 公网访问管理：反代、DDNS、HTTPS 证书、内网穿透。",
+   "platform": [
+    "x86",
+    "arm"
+   ],
+   "categories": [
+    "网络工具"
+   ],
+   "icon_url": "https://raw.githubusercontent.com/O96u/Fonu/main/packaging/fonu-fpk/ICON.PNG",
+   "distributor": "muxui",
+   "distributor_url": "https://github.com/O96u/Fonu",
+   "author": "muxui",
+   "author_url": "https://github.com/O96u/Fonu",
+   "developer": "",
+   "publisher": "",
+   "publisher_url": "",
+   "run_as": "package",
+   "install_type": "",
+   "is_docker": false,
+   "service_port": "6893",
+   "releases": {
+    "1.1.9": {
+     "packages": {
+      "x86": {
+       "download_url": "https://github.com/O96u/Fonu/releases/download/v1.1.9/fonu_1.1.9_amd64.fpk",
+       "sha256": "af84d10b3a7124b1f2587343d614aa297122e6dfe03458391c21ac227e0deb32",
+       "size": 37782131
+      },
+      "arm": {
+       "download_url": "https://github.com/O96u/Fonu/releases/download/v1.1.9/fonu_1.1.9_arm64.fpk",
+       "sha256": "f5396db2e1302925d614bf34a67835dece5d7ccfca44ddd4b73437b5e777e884",
+       "size": 35826361
+      }
+     }
+    }
+   },
+   "appname": "fonu",
+   "_src": "O96u/Fonu"
+  },
+  "cmccyun": {
+   "display_name": "移动云盘",
+   "desc": "将中国移动云盘（139 云盘）挂载为飞牛 fnOS 本地文件系统，可直接浏览、下载、上传、重命名、删除云盘文件；内置授权管理界面。",
+   "platform": [
+    "all"
+   ],
+   "categories": [
+    "网络工具"
+   ],
+   "icon_url": "https://raw.githubusercontent.com/vincent-jia253/fnos-cmccyun/main/ICON.PNG",
+   "distributor": "vincent-jia253",
+   "distributor_url": "https://github.com/vincent-jia253",
+   "author": "vincent-jia253",
+   "author_url": "https://github.com/vincent-jia253",
+   "developer": "",
+   "publisher": "",
+   "publisher_url": "",
+   "run_as": "package",
+   "install_type": "",
+   "is_docker": false,
+   "service_port": "19898",
+   "releases": {
+    "1.3.2": {
+     "packages": {
+      "all": {
+       "download_url": "https://github.com/vincent-jia253/fnos-cmccyun/releases/download/v1.3.2/cmccyun-1.3.2.fpk",
+       "sha256": "7c52c45805dc00347a744f213af709870a7deab7959f02f0f402e03d08b61994",
+       "size": 6791237
+      }
+     }
+    }
+   },
+   "appname": "cmccyun",
+   "_src": "vincent-jia253/fnos-cmccyun"
+  },
+  "basemetas-fileview": {
+   "display_name": "FileView 预览",
+   "desc": "BaseMetas Fileview 全格式在线预览：OFD、Office、三维模型、压缩包等，经飞牛统一网关接入。",
+   "platform": [
+    "all"
+   ],
+   "categories": [
+    "效率办公"
+   ],
+   "icon_url": "https://raw.githubusercontent.com/bug-yu/fnos-basemetas-fileview/main/fpk/basemetas-fileview/ICON.PNG",
+   "distributor": "BaseMetas",
+   "distributor_url": "https://fileview.basemetas.cn",
+   "author": "bug-yu",
+   "author_url": "https://github.com/bug-yu",
+   "developer": "",
+   "publisher": "",
+   "publisher_url": "",
+   "run_as": "package",
+   "install_type": "",
+   "is_docker": false,
+   "service_port": "",
+   "releases": {
+    "0.5.59": {
+     "packages": {
+      "all": {
+       "download_url": "https://github.com/bug-yu/fnos-basemetas-fileview/releases/download/v0.5.59/basemetas-fileview-0.5.59-desktop.fpk",
+       "sha256": "de70fd4f4de61d0469be6a7bdb2d504719914a1c10ecbedf53e7d2d9f2ed7b6c",
+       "size": 236238
+      }
+     }
+    }
+   },
+   "appname": "basemetas-fileview",
+   "_src": "bug-yu/fnos-basemetas-fileview"
+  },
+  "hermes-agent": {
+   "display_name": "Hermes Agent",
+   "desc": "开源 AI Agent：多平台消息网关（微信 ClawBot/QQ/飞书/WhatsApp/Telegram）、内置学习循环、技能系统与 MCP 扩展。",
+   "platform": [
+    "all"
+   ],
+   "categories": [
+    "效率办公"
+   ],
+   "icon_url": "https://raw.githubusercontent.com/haibo8023/fnos-hermes-agent/main/fpk/ICON.PNG",
+   "distributor": "veenyi",
+   "distributor_url": "https://github.com/veenyi/fnos-hermes-agent-web",
+   "author": "Nous Research",
+   "author_url": "https://github.com/NousResearch/hermes-agent",
+   "developer": "",
+   "publisher": "",
+   "publisher_url": "",
+   "run_as": "package",
+   "install_type": "",
+   "is_docker": false,
+   "service_port": "",
+   "releases": {
+    "0.22.2.02": {
+     "packages": {
+      "all": {
+       "download_url": "https://github.com/haibo8023/fnos-hermes-agent/releases/download/v0.22.2.02/fnos-hermes-agent_v0.22.2.02.fpk",
+       "sha256": "f5b8b87053c2d05c2e6f2c2a3ab1a131a9ce92f74f2cc9c1ba6fab1e94d40d93",
+       "size": 382522291
+      }
+     }
+    }
+   },
+   "appname": "hermes-agent",
+   "_src": "haibo8023/fnos-hermes-agent"
+  },
+  "pigeonbox": {
+   "display_name": "PigeonBox",
+   "desc": "匿名口令分享文本与文件（文件快递柜）：粘贴文本或拖拽上传即得取件码与二维码，支持取件密码与到期自动销毁，数据落在 NAS 共享目录。",
+   "platform": [
+    "all"
+   ],
+   "categories": [
+    "网络工具"
+   ],
+   "icon_url": "https://raw.githubusercontent.com/pigeonbox/fnos/master/fnos/ICON.PNG",
+   "distributor": "zhangyi",
+   "distributor_url": "https://github.com/pigeonbox/fnos",
+   "author": "zhangyi",
+   "author_url": "https://github.com/pigeonbox/fnos",
+   "developer": "",
+   "publisher": "",
+   "publisher_url": "",
+   "run_as": "package",
+   "install_type": "",
+   "is_docker": false,
+   "service_port": "12345",
+   "releases": {
+    "2.0.2": {
+     "packages": {
+      "all": {
+       "download_url": "https://github.com/pigeonbox/fnos/releases/download/v2.0.2/pigeonbox.fpk",
+       "sha256": "a2e0b954de5342186b980a24f07239206dc431f9d3890f87b2e27993ecad7caa",
+       "size": 43532282
+      }
+     }
+    }
+   },
+   "appname": "pigeonbox",
+   "_src": "pigeonbox/fnos"
+  },
+  "hermes-studio": {
+   "display_name": "Hermes Studio",
+   "desc": "飞牛原生 Hermes Studio：AI 智能体工作台，内置 fnOS Skill 技能系统与 trim-cli 工具链，支持应用中心/Docker/下载/存储等系统能力编排。",
+   "platform": [
+    "all"
+   ],
+   "categories": [
+    "效率办公"
+   ],
+   "icon_url": "https://raw.githubusercontent.com/veenyi/Fnos-Hermes-Studio/main/ICON.PNG",
+   "distributor": "veenyi",
+   "distributor_url": "https://github.com/veenyi",
+   "author": "veenyi",
+   "author_url": "https://github.com/veenyi",
+   "developer": "",
+   "publisher": "",
+   "publisher_url": "",
+   "run_as": "package",
+   "install_type": "",
+   "is_docker": false,
+   "service_port": "",
+   "releases": {
+    "v0.7.36-1": {
+     "packages": {
+      "all": {
+       "download_url": "https://github.com/veenyi/Fnos-Hermes-Studio/releases/download/v0.7.36-1/fnos-hermes-studio_v0.7.36-1.fpk",
+       "sha256": "cc320614c5adc5bf9c1973a1433c8a63d8956b97c9e557cdd4564c5cc3b512b1",
+       "size": 363874710
+      }
+     }
+    }
+   },
+   "appname": "hermes-studio",
+   "_src": "veenyi/Fnos-Hermes-Studio"
+  },
+  "qwenpaw_yuexps": {
+   "display_name": "QwenPaw",
+   "desc": "QwenPaw 的 fnOS 打包版（yuexps 维护）：面向 Qwen 的 AI 桌面助手应用。",
+   "platform": [
+    "all"
+   ],
+   "categories": [
+    "效率办公"
+   ],
+   "icon_url": "https://raw.githubusercontent.com/yuexps/QwenPaw-FNOS/main/ICON.PNG",
+   "distributor": "yuexps",
+   "distributor_url": "https://github.com/yuexps",
+   "author": "yuexps",
+   "author_url": "https://github.com/yuexps",
+   "developer": "",
+   "publisher": "",
+   "publisher_url": "",
+   "run_as": "package",
+   "install_type": "",
+   "is_docker": false,
+   "service_port": "",
+   "releases": {
+    "v26.9.11": {
+     "packages": {
+      "all": {
+       "download_url": "https://github.com/yuexps/QwenPaw-FNOS/releases/download/v26.9.11/qwenpaw_yuexps.fpk",
+       "sha256": "9643abb9c657b3c7e1cd2a0981c94a4f513be19d9c9383733cea0941c7184735",
+       "size": 35570503
+      }
+     }
+    }
+   },
+   "appname": "qwenpaw_yuexps",
+   "_src": "yuexps/QwenPaw-FNOS"
+  },
+  "deepseek.harness": {
+   "display_name": "DeepSeek Harness",
+   "desc": "DeepSeek Harness 管理应用，支持管理 Harness 服务的启动、停止、重启与升级。",
+   "platform": [
+    "x86",
+    "arm"
+   ],
+   "categories": [
+    "效率办公"
+   ],
+   "icon_url": "https://raw.githubusercontent.com/yuexps/deepseek.harness.fnos/main/fnpack/ICON.PNG",
+   "distributor": "yuexps",
+   "distributor_url": "https://github.com/yuexps",
+   "author": "yuexps",
+   "author_url": "https://github.com/yuexps",
+   "developer": "",
+   "publisher": "",
+   "publisher_url": "",
+   "run_as": "package",
+   "install_type": "",
+   "is_docker": false,
+   "service_port": "",
+   "releases": {
+    "v0.3.9": {
+     "packages": {
+      "x86": {
+       "download_url": "https://github.com/yuexps/deepseek.harness.fnos/releases/download/v0.3.9/deepseek.harness-x86.fpk",
+       "sha256": "d6dd7b9151dcf69599600cedc2dc6b334e9676eb8c763bd80781845b5a4c5733",
+       "size": 137362998
+      },
+      "arm": {
+       "download_url": "https://github.com/yuexps/deepseek.harness.fnos/releases/download/v0.3.9/deepseek.harness-arm.fpk",
+       "sha256": "d9a9f3aa7577169aea7de12b54f232a4a3a001d5c2be16716a26e6637c7eeb70",
+       "size": 139366373
+      }
+     }
+    }
+   },
+   "appname": "deepseek.harness",
+   "_src": "yuexps/deepseek.harness.fnos"
   }
+ }
 }
