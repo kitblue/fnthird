@@ -4,7 +4,7 @@
     "name": "fnthird",
     "author": "kitblue",
     "homepage": "https://github.com/kitblue/fnthird",
-    "description": "飞牛 fnOS 第三方应用源：收录原生 manifest 格式（无 fnpack.json）的第三方 app 项目，为其提供被第三方应用商店收录的路径。"
+    "description": "飞牛 fnOS 第三方应用源：收录原生 manifest 格式（无 fnpack.json）的第三方 app 项目，以及 FanTune 等独立应用条目，为其提供被第三方应用商店收录的路径。当前收录 32 个应用。"
   },
   "apps": {
     "clouddl": {
@@ -1140,6 +1140,47 @@
       },
       "appname": "SpaceCadetPinball",
       "_src": "IMGZCQ/FnDepot"
+    },
+    "fancontrolserver": {
+      "display_name": "FanTune",
+      "desc": "FanTune 是一款面向 NAS 与 x86 主板的智能风扇与温度管理软件：温控曲线、多风扇管理、实时硬件监控。基于开源项目 [FanControlServer](https://github.com/guan-ry/FanControlServerApp) 品牌定制，支持 IT87/NCT6775 等通用 Super I/O 风扇芯片（威联通等厂商的 NAS 大量采用此类芯片，fnOS 已内置相关驱动，开箱即用）；少数采用 IT8528 EC 的机型内置 [qnap8528 驱动](https://github.com/iamiao/8528) 随包自动安装。适配飞牛 OS（fnOS）应用中心，本仓库即 FnDepot 第三方源（仓库模式或 JSON 直链均可添加），可在商店一键安装。",
+      "platform": [
+        "x86"
+      ],
+      "categories": [
+        "系统工具"
+      ],
+      "icon_url": "https://raw.githubusercontent.com/KITblue/fantune/main/FanControlServer/icon.png",
+      "preview_urls": [
+        "https://raw.githubusercontent.com/kitblue/fantune/main/FanControlServer/Preview/01_overview.png",
+        "https://raw.githubusercontent.com/kitblue/fantune/main/FanControlServer/Preview/02_fans.png",
+        "https://raw.githubusercontent.com/kitblue/fantune/main/FanControlServer/Preview/03_settings.png"
+      ],
+      "run_as": "root",
+      "install_type": "",
+      "is_docker": false,
+      "distributor": "Kitblue",
+      "distributor_url": "https://github.com/KITblue",
+      "desktop_uidir": "ui",
+      "desktop_applaunchname": "FanControlServer.main",
+      "releases": {
+        "1.3.7.37": {
+          "packages": {
+            "x86": {
+              "download_url": "https://github.com/kitblue/fantune/releases/download/v1.3.7.37/FanControlServer-v1.3.7.37-fantune-iframe.fpk",
+              "sha256": "8fb33010b33b88f36e41dc84ad1d463f3d8d17d20645da9230778933ee6779e3",
+              "size": 6911531
+            }
+          }
+        }
+      },
+      "appname": "fancontrolserver",
+      "_src": "KITblue/fantune",
+      "author": "Kitblue",
+      "author_url": "https://github.com/Kitblue",
+      "developer": "",
+      "publisher": "",
+      "publisher_url": "https://github.com/KITblue"
     }
   }
 }
