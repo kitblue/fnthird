@@ -7,46 +7,6 @@
     "description": "飞牛 fnOS 第三方应用源：收录原生 manifest 格式（无 fnpack.json）的第三方 app 项目，为其提供被第三方应用商店收录的路径。"
   },
   "apps": {
-    "fnos-terminal": {
-      "display_name": "终端",
-      "desc": "在飞牛 fnOS 桌面中打开仅限管理员使用的 Debian Web 终端。基于 ttyd，通过统一网关访问，不开放额外端口。",
-      "platform": [
-        "x86",
-        "arm"
-      ],
-      "categories": [
-        "系统工具"
-      ],
-      "icon_url": "https://raw.githubusercontent.com/Eric0101/fnos-terminal/main/package/ICON.PNG",
-      "distributor": "金木炎",
-      "distributor_url": "https://github.com/Eric0101",
-      "author": "金木炎",
-      "author_url": "https://github.com/Eric0101",
-      "developer": "",
-      "publisher": "",
-      "publisher_url": "",
-      "run_as": "package",
-      "install_type": "",
-      "is_docker": false,
-      "releases": {
-        "1.2.12": {
-          "packages": {
-            "x86": {
-              "download_url": "https://github.com/Eric0101/fnos-terminal/releases/download/v1.2.12/fnos-terminal_1.2.12_x86.fpk",
-              "sha256": "5cc4aabd994345957248879edea2650e7e35fdbd4829a4439c711c24e1a21cda",
-              "size": 1123697
-            },
-            "arm": {
-              "download_url": "https://github.com/Eric0101/fnos-terminal/releases/download/v1.2.12/fnos-terminal_1.2.12_arm.fpk",
-              "sha256": "f8666c42ba12704c253f58c185a75b44e0f212c85d8b85cfd2f33003fb3ccebb",
-              "size": 1134783
-            }
-          }
-        }
-      },
-      "appname": "fnos-terminal",
-      "_src": "Eric0101/fnos-terminal"
-    },
     "clouddl": {
       "display_name": "多网盘下载器",
       "desc": "原生多网盘下载工具，支持百度网盘与夸克网盘文件及文件夹递归下载、可调分片与并发、实时速度和预计剩余时间、本机 Aria2 RPC、磁盘保护、定时下载、日志诊断和首次使用引导，无需 Docker",
