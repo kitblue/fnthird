@@ -1,5 +1,5 @@
 # -*- coding: utf-8 -*-
-"""fnos-apps-manifests 每日自动更新检查
+"""fnthird 每日自动更新检查
 
 读取本源 fnpack.json 中收录的每个 app（_src 指向上游 GitHub 仓库），
 检查上游 Releases 是否有比当前记录更新的版本；如有，则下载新资产并
@@ -25,7 +25,7 @@ VERIFY = False
 ctx = ssl._create_unverified_context()
 BASE = Path(__file__).resolve().parent.parent
 FNPACK = BASE / "fnpack.json"
-REPO = "kitblue/fnos-apps-manifests"
+REPO = "kitblue/fnthird"
 BRANCH = "main"
 
 
@@ -40,7 +40,7 @@ def get_token():
 
 
 def http_json(url, token=""):
-    headers = {"Accept": "application/vnd.github+json", "User-Agent": "fnos-apps-manifests/1.0"}
+    headers = {"Accept": "application/vnd.github+json", "User-Agent": "fnthird/1.0"}
     if token:
         headers["Authorization"] = f"token {token}"
     req = urllib.request.Request(url, headers=headers)
@@ -49,7 +49,7 @@ def http_json(url, token=""):
 
 
 def http_bytes(url, token=""):
-    headers = {"Accept": "application/octet-stream", "User-Agent": "fnos-apps-manifests/1.0"}
+    headers = {"Accept": "application/octet-stream", "User-Agent": "fnthird/1.0"}
     if token:
         headers["Authorization"] = f"token {token}"
     req = urllib.request.Request(url, headers=headers)
@@ -138,7 +138,7 @@ def check_app(appname, entry, token):
 def push_file(token, path, content_b64, message):
     api = f"https://api.github.com/repos/{REPO}/contents/{path}"
     headers = {"Authorization": f"token {token}", "Accept": "application/vnd.github+json",
-               "User-Agent": "fnos-apps-manifests/1.0"}
+               "User-Agent": "fnthird/1.0"}
     try:
         req = urllib.request.Request(api + f"?ref={BRANCH}", headers=headers)
         with urllib.request.urlopen(req, timeout=30, context=ctx) as r:
