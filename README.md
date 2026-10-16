@@ -52,4 +52,12 @@ fnpack.json        # 源文件（商店收录入口）
 1. 在 `manifests/<owner>-<repo>/manifest.json` 保存原 manifest 的 JSON 化版本
 2. 在 `fnpack.json` 的 `apps` 中添加对应应用条目（含 releases 下载信息）
 3. 提交推送
+
+## 每日自动检查更新
+
+仓库内置 GitHub Actions（`.github/workflows/daily-update.yml`），每天自动检查已收录 app 的上游 GitHub Releases 是否有新版本：
+
+- 脚本：`scripts/check_updates.py`（依据 `fnpack.json` 中每个 app 的 `_src` 定位上游仓库，查询最新 release，重新下载资产并核算 sha256/size）
+- 发现新版本时自动更新 `fnpack.json` 的 releases 字段并推送（仅保留最新版本）
+- 可手动触发：Actions 页面 Run workflow
 *（内容由AI生成，仅供参考）*
