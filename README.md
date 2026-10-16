@@ -17,7 +17,7 @@ AIGC:
 
 ## 源信息
 
-- 源名：`fnos-apps-manifests`
+- 源名：`fnthird`
 - 源文件：`fnpack.json`（FnDepot V2 schema）
 - 收录应用：见 `fnpack.json` 的 `apps` 字段
 
@@ -25,8 +25,8 @@ AIGC:
 
 ## 完整源地址
 
-- 仓库主页：<https://github.com/kitblue/fnos-apps-manifests>
-- 源文件完整原地址（fnpack.json）：<https://raw.githubusercontent.com/kitblue/fnos-apps-manifests/main/fnpack.json>
+- 仓库主页：<https://github.com/kitblue/fnthird>
+- 源文件完整原地址（fnpack.json）：<https://raw.githubusercontent.com/kitblue/fnthird/main/fnpack.json>
 
 在 FnDepot 等支持 FnDepot V2 的第三方应用商店中，将上述 `fnpack.json` 完整原地址添加为第三方源，即可收录并正常安装本源的 app（各 app 均符合第三方应用商店正常使用标准）。
 
