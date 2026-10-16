@@ -1,0 +1,18 @@
+appname=basemetas-fileview
+version=0.5.59
+display_name=FileView 预览
+desc=BaseMetas Fileview 全格式在线预览：OFD、Office、三维模型、压缩包等，经飞牛统一网关接入。⚠️ CAD 图纸（DWG/DXF）已独立成单独的应用「CAD 查看器」，请到应用中心安装它：github.com/bug-yu/fnos-cadviewer
+source=thirdparty
+platform=all
+
+maintainer=BaseMetas
+maintainer_url=https://fileview.basemetas.cn
+distributor=bug-yu
+distributor_url=https://github.com/bug-yu
+
+os_min_version=1.2.0
+
+desktop_uidir=ui
+desktop_applaunchname=basemetas-fileview.view
+
+changelog=0.5.59：修「飞牛**远程挂载 / 外接存储**的文件预览不了」（真机反馈）。飞牛把远程挂载（SMB/WebDAV/网盘）与外接存储（USB 硬盘、U 盘）放在 **/vol0X** 这种**带前导零**的命名空间下，路径形如 /vol02/1000-0-d0b6b52b/<目录>；而「存储空间」是不带前导零的 /vol1、/vol2…。旧实现有**两处**会把它静默吃掉：① fv_dir_volumes 只列 /vol[1-9]…，带前导零的 /vol02 **根本探测不到**；② 卷列表去重用 `sort -n -u`，而 /vol2 与 /vol02 的数字键都是 2 → 被当成重复**去掉**。后果：/vol02 不进 compose 挂载段 → 容器里看不到该路径 → **预览必然失败**。⚠️ 更隐蔽的是第二处：「挂载核对」用的是同一个规范化函数，所以「容器少了 /vol02」会被判成**一致**，自检与修复脚本都看不出来 ✗ 现在卷号一律**允许前导零**，去重改成「数字 + 完整路径」两个键（`sort -k1,1n -k2,2 -u`）。自检新增**行为断言**（/vol02 必须被保留、canon 必须能区分 /vol2 与 /vol02）+ 反查真实实现的 grep 断言，并做了阳/阴性对照。📌 临时办法（升级前）：把应用设置里的「存储卷」从 auto 改成**手填** `/vol1,/vol2,/vol02`（手填列表一直允许前导零），保存会自动重建容器。📌 另外说明：官方文档里「外接存储 / 远程挂载」**不是另一套权限模型** —— 开放 API 只把它们当成选择器侧栏的两个分组（external / remot
