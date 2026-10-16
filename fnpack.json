@@ -4,7 +4,7 @@
   "name": "fnthird",
   "author": "kitblue",
   "homepage": "https://github.com/kitblue/fnthird",
-  "description": "飞牛 fnOS 第三方应用源：收录原生 manifest 格式（无 fnpack.json）的第三方 app 项目，以及 FanTune 等独立应用条目，为其提供被第三方应用商店收录的路径。当前收录 43 个应用（含承接 Blue-Mink/FnDepot 的 9 个独立应用条目）。"
+  "description": "飞牛 fnOS 第三方应用源：收录原生 manifest 格式（无 fnpack.json）的第三方 app 项目，以及 FanTune 等独立应用条目，为其提供被第三方应用商店收录的路径。当前收录 66 个应用。"
  },
  "apps": {
   "clouddl": {
@@ -1778,6 +1778,915 @@
    },
    "appname": "EasyTier-EUI",
    "_src": "710850609/FnDepot"
+  },
+  "student-management-system": {
+   "display_name": "学生管理系统",
+   "desc": "纯 Node.js 学生管理系统，覆盖学籍档案、班级年级、教师档案、多科目成绩、考勤操行、请假、通知公告、成绩分析、宿舍安排与智能分班，数据以 JSON 本地持久化，开箱即用。",
+   "platform": [
+    "all"
+   ],
+   "categories": [
+    "教育学习"
+   ],
+   "icon_url": "https://raw.githubusercontent.com/RONGLINC93/Student-Management-System/main/fnos/student-management-system/ICON_256.PNG",
+   "distributor": "RONGLINC93",
+   "distributor_url": "https://github.com/RONGLINC93/Student-Management-System",
+   "author": "RONGLINC93",
+   "author_url": "https://github.com/RONGLINC93/Student-Management-System",
+   "developer": "",
+   "publisher": "",
+   "publisher_url": "",
+   "run_as": "package",
+   "install_type": "",
+   "is_docker": false,
+   "service_port": "3000",
+   "releases": {
+    "1.4.5": {
+     "changelog": "本版本核心：**顶栏「刷新」按钮刷「当前聚焦的选项卡」，且刷新结果可见**。\n\n### 修复\n\n- **刷新按钮「按下去没反应」**：刷新链路本身能拉数据，但全程静默——数据没变化时页面毫无动静，用户无法判断到底刷没刷；`系统设置` 页更是完全没有暴露 `window.cbEmbedRefresh` 钩子，`embed.js` 的 `refresh()` 找不到回调直接空返回，点击后一个请求都不发。修复：① 补齐 `settings.html` 的刷新钩子，按当前分组重载对应列表（账号 `/api/users`、审计 `/api/audit`、备份 `/api/backups`、运行状态 `/api/server/status`）；② `embed.js` 刷新后向父窗口回执 `icst-refreshed`（区分成功 / 有弹窗打开已跳过 / 异常），并在页面确实没有刷新钩子时兜底整页重载，保证任何页签刷新都有效果；③ 工作台顶栏新增可见反馈——点击后刷新图标旋转，收到回执（或 3 秒超时）后停止并轻提示「已刷新「XX」」/「有弹窗未关闭，已跳过刷新」。切页签触发的自动刷新（`icst-active`）不回执，不会误弹提示\n- **分屏（并列）下刷新错窗格**：`activeKey`（顶栏刷新 / 标题 / 新窗口跟随的操作目标）原本只在点击选项卡条时更新，点进右侧副窗格 iframe 内部时不会变，导致顶栏刷新按钮刷的是上次点击的页签而非你正在看的窗格；修复为**由 iframe 内部主动上报焦点**——`embed.js` 在页内 `pointerdown` / `focusin` / `focus` 时向父窗口 `postMessage` 一个 `icst-focus`（带自身路径），父窗口据此调用 `markActive` 把 `activeKey` 切到该页签（分屏左右归属与标题高亮同步更新，且不触发多余刷新），刷新按钮现在稳定刷新「当前可见 / 聚焦」的选项卡。注意：iframe 内部的点击/聚焦事件**不会冒泡**到父窗口的 `<iframe>` 元素，故此前在父窗口给 iframe 挂 `pointerdown` 监听的方案无效，必须改为页内上报。",
+     "updated_at": "2026-10-08T18:44:41+08:00",
+     "os_min_version": "1.1.8",
+     "packages": {
+      "all": {
+       "download_url": "https://github.com/RONGLINC93/Student-Management-System/releases/download/v1.4.5/student-management-system-1.4.5.fpk",
+       "sha256": "68664c47061dd142a6bef8aaee8e38f379f999df713ccedafa131db12280d535",
+       "size": 378623
+      }
+     }
+    }
+   },
+   "_src": "RONGLINC93/FnDepot"
+  },
+  "umweb": {
+   "display_name": "音乐解锁",
+   "desc": "音乐解锁 Web 版（legacy v1.10.8）—— 在浏览器中解锁已购的加密音乐（ncm / qmc / mgg / mflac 等），纯前端运行，无需服务器。",
+   "platform": [
+    "all"
+   ],
+   "categories": [
+    "影音娱乐"
+   ],
+   "icon_url": "https://raw.githubusercontent.com/RONGLINC93/um-web/main/fnos/umweb/ICON_256.PNG",
+   "distributor": "RONGLINC93",
+   "distributor_url": "https://github.com/RONGLINC93/um-web",
+   "author": "um-web",
+   "author_url": "https://git.unlock-music.dev/um/web",
+   "developer": "",
+   "publisher": "",
+   "publisher_url": "",
+   "run_as": "package",
+   "install_type": "",
+   "is_docker": false,
+   "service_port": "9520",
+   "releases": {
+    "1.10.8": {
+     "changelog": "## 音乐解锁 1.10.8\n\n基于 Unlock Music 上游项目的二次开发版本（界面为格式工厂风格）。\n上游作者：MengYX（MIT 许可协议）；修改维护：RONGLINC93。\n\n### 下载说明\n- `音乐解锁-1.10.8-win.zip`：Windows 本地版，解压后双击 `运行.bat` 即可使用（需 Node.js）。\n- `*.fpk`：fnOS 应用包，在飞牛应用中心上传安装。\n\n### 支持格式\n网易云(ncm) · QQ音乐(qmc / mflac / mgg) · 酷狗(kgm) · 虾米(xm) · 酷我(kwm)\n\n> 所有解密运算都在本机浏览器内完成，文件不会上传。",
+     "updated_at": "2026-10-08T18:43:45+08:00",
+     "os_min_version": "1.1.8",
+     "packages": {
+      "all": {
+       "download_url": "https://github.com/RONGLINC93/um-web/releases/download/v1.10.8/umweb-1.10.8.fpk",
+       "sha256": "a786536cb5ef1ff38d8fcaf72a8c2dcef08db7365c159875a8b5113e5b16b0d2",
+       "size": 1036829
+      }
+     }
+    }
+   },
+   "_src": "RONGLINC93/FnDepot"
+  },
+  "reminder": {
+   "display_name": "提醒",
+   "desc": "事件 / 生日 / 办事 / 纪念日提醒网站，支持农历、重复规则、提前提醒，并可推送到企业微信、QQ、微信与自定义接口。",
+   "platform": [
+    "all"
+   ],
+   "categories": [
+    "生活服务"
+   ],
+   "icon_url": "https://raw.githubusercontent.com/RONGLINC93/reminder/main/fnos/reminder/ICON_256.PNG",
+   "distributor": "RONGLINC93",
+   "distributor_url": "https://github.com/RONGLINC93/reminder",
+   "author": "RONGLINC93",
+   "author_url": "https://github.com/RONGLINC93/reminder",
+   "developer": "",
+   "publisher": "",
+   "publisher_url": "",
+   "run_as": "package",
+   "install_type": "",
+   "is_docker": false,
+   "service_port": "9530",
+   "releases": {
+    "1.0.7": {
+     "changelog": "### 优化\n- **更新说明改为从 CHANGELOG.md 自动生成**：新增 `fnos/sync-changelog.js`，打包 fpk 时把当前版本的真实变更写入飞牛应用中心的 `changelog` 字段与升级向导；`release.js` 的 GitHub Release 正文同样取该段，发布后自动将 `[未发布]` 段转正为对应版本并新建下一版 `[未发布]` 段",
+     "updated_at": "2026-10-08T18:43:41+08:00",
+     "os_min_version": "1.1.8",
+     "packages": {
+      "all": {
+       "download_url": "https://github.com/RONGLINC93/reminder/releases/download/v1.0.7/reminder-1.0.7.fpk",
+       "sha256": "bbfac287c054c565d47234e9f4f02903fb091474013094d2637569356f93ab0e",
+       "size": 998922
+      }
+     }
+    }
+   },
+   "_src": "RONGLINC93/FnDepot"
+  },
+  "fnmonitorpro": {
+   "display_name": "飞牛监控pro",
+   "desc": "<b>fnOS 系统监控面板</b>：实时监控 CPU、内存、磁盘、网络、温度、功耗与 GPU，Docker 容器资源占用，端口占用与内置应用统计，支持历史趋势记录与数据持久化。<br><br>🏠 总览仪表盘（系统资源 + 硬盘 + 趋势合并一页）| 🐳 Docker · 端口 | ⚙️ 设置",
+   "platform": [
+    "arm",
+    "x86"
+   ],
+   "categories": [
+    "系统工具"
+   ],
+   "icon_url": "https://raw.githubusercontent.com/RONGLINC93/fnmonitorpro/main/ICON_256.PNG",
+   "distributor": "RONGLINC93",
+   "distributor_url": "https://github.com/RONGLINC93/fnmonitorpro",
+   "author": "RONGLINC93",
+   "author_url": "https://github.com/RONGLINC93/fnmonitorpro",
+   "developer": "",
+   "publisher": "",
+   "publisher_url": "",
+   "run_as": "package",
+   "install_type": "",
+   "is_docker": false,
+   "service_port": "8778",
+   "releases": {
+    "2.17.8": {
+     "changelog": "详见 manifest changelog",
+     "updated_at": "2026-10-13T10:02:22+08:00",
+     "os_min_version": "0.9.0",
+     "packages": {
+      "arm": {
+       "download_url": "https://github.com/RONGLINC93/fnmonitorpro/releases/download/v2.17.8/fnmonitorpro-2.17.8-arm.fpk",
+       "sha256": "0b0e9639f63a47e1e1a228aa49e71eeefbafb79879f36730ec5a7e01ed696890",
+       "size": 470587
+      },
+      "x86": {
+       "download_url": "https://github.com/RONGLINC93/fnmonitorpro/releases/download/v2.17.8/fnmonitorpro-2.17.8-x86.fpk",
+       "sha256": "87a02c1e5ad8bee867efbdfa32f55537b84efe8fc5071aee6d6bbfc5d2fba18c",
+       "size": 470605
+      }
+     }
+    }
+   },
+   "_src": "RONGLINC93/FnDepot"
+  },
+  "ronglinc93widget": {
+   "display_name": "RONGLINC93小组件",
+   "desc": "飞牛 fnOS RONGLINC93桌面小工具零依赖，仅用 Python 标准库。",
+   "platform": [
+    "all"
+   ],
+   "categories": [
+    "系统工具"
+   ],
+   "icon_url": "https://raw.githubusercontent.com/RONGLINC93/widget/main/fpk/ICON_256.PNG",
+   "distributor": "RONGLINC93",
+   "distributor_url": "https://github.com/RONGLINC93/widget",
+   "author": "RONGLINC93",
+   "author_url": "https://github.com/RONGLINC93/widget",
+   "developer": "",
+   "publisher": "",
+   "publisher_url": "",
+   "run_as": "package",
+   "install_type": "",
+   "is_docker": false,
+   "service_port": "8099",
+   "releases": {
+    "0.1.8": {
+     "changelog": "- v0.1.8：<b>桌面入口仅管理员可见</b>：`ui/config` 的 `allUsers` 由 `true` 改为 `false`，。v0.1.7：<b>日历农历</b>：新增零依赖农历转换库 `static/lunar.js`\n- <b>法定节假日（含调休）</b>：新增 `static/holiday-cn.js`，收录 2023–2026 年\n- <b>所有悬浮窗固定按钮</b>：目录 / 日历 / 天气顶栏新增 📌 固定按钮。点击切换\n- <b>管理页「桌面预览」空白、三个预览窗都不显示</b>（`ui/index.html`）：预览由页面内联脚本\n- <b>预览里的日历缺农历 / 假日角标</b>：管理页只加载了三个组件，漏了 `lunar.js` /\n- <b>预览里仍显示「固定」按钮</b>：预览本就隐藏关闭 / 最小化按钮以免误改真实状态，\n- <b>天气最小化条出现两个图标、缺标题、关闭按钮挤在左边</b>：未设置地点时 `loadWeather`\n- <b>目录 / 日历顶栏按钮内边距未清零、📌 图标偏出按钮</b>：天气按钮显式写了\n- <b>悬浮窗四边均可缩放</b>：目录 / 日历 / 天气三个浮窗原本仅右下角把手可调大小，现改为。v0.1.6：<b>最小化状态记忆（日历 / 天气）</b>：最小化状态（`min`）随 `POST /api/calendar_settings`\n- <b>三个组件最小化后收不下去、顶栏下留大片空白</b>：日历 / 目录 / 天气的最小化 CSS\n- <b>天气最小化条不可拖动 / 还原</b>：天气最小化改写 class 方案（`.ww-min`，不再直接\n- <b>天气组件响应式收缩、不再出滚动条</b>：新增 `container-type: inline-size` 容器查询，。v0.1.5：<b>日历默认位置被右上角原生系统小组件盖住、拖不动</b>：默认位置从\n- <b>悬浮窗尺寸适配</b>：天气组件恢复高度可调（缩放把手同时改宽/高，最小 140px），\n- <b>悬浮窗拖拽吸附图标网格</b>：日历 / 天气 / 目录浏览器三个浮层，拖动松手时自动\n- <b>设置页重做为「小组件管理面板」</b>：从扁平设置表单改为组件卡片式管理界面 ——\n- <b>管理页桌面预览：缩放迷你桌面</b>：页面顶部「桌面预览」是一个带壁纸的「迷你桌面」框，把三个。v0.1.4：<b>桌面可选组件：日历悬浮窗</b>：月历（翻月/翻年、今天高亮、点选任意日期）+ 实时时钟\n- <b>桌面可选组件：天气悬浮窗</b>：实时天气（温度/体感/湿度/风速 + 天气图标）+ 未来 6 天预报，\n- 三个浮层（目录 / 日历 / 天气）均支持拖拽、缩放（双击把手恢复默认）、最小化、关闭，\n- <b>日历 / 天气悬浮窗在飞牛桌面注入场景下无法拖动</b>：拖拽与缩放改用。v0.1.3：<b>发布脚本收口到文档</b>：`release.py` 发布成功后除递增 manifest 版本号，\n- <b>登录界面也会显示浮层（隐私问题）</b>：`conf.d` 把 `location = /login` 也 rewrite。v0.1.2：<b>文件预览 / 下载（`GET /api/file`）</b>：三种模式 ——\n- <b>浮层里点文件名即可预览</b>：图片 `<img>`、视频/音频 `<video>/<audio>`、\n- <b>排序</b>：点表头（名称/大小/类型/修改时间）排序，再点一次反向；目录永远排在文件之前，\n- <b>文件名过滤</b>：工具栏下方新增过滤框，输入即时筛选（大小写不敏感），\n- <b>文件类型图标 + 类型标签</b>：🖼 图片 / 🎬 视频 / 🎵 音频 / 📝 文本 /\n- <b>文件列表首行加 `..` 返回上级</b>：不用再去点工具栏的 ↑；点击即回上层。\n- <b>深色主题滚动条</b>：目录列表区（`.dw-body`）的默认亮灰滚动条改为主题色\n- <b>🔍 递归搜索（`GET /api/search`）</b>：在当前目录<b>及其子目录</b>里按文件名搜索。\n- 参数：`path`（起始目录）、`kw`（关键字）、`kind`（`all`/`dir`/`file`/`image`/`video`/\n- <b>三重防拖死保护</b>（对着 `/vol1` 全盘搜也不怕）：结果 ≤ 500 条、深度 ≤ 6 层、\n- 前端：工具栏 🔍 或 `Ctrl+F` 切到搜索模式（搜索栏与过滤栏二选一），结果多一列\n- <b>路径面包屑</b>：路径每一段可点击直达该层，深层目录不用反复点 ↑。\n- 其余 9 项详见 CHANGELOG.md。v0.1.1：设置持久化到服务端(跨源共享)；主目录边界(向上不可越界)；关闭浮层后刷新不再弹出；启动自愈清理孤儿注入；注入前检测冲突并拒绝避免崩溃；新增一键急救(/api/diagnose + /api/rescue)；修复卸载不清注入导致孤儿配置永久占用 location = / 引发崩溃；修复双栈监听与 /rl93w/ 反代缺失；新增 RONGLINC93 品牌图标。v0.1.0：初始版本：目录文件列表浮层组件 + 零依赖 Python 后端。",
+     "updated_at": "2026-10-10T19:47:11+08:00",
+     "os_min_version": "1.0.0",
+     "packages": {
+      "all": {
+       "download_url": "https://github.com/RONGLINC93/widget/releases/download/v0.1.8/ronglinc93widget-0.1.8-all.fpk",
+       "sha256": "4140b8cffc9f3eaa671829accbc5f2e282e3f193c124eb7ca08b8f4858c0d632",
+       "size": 94764
+      }
+     }
+    }
+   },
+   "_src": "RONGLINC93/FnDepot"
+  },
+  "t6-drivers": {
+   "display_name": "T6 驱动",
+   "desc": "UnifyDrive UP6 / 极空间 T6 / PA60 的内核驱动（DKMS）：风扇、温度、LED、背光、蜂鸣器、按键、电池充电控制、触摸屏以及 HDMI 转 DSI 屏幕桥接。三件套中需第一个安装。",
+   "platform": [
+    "x86"
+   ],
+   "categories": [
+    "硬件驱动"
+   ],
+   "icon_url": "./t6-drivers/ICON.PNG",
+   "distributor": "Mason",
+   "distributor_url": "https://github.com/jiaaom/up6-linux-drivers",
+   "author": "Mason",
+   "author_url": "https://github.com/jiaaom/up6-linux-drivers",
+   "developer": "",
+   "publisher": "",
+   "publisher_url": "",
+   "run_as": "root",
+   "install_type": "root",
+   "is_docker": false,
+   "service_port": "",
+   "releases": {
+    "2.0.0": {
+     "changelog": "与 T6 前面板 2.0 一同发布，本身没有改动。",
+     "i18n": {
+      "en-US": {
+       "changelog": "Released together with T6 Front Panel 2.0; no changes of its own."
+      }
+     },
+     "updated_at": "2026-10-17T06:58:57+08:00",
+     "os_min_version": "1.2.0",
+     "packages": {
+      "x86": {
+       "download_url": "https://github.com/jiaaom/up6-linux-drivers/releases/download/v2.0/t6-drivers.fpk",
+       "sha256": "ccc7b73d16a1b166276b75fe89eafc70344220146a4f47be9d66b41894bce240",
+       "size": 44969
+      }
+     }
+    }
+   },
+   "_src": "jiaaom/FnDepot"
+  },
+  "t6-control": {
+   "display_name": "T6 控制中心",
+   "desc": "UnifyDrive UP6 / 极空间 T6 的风扇曲线、LED、屏幕亮度、电池充电上限和蜂鸣器设置。需先安装 T6 驱动。",
+   "platform": [
+    "x86"
+   ],
+   "categories": [
+    "硬件驱动",
+    "系统工具"
+   ],
+   "icon_url": "./t6-control/ICON.PNG",
+   "distributor": "Mason",
+   "distributor_url": "https://github.com/jiaaom/up6-linux-drivers",
+   "author": "Mason",
+   "author_url": "https://github.com/jiaaom/up6-linux-drivers",
+   "developer": "",
+   "publisher": "",
+   "publisher_url": "",
+   "run_as": "root",
+   "install_type": "root",
+   "is_docker": false,
+   "service_port": "",
+   "releases": {
+    "2.0.1": {
+     "changelog": "fnOS 设为中文时页面恢复正常；自 1.2.0 起会停在“Page error”，不显示任何读数。",
+     "i18n": {
+      "en-US": {
+       "changelog": "The page works again when fnOS is set to Chinese; since 1.2.0 it stopped with a \"Page error\" and showed no readings."
+      }
+     },
+     "updated_at": "2026-10-17T07:17:24+08:00",
+     "os_min_version": "1.2.0",
+     "packages": {
+      "x86": {
+       "download_url": "https://github.com/jiaaom/up6-linux-drivers/releases/download/v2.0.1/t6-control.fpk",
+       "sha256": "4864caca4d870424df628d26f104c9745b64fe7d24d961b7c40166351146bf5f",
+       "size": 2621356
+      }
+     }
+    }
+   },
+   "_src": "jiaaom/FnDepot"
+  },
+  "appliance-compositor": {
+   "display_name": "Appliance Compositor",
+   "desc": "屏幕类应用共用的显示和声音服务：一个 Wayland 合成器（weston + appliance-shell）驱动所有屏幕，一个 PipeWire 声音服务。本身没有界面；T6 前面板、Fygo Cinema 等应用依赖它，需先安装。",
+   "platform": [
+    "x86"
+   ],
+   "categories": [
+    "系统工具"
+   ],
+   "icon_url": "./appliance-compositor/ICON.PNG",
+   "distributor": "Mason",
+   "distributor_url": "https://github.com/jiaaom/appliance-compositor",
+   "author": "Mason",
+   "author_url": "https://github.com/jiaaom/appliance-compositor",
+   "developer": "",
+   "publisher": "",
+   "publisher_url": "",
+   "run_as": "root",
+   "install_type": "root",
+   "is_docker": false,
+   "service_port": "",
+   "releases": {
+    "1.1.1": {
+     "changelog": "修复：重启后屏幕可能一直黑着。显示服务在开机画面（Plymouth）期间启动，拿不到显示器；现在会等开机画面结束后再启动。",
+     "i18n": {
+      "en-US": {
+       "changelog": "Fix: after a reboot the screens could stay dark. The compositor started under the boot splash (Plymouth) and could not take the displays; it now waits for the splash to end."
+      }
+     },
+     "updated_at": "2026-09-30T13:12:20+08:00",
+     "os_min_version": "1.2.0",
+     "packages": {
+      "x86": {
+       "download_url": "https://github.com/jiaaom/appliance-compositor/releases/download/v1.1.1/appliance-compositor.fpk",
+       "sha256": "27d0b7b3107926270c62e9ef356ad55ed69ac93b7db053bb71c17bc18686fe4d",
+       "size": 48986
+      }
+     }
+    }
+   },
+   "_src": "jiaaom/FnDepot"
+  },
+  "t6-panel": {
+   "display_name": "T6 前面板",
+   "desc": "UnifyDrive UP6 / 极空间 T6 前置触摸屏应用：总览、文件管理、网络连接和设备设置，内置视频和音乐播放器。需先安装 T6 控制中心和 Appliance Compositor。",
+   "platform": [
+    "x86"
+   ],
+   "categories": [
+    "系统工具",
+    "影音娱乐"
+   ],
+   "icon_url": "./t6-panel/ICON.PNG",
+   "distributor": "Mason",
+   "distributor_url": "https://github.com/jiaaom/up6-linux-drivers",
+   "author": "Mason",
+   "author_url": "https://github.com/jiaaom/up6-linux-drivers",
+   "developer": "",
+   "publisher": "",
+   "publisher_url": "",
+   "run_as": "root",
+   "install_type": "root",
+   "is_docker": false,
+   "service_port": "",
+   "releases": {
+    "2.0.0": {
+     "changelog": "全新外观和布局（Ridgeline 设计系统），支持中文和英文，默认浅色主题。总览以一张本机线描图开头，标注处理器、内存、温度、网口和存储读数；顶部的状态行一眼告诉你是否一切正常，有问题时点一下直达。文件：最多三个标签页，复制和移动在后台进行，文件图标按类型着色，文件夹大小在对话框里计算；退出登录会关闭打开的文件夹并清空剪贴板和最近文件。连接：连接地图，Wi-Fi 可加入企业（802.1X）网络，热点和本机地址都有二维码。屏幕闲置后先变暗（1–15 分钟，降到亮度的 10%、25% 或 50%，一碰即恢复），再熄屏（1、12、24 小时或从不）；原来的熄屏时间会转为变暗时间。设置新增声音和关于页面；SSH 开关前会先确认；遥控器的主页键在四个标签之间切换。不再提供日文。",
+     "i18n": {
+      "en-US": {
+       "changelog": "A new look and layout (Ridgeline design system), in Chinese and English, light by default. Overview opens with a drawing of the NAS labelled with its processor, memory, temperature, network and storage readings; a status line says whether all is well and opens the problem when it isn't. Files: up to three tabs, copies and moves in the background, file icons in colour by type, folder size in a dialog; signing out closes the open folders and clears the clipboard and recent files. Network: a connection map, Wi-Fi joins enterprise (802.1X) networks, QR codes for the hotspot and the NAS's address. When idle the screen first dims (after 1–15 minutes, to 10, 25 or 50 % of its brightness; a touch brings it back), then turns off (after 1, 12 or 24 hours, or never); the old screen timeout carries over as the dimming time. Settings adds Sound and About pages; SSH asks before it changes; the remote's Home key steps through the four tabs. Japanese is no longer offered."
+      }
+     },
+     "updated_at": "2026-10-17T06:58:57+08:00",
+     "os_min_version": "1.2.0",
+     "packages": {
+      "x86": {
+       "download_url": "https://github.com/jiaaom/up6-linux-drivers/releases/download/v2.0/t6-panel.fpk",
+       "sha256": "ed4c736ac9816c93ba554020929d0899451bbaa79ddded8f92d2713225fd8c4a",
+       "size": 136661537
+      }
+     }
+    }
+   },
+   "_src": "jiaaom/FnDepot"
+  },
+  "fygo-cinema": {
+   "display_name": "Fygo Cinema",
+   "desc": "直连电视看飞牛影视：NAS 自带的飞牛影视网页版全屏显示在接到 NAS 的电视上，用遥控器操作，视频硬件解码。自动登录，插上电视即启动，声音从电视扬声器播放。需先安装飞牛影视和 Appliance Compositor。",
+   "platform": [
+    "x86"
+   ],
+   "categories": [
+    "影音娱乐"
+   ],
+   "icon_url": "./fygo-cinema/ICON.PNG",
+   "distributor": "Mason",
+   "distributor_url": "https://github.com/jiaaom/fygo-cinema",
+   "author": "Mason",
+   "author_url": "https://github.com/jiaaom/fygo-cinema",
+   "developer": "",
+   "publisher": "",
+   "publisher_url": "",
+   "run_as": "root",
+   "install_type": "root",
+   "is_docker": false,
+   "service_port": "",
+   "releases": {
+    "1.1.3": {
+     "changelog": "在 FygoOS 手机 App 中，管理页面能完整显示在手机屏幕上；以前右侧会被截掉（开关、电视卡片、移除按钮和下拉菜单）。",
+     "i18n": {
+      "en-US": {
+       "changelog": "The admin page fits a phone screen in the FygoOS mobile app; before, its right side was cut off (the switch, the TV tile, the Remove button and the dropdowns)."
+      }
+     },
+     "updated_at": "2026-10-16T06:40:13+08:00",
+     "os_min_version": "1.2.0",
+     "packages": {
+      "x86": {
+       "download_url": "https://github.com/jiaaom/fygo-cinema/releases/download/v1.1.3/fygo-cinema.fpk",
+       "sha256": "d8f6103e94350815d80463c20494c3f661cb6f7cf539eddf664254cc0fa0e61a",
+       "size": 126773329
+      }
+     }
+    }
+   },
+   "_src": "jiaaom/FnDepot"
+  },
+  "reverse-proxy": {
+   "display_name": "反向代理",
+   "desc": "为飞牛 fnOS 打造的易用型多协议反向代理工具。支持协议组合、连续端口范围、多格式证书自动解析、访问控制、健康检查、日志、导入导出和配置热加载。",
+   "platform": [
+    "all"
+   ],
+   "categories": [
+    "系统工具",
+    "编程开发"
+   ],
+   "icon_url": "https://raw.githubusercontent.com/BearHero520/FnDepot/main/assets/icons/reverse-proxy.png",
+   "distributor": "BearHero",
+   "distributor_url": "https://github.com/BearHero520/fnos-reverse-proxy",
+   "author": "BearHero",
+   "author_url": "https://github.com/BearHero520/fnos-reverse-proxy",
+   "developer": "",
+   "publisher": "",
+   "publisher_url": "",
+   "run_as": "root",
+   "install_type": "",
+   "is_docker": false,
+   "service_port": "",
+   "releases": {
+    "1.0.18": {
+     "changelog": "v1.0.18 修复规则状态标识留白；状态筛选集中排列；升级重启保留运行历史，更新规则保留最近客户端。",
+     "updated_at": "2026-09-23T02:57:40Z",
+     "os_min_version": "1.1.3100",
+     "packages": {
+      "all": {
+       "download_url": "https://github.com/BearHero520/fnos-reverse-proxy/releases/download/v1.0.18/reverse-proxy.fpk",
+       "sha256": "6875fce8175f263793cc340140ca27201bccadaca48eb78442939fb1dbdcb5b7",
+       "size": 98032617
+      }
+     }
+    }
+   },
+   "_src": "BearHero520/FnDepot"
+  },
+  "miair-plus": {
+   "display_name": "MiAir Plus",
+   "desc": "小爱音箱 DLNA / AirPlay 音乐投送与自定义音乐闹钟。支持音乐上传、NAS 选曲、工作日与节假日规则，内置 FFmpeg，x86_64 / ARM64 通用。AirPlay 2 为预览功能。",
+   "platform": [
+    "all"
+   ],
+   "categories": [
+    "影音娱乐",
+    "智能智控"
+   ],
+   "icon_url": "https://raw.githubusercontent.com/BearHero520/FnDepot/main/assets/icons/miair-plus.png",
+   "distributor": "BearHero520",
+   "distributor_url": "https://github.com/BearHero520/miair-plus",
+   "author": "BearHero520",
+   "author_url": "https://github.com/BearHero520/miair-plus",
+   "developer": "",
+   "publisher": "",
+   "publisher_url": "",
+   "run_as": "root",
+   "install_type": "",
+   "is_docker": false,
+   "service_port": "8310",
+   "releases": {
+    "2.0.9": {
+     "changelog": "# MiAir Plus 2.0.9\n\n- iOS：移动端输入字号调整，避免输入时自动放大，保留手动缩放。\n- AirPlay：音量请求移到后台，避免慢云响应阻塞音频接收；修复最低音量误静音、音箱音量未同步及实时流 Range 探测兼容问题。\n- 闹钟：支持完整播放一首、整首循环 2–20 次和原来的按时长播放；新建默认整首，旧闹钟保留原设置。\n- 新增接收、转码和音箱拉流日志，便于定位投送故障。\n\n通用 FPK，支持 x86_64 / ARM64，内置 FFmpeg、Shairport Sync 和 NQPTP。\n已通过自动测试和模拟音频链路验证；AirPlay 是否解决现场无声仍需安装后实测，AirPlay 2 仍为预览功能。\r\n\n验证记录：[Go、前端、双架构构建与安装脚本检查](https://github.com/BearHero520/miair-plus/actions/runs/34818537137) 已通过。\n\n下载 `miair-plus-2.0.9-all.fpk` 安装或升级；其他附件为校验值和原生组件对应源码。旧闹钟保持原来的播放时长，编辑闹钟即可切换到整首或循环模式。",
+     "updated_at": "2026-09-14T07:38:11Z",
+     "os_min_version": "",
+     "packages": {
+      "all": {
+       "download_url": "https://github.com/BearHero520/miair-plus/releases/download/v2.0.9/miair-plus-2.0.9-all.fpk",
+       "sha256": "79553792c72544d0b15740f4de182a6b860ceb0193a0a19a4a123260376e4017",
+       "size": 25177184
+      }
+     }
+    }
+   },
+   "_src": "BearHero520/FnDepot"
+  },
+  "lemon-music": {
+   "display_name": "柠檬音乐",
+   "desc": "<b>多平台搜歌、本地音乐库、标签整理与高品质下载</b>。兼容落雪自定义音源，浏览器内完成找歌 → 试听 → 下载 → 整理。<br><br><b>亮点</b><br>· 搜索：酷我 / 酷狗 / QQ / 网易云 / 咪咕；FLAC · Hi-Res · 母带，支持批量下载<br>· 音乐库：每日推荐（本地+平台混搭）、推荐歌单、漫游播放<br>· 文件管理：标签编辑、清理（重复/小文件）、伪 FLAC 检测、按歌手整理<br>· 播放：全屏逐字歌词、频谱与风格配色<br><br><b>依赖</b>：应用中心 <b>Node.js v22</b>。目录可在安装向导或「访问权限」中指定；卸载可选保留配置。<br><br><b>免责声明</b>：仅供个人合法使用，请遵守当地法律与平台条款。",
+   "platform": [
+    "x86",
+    "arm"
+   ],
+   "categories": [
+    "影音娱乐"
+   ],
+   "icon_url": "https://raw.githubusercontent.com/lianhua/FnDepot/main/lemon-music/ICON.PNG",
+   "distributor": "jia070310",
+   "distributor_url": "https://github.com/jia070310/lemon-muisc",
+   "author": "jia070310",
+   "author_url": "https://github.com/jia070310/lemon-muisc",
+   "developer": "",
+   "publisher": "",
+   "publisher_url": "",
+   "run_as": "package",
+   "install_type": "",
+   "is_docker": false,
+   "service_port": "7983",
+   "releases": {
+    "1.2.17.9": {
+     "updated_at": "2026-10-16T12:02:17Z",
+     "os_min_version": "1.1.8",
+     "packages": {
+      "x86": {
+       "download_url": "https://raw.githubusercontent.com/lianhua/FnDepot/main/lemon-music/lemon-music-1.2.17.9-x86.fpk",
+       "sha256": "c94a51ad119b04c73b813aac484d3033c579e8480412c399756ec1eeb8fe722e",
+       "size": 5534898
+      },
+      "arm": {
+       "download_url": "https://raw.githubusercontent.com/lianhua/FnDepot/main/lemon-music/lemon-music-1.2.17.9-arm.fpk",
+       "sha256": "ceff335fa73cc32e72626c46f83d8d2896155fe854623b5eb8da9925495d8c4a",
+       "size": 5534898
+      }
+     }
+    }
+   },
+   "_src": "lianhua/FnDepot"
+  },
+  "workbuddy-fnos": {
+   "display_name": "WorkBuddy",
+   "desc": "WorkBuddy 的第三方安装器。安装时从官方地址获取官方 .deb 并解包为 fnOS 应用，不包含 WorkBuddy 任何二进制。本工具与 WorkBuddy 官方无隶属关系。",
+   "platform": [
+    "x86",
+    "arm"
+   ],
+   "categories": [
+    "系统工具"
+   ],
+   "icon_url": "https://raw.githubusercontent.com/lianhua/FnDepot/main/workbuddy-fnos/ICON.PNG",
+   "distributor": "lianhua",
+   "distributor_url": "https://github.com/lianhua/FnDepot",
+   "author": "workbuddy-fnOS-installer Contributors",
+   "author_url": "https://github.com/mclhm8182/workbuddy-fnOS-installer",
+   "developer": "",
+   "publisher": "",
+   "publisher_url": "",
+   "run_as": "package",
+   "install_type": "",
+   "is_docker": false,
+   "service_port": "8090",
+   "releases": {
+    "1.2.4": {
+     "updated_at": "2026-10-10T16:11:46Z",
+     "os_min_version": "1.1.3100",
+     "packages": {
+      "x86": {
+       "download_url": "https://raw.githubusercontent.com/lianhua/FnDepot/main/workbuddy-fnos/workbuddy-fnos-1.2.4-x86.fpk",
+       "sha256": "c6996d7ae04e8884a4caaad4c770fa817fa8845c27839304d3e37aca39c174a1",
+       "size": 43720
+      },
+      "arm": {
+       "download_url": "https://raw.githubusercontent.com/lianhua/FnDepot/main/workbuddy-fnos/workbuddy-fnos-1.2.4-arm.fpk",
+       "sha256": "a4d9f74762411ee0044a33742951f34eee462bef2d04cb3d300fe02ba10d37e3",
+       "size": 43719
+      }
+     }
+    }
+   },
+   "_src": "lianhua/FnDepot"
+  },
+  "r1toolbox": {
+   "display_name": "R1 Toolbox",
+   "desc": "`专为海康R1 & R1X 刷飞牛后的硬件问题修复与功能增强<br>• 🎛 控制中心：亮度、息屏、RGB灯效、风扇模式、主题切换<br>• 🌤 时钟天气、资源监控、完美触控、主题更换<br>• 🎬 动态视频壁纸、音乐播放器（黑胶唱片）、定时亮灭屏、自动滚屏<br>• 🌐 Web管理：功能设置、实时监控、风扇曲线、主题编辑<br>• 🔧 MAC地址修复、视频壁纸更换<br>• 💬 永久激活有少量费用，欢迎加机友QQ群：99182714`",
+   "platform": [
+    "x86"
+   ],
+   "categories": [
+    "工具",
+    "硬件",
+    "美化"
+   ],
+   "icon_url": "https://raw.githubusercontent.com/ZhangZsky/FnDepot/main/r1toolbox/ICON.PNG",
+   "distributor": "zhangzsky",
+   "distributor_url": "https://qm.qq.com/q/mVrB8ASTXc",
+   "author": "zhangzsky",
+   "author_url": "https://qm.qq.com/q/mVrB8ASTXc",
+   "developer": "",
+   "publisher": "",
+   "publisher_url": "",
+   "run_as": "package",
+   "install_type": "系统空间",
+   "is_docker": false,
+   "service_port": "",
+   "releases": {
+    "4.9.30": {
+     "packages": {
+      "x86": {
+       "download_url": "https://raw.githubusercontent.com/ZhangZsky/FnDepot/main/r1toolbox/r1toolbox_x86.fpk",
+       "sha256": "2f422eaf9eec5d21e540aa852b77d06b99b4371aa2c85f042504adcb2cd30677",
+       "size": 2669480
+      }
+     }
+    }
+   },
+   "_src": "ZhangZsky/FnDepot"
+  },
+  "PipeBridge": {
+   "display_name": "PipeBridge",
+   "desc": "`基于 PipeWire / BlueZ 的 FnOS 多媒体硬件管理中间层<br>• 📡 蓝牙扫描配对连接、HFP/HSP↔A2DP 切换、OBEX 文件收发<br>• 🔊 音频输出设备切换、音量控制、USB声卡热插拔识别<br>• 🖥 PipeWire 视频流路由、DRM 多显示器输出与布局/旋转/缩放<br>• ⚙️ 后端 FastAPI 常驻监听 Unix Socket，SSE 实时推送设备事件<br>• 🔧 依赖一键检测修复、自动重连管理`",
+   "platform": [
+    "x86"
+   ],
+   "categories": [
+    "工具",
+    "多媒体",
+    "蓝牙"
+   ],
+   "icon_url": "https://raw.githubusercontent.com/ZhangZsky/FnDepot/main/PipeBridge/ICON.PNG",
+   "distributor": "zhangzsky",
+   "distributor_url": "https://qm.qq.com/q/mVrB8ASTXc",
+   "author": "zhangzsky",
+   "author_url": "https://qm.qq.com/q/mVrB8ASTXc",
+   "developer": "",
+   "publisher": "",
+   "publisher_url": "",
+   "run_as": "package",
+   "install_type": "系统空间",
+   "is_docker": false,
+   "service_port": "",
+   "releases": {
+    "0.38": {
+     "packages": {
+      "x86": {
+       "download_url": "https://raw.githubusercontent.com/ZhangZsky/FnDepot/main/PipeBridge/PipeBridge_x86.fpk",
+       "sha256": "aef12131a538f76e9b92cf2cae6446958392d4fa4456c802701b646fe8ac1595",
+       "size": 324369
+      }
+     }
+    }
+   },
+   "_src": "ZhangZsky/FnDepot"
+  },
+  "agnes-ai-studio": {
+   "display_name": "Agnes AI Studio",
+   "desc": "通过 Web UI 实现文生图、图生图、文生视频、图文生视频，调用 Agnes AI 免费图像/视频生成模型。需自备 Agnes AI API Key（在设置页填写）。",
+   "platform": [
+    "x86"
+   ],
+   "categories": [
+    "AI赋能"
+   ],
+   "icon_url": "../assets/icons/agnes-ai-studio.png",
+   "distributor": "mayishidai",
+   "distributor_url": "https://github.com/mayishidai",
+   "author": "mayishidai",
+   "author_url": "https://github.com/mayishidai",
+   "developer": "",
+   "publisher": "",
+   "publisher_url": "",
+   "run_as": "package",
+   "install_type": "",
+   "is_docker": true,
+   "service_port": "5000",
+   "releases": {
+    "1.0.0": {
+     "changelog": "首个版本。通过 Web UI 提供文生图、图生图、文生视频、图文生视频能力。",
+     "updated_at": "2026-08-08T22:00:00+08:00",
+     "packages": {
+      "x86": {
+       "download_url": "https://github.com/mayishidai/FnDepot/releases/download/v1.0.0/agnes-ai-studio.fpk",
+       "sha256": "06a749cc7b2495b711f3778042d682c2d1b6eaaddd97638d5231670d71a597be",
+       "size": 24579
+      }
+     }
+    }
+   },
+   "_src": "mayishidai/FnDepot"
+  },
+  "dev-hub": {
+   "display_name": "Dev Hub 应用导航台",
+   "desc": "把你自己开发的 GitHub 应用聚合到一个面板里：自动检查代码更新、一键启动停止、查看运行日志、统一入口跳转。应用在面板容器内以子进程运行，默认经内置反向代理访问；写死根路径的应用可改用独立端口直连（容器已发布 19100-19119）。",
+   "platform": [
+    "x86"
+   ],
+   "categories": [
+    "系统工具"
+   ],
+   "icon_url": "../assets/icons/dev-hub.png",
+   "distributor": "mayishidai",
+   "distributor_url": "https://github.com/mayishidai",
+   "author": "mayishidai",
+   "author_url": "https://github.com/mayishidai",
+   "developer": "",
+   "publisher": "",
+   "publisher_url": "",
+   "run_as": "package",
+   "install_type": "",
+   "is_docker": true,
+   "service_port": "8890",
+   "releases": {
+    "1.1.0": {
+     "changelog": "发布 1.1.0。",
+     "updated_at": "2026-10-10T12:01:17+08:00",
+     "packages": {
+      "x86": {
+       "download_url": "https://github.com/mayishidai/FnDepot/releases/download/v1.1.0/dev-hub.fpk",
+       "sha256": "ae4472cd6c67d657f71ed4a762987fdd98cb781bec1d9871d078b40c90a5b82b",
+       "size": 8445
+      }
+     }
+    }
+   },
+   "_src": "mayishidai/FnDepot"
+  },
+  "douyin_sparkflow": {
+   "display_name": "抖音 SparkFlow",
+   "desc": "抖音多账号火花自动维护工具（非官方第三方项目）：自动维护好友火花标记，支持多账号管理、定时发送与 Web 控制台。<br/><br/><strong>核心能力：</strong><br/>• 扫码登录：内置 noVNC 登录桌面，在 Web 页面内直接扫码、处理验证码<br/>• 多账号管理：同时维护多个账号，独立配置好友与发送策略<br/>• 定时调度：可配置发送窗口（如 10:00-18:00/20m），自动补偿漏发<br/>• 消息模板：一言、节日祝福、自定义文本随机化发送<br/>• 可视化面板：进度环、发送明细、日志查看与失败重试<br/><br/><strong>部署说明：</strong><br/>本包为飞牛 fnOS 原生部署（非 Docker）：依赖应用中心的 Python 3.12 与 Node.js v24 运行时；Python 依赖、Playwright Chromium 与 noVNC 登录环境已预置在包内，安装后无需联网拉取依赖、无需构建镜像。数据（账号、登录态、浏览器配置、日志）保存在应用数据目录，卸载或升级默认保留。<br/><br/><strong>免责声明：</strong><br/>本项目为第三方公开源码的非官方打包，与抖音及其关联方无任何关系；仅限个人非商业用途，使用者只能操作本人拥有或已获授权的账号，自动化操作可能触发平台风控（验证、限流、封禁等），风险自负。",
+   "platform": [
+    "x86"
+   ],
+   "categories": [
+    "影音娱乐"
+   ],
+   "icon_url": "https://raw.githubusercontent.com/JaxSupero/douyin-sparkflow-fpk/main/ICON_256.PNG",
+   "distributor": "JaxSupero",
+   "distributor_url": "https://github.com/JaxSupero/douyin-sparkflow-fpk",
+   "author": "halfwaystudent",
+   "author_url": "https://github.com/halfwaystudent/douyin-sparkflow",
+   "developer": "",
+   "publisher": "",
+   "publisher_url": "",
+   "run_as": "package",
+   "install_type": "",
+   "is_docker": false,
+   "service_port": "8787",
+   "releases": {
+    "1.1.6": {
+     "changelog": "抖音 SparkFlow for fnOS（原生部署，非 Docker）\n- FPK version: `1.1.6`\n- Upstream commit: `fafaff4334db313eca61c1a18244a0ff622f23c6`\n- Upstream date: `2026-10-13`\n\n**更新说明**\n\n瘦身：移除 chromium_headless_shell（约 323 MiB，无头任务改用完整 Chromium，功能不变）；按实际依赖闭包精简 X 显示栈，移除未使用的 Mesa 图形驱动与相关库（约 805 MiB）。安装包体积从约 711 MiB 降至约 320 MiB，扫码登录、定时发送等功能均无变化。\n\n---\n仅支持 x86_64；上游许可仅限非商业用途。",
+     "updated_at": "2026-10-14T15:47:45Z",
+     "packages": {
+      "x86": {
+       "download_url": "https://github.com/JaxSupero/douyin-sparkflow-fpk/releases/download/v1.1.6/fnos-douyin_sparkflow_v1.1.6.fpk",
+       "sha256": "b94ad1e9a5e8af0376c94492ce242f0aa5278ae1ed19ba5affab678546d1a0b9",
+       "size": 349727418
+      }
+     }
+    }
+   },
+   "_src": "JaxSupero/FnDepot"
+  },
+  "numa": {
+   "display_name": "numa dns",
+   "desc": "Numa 是 Rust 编写的跨平台便携式本地 DNS 解析工具，以单二进制文件形式运行，无需树莓派、云服务或注册账号，兼顾网络隐私防护、广告拦截与开发者本地调试需求，数据全程本地留存。讨论 Q 群：767315692，官方链接：https://numa.rs/",
+   "platform": [
+    "x86",
+    "arm"
+   ],
+   "categories": [
+    "系统工具"
+   ],
+   "icon_url": "numa/ICON.PNG",
+   "distributor": "老A",
+   "distributor_url": "https://github.com/maxsusu/FnDepot/tree/main/numa",
+   "author": "razvandimescu",
+   "author_url": "https://numa.rs/",
+   "developer": "",
+   "publisher": "",
+   "publisher_url": "",
+   "run_as": "root",
+   "install_type": "",
+   "is_docker": false,
+   "service_port": "5380",
+   "releases": {
+    "0.24.1202610122310": {
+     "changelog": "新增适配 numa v0.24.1 仪表盘登录认证（Basic Auth）：内网与 FN Connect 统一经本机反向代理打开仪表盘，干净地址、免输令牌、秒开。",
+     "updated_at": "2026-10-12T20:46:27Z",
+     "packages": {
+      "x86": {
+       "download_url": "https://github.com/maxsusu/FnDepot/releases/download/numa/numa_0.24.1202610122310_x86.fpk",
+       "sha256": "7a060fbd93bfa138fb5f7351e362226e50a33ca5eed60daf1a42882277405116",
+       "size": 5372272
+      },
+      "arm": {
+       "download_url": "https://github.com/maxsusu/FnDepot/releases/download/numa/numa_0.24.1202610122310_arm64.fpk",
+       "sha256": "218f577a7aad081106256648ba3c9a3bcdf2af0968b6e54227fde5af0c4868cf",
+       "size": 5132258
+      }
+     }
+    }
+   },
+   "_src": "maxsusu/FnDepot"
+  },
+  "dsh": {
+   "display_name": "DSH",
+   "desc": "DeepSeek Harness（DSH）飞牛NAS版：自动跟进上游最新版本构建，amd64/arm64 双架构原生安装包，飞牛桌面一键打开。",
+   "platform": [
+    "x86",
+    "arm"
+   ],
+   "categories": [
+    "AI赋能",
+    "编程开发"
+   ],
+   "icon_url": "https://raw.githubusercontent.com/yoqie/FnDepot/main/assets/dsh/ICON.PNG",
+   "distributor": "cliii-one",
+   "distributor_url": "https://github.com/cliii-one/DSH_FNOS",
+   "author": "cliii-one",
+   "author_url": "https://github.com/cliii-one/DSH_FNOS",
+   "developer": "",
+   "publisher": "",
+   "publisher_url": "",
+   "run_as": "root",
+   "install_type": "root",
+   "is_docker": false,
+   "service_port": "3082",
+   "releases": {
+    "0.2.1-alpha.5.2": {
+     "version": "0.2.1-alpha.5.2",
+     "release_note": "DSH v0.2.1-alpha.5.2 飞牛 fnOS 自动构建（arm/x86），更新内容见上游 deepseek-ai/deepseek-harness。",
+     "updated_at": "2026-10-16T13:28:17Z",
+     "packages": {
+      "x86": {
+       "download_url": "https://github.com/yoqie/FnDepot/releases/download/dsh-0.2.1-alpha.5.2/DSH_v0.2.1-alpha.5.2_amd64.fpk",
+       "sha256": "5604efdd96e5b37632c6a9ae791db395d95f770a010e276ef031bb0d41395b09",
+       "size": 166213171
+      },
+      "arm": {
+       "download_url": "https://github.com/yoqie/FnDepot/releases/download/dsh-0.2.1-alpha.5.2/DSH_v0.2.1-alpha.5.2_arm64.fpk",
+       "sha256": "22fd0c1d95070f7efc5e393ac3f4a44ed0c84cbe9e21d941b46828b48ea2663a",
+       "size": 169187331
+      }
+     }
+    }
+   },
+   "_src": "yoqie/FnDepot"
+  },
+  "workbuddy2api": {
+   "display_name": "WorkBuddy2API-Hub",
+   "desc": "WorkBuddy 账号池网关：把多个 WorkBuddy/CodeBuddy 账号聚合成 OpenAI 兼容 API，在飞牛应用中心里通过统一网关免密打开，并带账号导入导出、用量与积分的 Web 看板。",
+   "platform": [
+    "all"
+   ],
+   "categories": [
+    "AI赋能",
+    "系统工具"
+   ],
+   "icon_url": "./ICON.PNG",
+   "distributor": "ccrabit",
+   "distributor_url": "https://github.com/ccrabit",
+   "author": "ardeyouxipianyi",
+   "author_url": "https://github.com/ardeyouxipianyi/workbuddy2api-hub",
+   "developer": "",
+   "publisher": "",
+   "publisher_url": "",
+   "run_as": "package",
+   "install_type": "",
+   "is_docker": false,
+   "service_port": "8788",
+   "releases": {
+    "1.6.19": {
+     "changelog": "首个飞牛上架版本：应用本体同步上游 v1.6.11–v1.6.19 及 v1.6.19 之后的提交（面板三页拆分、账号页可独立成菜单与签到活跃看板、表头排序、剩余用量优先调度等），飞牛侧保留统一网关免密入口、主题与移动端适配。安装包为多架构合一包，从本应用主仓库的 GitHub Release 资产下载。",
+     "updated_at": "2026-10-11T00:40:00+08:00",
+     "packages": {
+      "all": {
+       "download_url": "https://github.com/ccrabit/workbuddy2api-hub/releases/download/fnos-1.6.19/WorkBuddy2API-Hub_1.6.19_all.fpk",
+       "sha256": "e65dcb844df7ede523e990c33e3e661e27d6c73e0a9770592d76e006d610505d",
+       "size": 626248
+      }
+     }
+    }
+   },
+   "_src": "ccrabit/FnDepot"
+  },
+  "mmh": {
+   "display_name": "MMH 家庭财务工作台",
+   "desc": "MMH 家庭财务工作台是本地优先的家庭记账与全资产管理工具，以飞牛原生应用包安装在你的 NAS 上，不依赖 Docker 和 PostgreSQL，账本数据保存在飞牛应用数据目录。支持多账本、多成员、账户流水、往来款、信用卡、贷款、基金、股票、存款、债券、房产、保险、统计报表、导入导出、AI 助手以及手动/自动备份。报销与差旅工作流正在开发中，已提供部分录入和查看能力。另有群晖 DSM 套件、Windows 桌面版、Docker 镜像与 Android App 可供选择。",
+   "platform": [
+    "x86",
+    "arm"
+   ],
+   "categories": [
+    "生活服务"
+   ],
+   "icon_url": "https://raw.githubusercontent.com/frankluise5220/MMH/main/public/branding/mmh-logo-pageflip-192.png?v=0.1.73",
+   "distributor": "frankluise5220",
+   "distributor_url": "https://github.com/frankluise5220/MMH",
+   "author": "frankluise5220",
+   "author_url": "https://github.com/frankluise5220/MMH",
+   "developer": "",
+   "publisher": "",
+   "publisher_url": "",
+   "run_as": "package",
+   "install_type": "",
+   "is_docker": false,
+   "service_port": "7777",
+   "releases": {
+    "0.1.73": {
+     "changelog": "【功能改进】\n- 通知中心可回看：通知面板从「一屏到底」补成未读 / 已读两个页签，已读记录保存在本机并保留最近 200 条，可单条标记已读、全部已读或清空；铃铛红点数字改为未读数。\n- 执行回执明细到账户：定时任务的执行回执展开为按账户拆分的「账户 / 条数 / 金额」明细，不再显示「近 N 天累计」。\n- 提醒与回执里的账户名跟随显示格式：账户名改由服务端按系统设置「账户显示格式」渲染，与列表页、明细表、下拉框使用同一套渲染器；在设置里改动显示格式时，通知面板会按需重取。\n- 本版说明改为按界面语言显示：软件内「设置 → 系统更新 → 本版说明」不再整篇转载 GitHub Release 公告，只显示本版更新内容，并按界面语言取正文，没有对应语种时回落中文。\n【Bug 修复】\n- 修复飞牛（fnOS）网关下路径前缀丢失：从飞牛应用入口进入 MMH 后，浏览器地址栏跳转、新窗口打开流水附件、定时任务与账户快捷跳转、赞赏二维码、以及代码里的原生链接会丢掉网关前缀 /app/mmh，点按后可能落到飞牛的「这里暂时没有装入页面」、附件打不开或二维码不显示。本版把这些出口统一补上前缀，并在构建期新增扫描，避免以后新增的跳转再次漏前缀。\n- 账户「所有人」显示为配对家庭成员的姓名：账户所有人的下拉与列展示此前取的是分组名，与账户配对的家庭成员姓名不一致；本版统一改为配对成员的姓名，分组名只在未配对或功能分组（未指定 / 负债 / 往来款等）时兜底，改名任一侧都会双向同步。\n- 计划未执行任何条目不再产生通知：强制刷新或没有可执行内容时不再写入与展示通知，读取端同时过滤旧版本写下的空记录，未读、已读与红点三处口径一致。\n完整说明见 GitHub Release v0.1.73",
+     "os_min_version": "0.9.0",
+     "packages": {
+      "x86": {
+       "download_url": "http://fnapp.floatingice.win/apps/mmh-0.1.73.fpk",
+       "sha256": "0fdd859278d60759e8f92b23ce97e8dfe9fed5ebf2d09ae03247093ca34f1f34",
+       "size": 56455760
+      },
+      "arm": {
+       "download_url": "https://github.com/frankluise5220/MMH/releases/download/v0.1.73/mmh-fnos-v0.1.73-arm64.fpk",
+       "sha256": "93b8de8b1d41d7e19001fe9fdc155cdf868c88346eb8f5889e1fd60b476aa655",
+       "size": 56406773
+      }
+     },
+     "updated_at": "2026-10-16T09:52:10+08:00"
+    }
+   },
+   "_src": "frankluise5220/FnDepot"
   }
  }
 }
