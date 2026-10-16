@@ -4,7 +4,7 @@
   "name": "fnthird",
   "author": "kitblue",
   "homepage": "https://github.com/kitblue/fnthird",
-  "description": "飞牛 fnOS 第三方应用源：收录原生 manifest 格式（无 fnpack.json）的第三方 app 项目，以及 FanTune 等独立应用条目，为其提供被第三方应用商店收录的路径。当前收录 41 个应用（含承接 Blue-Mink/FnDepot 的 9 个独立应用条目）。"
+  "description": "飞牛 fnOS 第三方应用源：收录原生 manifest 格式（无 fnpack.json）的第三方 app 项目，以及 FanTune 等独立应用条目，为其提供被第三方应用商店收录的路径。当前收录 43 个应用（含承接 Blue-Mink/FnDepot 的 9 个独立应用条目）。"
  },
  "apps": {
   "clouddl": {
@@ -1696,6 +1696,88 @@
     }
    },
    "_src": "Blue-Mink/FnDepot"
+  },
+  "DBland": {
+   "display_name": "DBland",
+   "desc": "Go语言实现的Web版本数据库连接工具，内存占用少，启动快，支持MySQL，Oracle，SQLite等",
+   "platform": [
+    "x86",
+    "arm"
+   ],
+   "categories": [
+    "开发工具"
+   ],
+   "icon_url": "https://raw.githubusercontent.com/710850609/FnDepot/main/DBland/ICON.PNG",
+   "distributor": "",
+   "distributor_url": "",
+   "author": "BoB",
+   "author_url": "https://github.com/710850609",
+   "developer": "",
+   "publisher": "",
+   "publisher_url": "",
+   "run_as": "package",
+   "install_type": "",
+   "is_docker": false,
+   "service_port": "",
+   "releases": {
+    "1.1.1-003": {
+     "packages": {
+      "x86": {
+       "download_url": "https://github.com/710850609/fpk-dbland/releases/download/1.1.1-003/dbland-1.1.1-003-amd64.fpk",
+       "sha256": "b8fa932d7acecdf3395092e5f3a208d671e8ca7b068f7f50f8a468264c65c105",
+       "size": 16428925
+      },
+      "arm": {
+       "download_url": "https://github.com/710850609/fpk-dbland/releases/download/1.1.1-003/dbland-1.1.1-003-aarch64.fpk",
+       "sha256": "1f9c74aa52ece907658c1563a8b1ff320ef31ce23bfb1d319de08ed2758f41e9",
+       "size": 16429009
+      }
+     }
+    }
+   },
+   "appname": "DBland",
+   "_src": "710850609/FnDepot"
+  },
+  "EasyTier-EUI": {
+   "display_name": "易组网",
+   "desc": "简化使用EasyTier的一种UI界面，快速组网",
+   "platform": [
+    "x86",
+    "arm"
+   ],
+   "categories": [
+    "实用效率"
+   ],
+   "icon_url": "https://raw.githubusercontent.com/710850609/FnDepot/main/EasyTier-EUI/ICON.PNG",
+   "distributor": "",
+   "distributor_url": "",
+   "author": "BoB",
+   "author_url": "https://github.com/710850609",
+   "developer": "",
+   "publisher": "",
+   "publisher_url": "",
+   "run_as": "package",
+   "install_type": "",
+   "is_docker": false,
+   "service_port": "",
+   "releases": {
+    "2.5.020604": {
+     "packages": {
+      "x86": {
+       "download_url": "https://github.com/710850609/EasyTier-EUI/releases/download/2.5.020604/EasyTier-EUI-fnos-x86_64-2.5.020604.fpk",
+       "sha256": "d4afeb0064fb83ead13a7f31c5d56b2dc8d47f8d11102e344b098b3f709bdf6c",
+       "size": 12664839
+      },
+      "arm": {
+       "download_url": "https://github.com/710850609/EasyTier-EUI/releases/download/2.5.020604/EasyTier-EUI-fnos-aarch64-2.5.020604.fpk",
+       "sha256": "a8a0139261bb9d852dc84cb2290cc784a90b5a174f78a66315c982eb41ae4a0a",
+       "size": 10331840
+      }
+     }
+    }
+   },
+   "appname": "EasyTier-EUI",
+   "_src": "710850609/FnDepot"
   }
  }
 }
