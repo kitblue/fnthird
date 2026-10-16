@@ -2,6 +2,17 @@
 AIGC:
     Label: "1"
     ContentProducer: 001191440300708461136T1XGW3
+    ProduceID: 257c07a97525093c65a112a601161c42_bf6030aec98411f18b7f525400393706
+    ReservedCode1: xSiMQN1He/zCNK83UI/UPVWkoDQB+QdygX4KD53UlgP0ihL9euS1ZCE3oh+ppJtuzmRZ7qkcAOcnrETHv/31O3PQh119YnZfaJ6ORa7bjm0wPlp/zJ4G1a2pqL8qNS/kX7R40ixbMbwaXE/xLQhcba019QWdxBeT3BDDCItppDlhz+hxgaZosK/4hvw=
+    ContentPropagator: 001191440300708461136T1XGW3
+    PropagateID: 257c07a97525093c65a112a601161c42_bf6030aec98411f18b7f525400393706
+    ReservedCode2: xSiMQN1He/zCNK83UI/UPVWkoDQB+QdygX4KD53UlgP0ihL9euS1ZCE3oh+ppJtuzmRZ7qkcAOcnrETHv/31O3PQh119YnZfaJ6ORa7bjm0wPlp/zJ4G1a2pqL8qNS/kX7R40ixbMbwaXE/xLQhcba019QWdxBeT3BDDCItppDlhz+hxgaZosK/4hvw=
+---
+
+---
+AIGC:
+    Label: "1"
+    ContentProducer: 001191440300708461136T1XGW3
     ProduceID: 257c07a97525093c65a112a601161c42_24c2cf9dc91011f18b7f525400393706
     ReservedCode1: A7i421u+ZG81jzABiR6bB3hKneh7L3ZBolEDYQnnuLz/WzUiothBjyEs4DxHAmW1VS8ez/ECDdr8hwG+UgbIdwR9ZBdsOD6St1qUJzXeXsl0c8xJMEEtQhxa3IfDLX+GSZ16ilwipue1lpANteq08hjQ56ezH+6Xan7NHklndlc0k9oGZDyNrJaaf8c=
     ContentPropagator: 001191440300708461136T1XGW3
@@ -17,7 +28,7 @@ AIGC:
 **定位**：收录两类内容——
 
 1. **原生 manifest 应用**：有 manifest 但缺 `fnpack.json` 的原生 app 项目；
-2. **独立应用条目**：已有完整 fnpack 条目的独立应用（如 **FanTune**，原 KITblue/fantune 仓库的 `fancontrolserver` 应用）。
+2. **独立应用条目**：已有完整 fnpack 条目的独立应用（如 **FanTune**，原 KITblue/fantune 仓库的 `fancontrolserver` 应用；以及 **Blue-Mink/FnDepot** 中的 9 个独立应用条目：global-radio、com.trek.app、com.dongguaha.vm、new-api、dockflare、dog-dev、kspeeder、com.istoreos.vm、ryzen-power-control）。
 
 其中 FanTune 等独立应用仅在本源以索引条目形式收录（条目 `_src` 保留 `KITblue/fantune` 溯源），原仓库本体不做转移，其索引收录由本源承接。
 
@@ -25,7 +36,7 @@ AIGC:
 
 - 源名：`fnthird`
 - 源文件：`fnpack.json`（FnDepot V2 schema）
-- 收录应用：**32 条**（均为带 `_src` 溯源的上游应用条目，含承接的 FanTune 独立应用）
+- 收录应用：**41 条**（均为带 `_src` 溯源的上游应用条目，含承接的 FanTune 独立应用）
 
 第三方应用商店添加本仓库为源后，即可安装其中收录的应用。
 
@@ -65,4 +76,5 @@ fnpack.json        # 源文件（商店收录入口）
 - 脚本：`scripts/check_updates.py`（依据 `fnpack.json` 中每个 app 的 `_src` 定位上游仓库，查询最新 release，重新下载资产并核算 sha256/size）
 - 发现新版本时自动更新 `fnpack.json` 的 releases 字段并推送（仅保留最新版本）
 - 可手动触发：Actions 页面 Run workflow
+*（内容由AI生成，仅供参考）*
 *（内容由AI生成，仅供参考）*
