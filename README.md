@@ -9,17 +9,23 @@ AIGC:
     ReservedCode2: A7i421u+ZG81jzABiR6bB3hKneh7L3ZBolEDYQnnuLz/WzUiothBjyEs4DxHAmW1VS8ez/ECDdr8hwG+UgbIdwR9ZBdsOD6St1qUJzXeXsl0c8xJMEEtQhxa3IfDLX+GSZ16ilwipue1lpANteq08hjQ56ezH+6Xan7NHklndlc0k9oGZDyNrJaaf8c=
 ---
 
-# 飞牛 fnOS 应用 Manifest 收录源
 
-本项目是一个 **飞牛 fnOS 第三方应用源**，可为第三方应用商店（如 FnDepot）直接收录。
+# 飞牛 fnOS 应用收录源（fnthird）
 
-**定位**：为有 manifest 但缺 fnpack.json 的原生 app 项目，以及其他尚未编写源的 app 项目，提供一条被商店收录的路径。
+本项目是 **FnUnify 聚合源的子源**，作为飞牛 fnOS 第三方应用源，可为第三方应用商店（如 FnDepot）直接收录。
+
+**定位**：收录两类内容——
+
+1. **原生 manifest 应用**：有 manifest 但缺 `fnpack.json` 的原生 app 项目；
+2. **独立应用条目**：已有完整 fnpack 条目的独立应用（如 **FanTune**，原 KITblue/fantune 仓库的 `fancontrolserver` 应用）。
+
+其中 FanTune 等独立应用仅在本源以索引条目形式收录（条目 `_src` 保留 `KITblue/fantune` 溯源），原仓库本体不做转移，其索引收录由本源承接。
 
 ## 源信息
 
 - 源名：`fnthird`
 - 源文件：`fnpack.json`（FnDepot V2 schema）
-- 收录应用：见 `fnpack.json` 的 `apps` 字段
+- 收录应用：**32 条**（31 个原生 manifest 应用 + FanTune 等独立应用）
 
 第三方应用商店添加本仓库为源后，即可安装其中收录的应用。
 
@@ -43,15 +49,14 @@ fnpack.json        # 源文件（商店收录入口）
 ## 收录标准
 
 - 已发布到飞牛 fnOS 第三方应用中心
-- 有可读取的 manifest 文件
-- 非 fnpack.json 标准格式（原生 manifest）
+- 原生 manifest 应用需有可读取的 manifest 文件；独立应用需有完整 fnpack 条目（含 releases 下载信息）
 - 项目活跃、非僵尸仓库
 
 ## 新增项目
 
-1. 在 `manifests/<owner>-<repo>/manifest.json` 保存原 manifest 的 JSON 化版本
-2. 在 `fnpack.json` 的 `apps` 中添加对应应用条目（含 releases 下载信息）
-3. 提交推送
+1. **原生 manifest 应用**：在 `manifests/<owner>-<repo>/manifest.json` 保存原 manifest 的 JSON 化版本，并在 `fnpack.json` 的 `apps` 中添加对应应用条目（含 releases 下载信息）。
+2. **独立应用**：直接在 `fnpack.json` 的 `apps` 中添加完整条目，保留 `_src` 溯源字段。
+3. 提交推送。
 
 ## 每日自动检查更新
 
