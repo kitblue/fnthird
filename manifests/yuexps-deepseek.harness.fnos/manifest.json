@@ -1,0 +1,14 @@
+{
+ "appname": "deepseek.harness",
+ "display_name": "DeepSeek Harness",
+ "version": "v0.3.9",
+ "maintainer": "yuexps",
+ "distributor": "yuexps",
+ "distributor_url": "https://github.com/yuexps",
+ "platform": "x86/arm",
+ "source": "thirdparty",
+ "run_as": "package",
+ "desc": "DeepSeek Harness 管理应用，支持管理 Harness 服务的启动、停止、重启与升级。",
+ "upstream": "https://github.com/yuexps/deepseek.harness.fnos",
+ "_note": "来自 yuexps/deepseek.harness.fnos release v0.3.9（x86+arm 双包），sha256 取自 GitHub Release API digest，未下载 fpk"
+}
