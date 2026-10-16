@@ -1,0 +1,14 @@
+{
+ "appname": "hermes-studio",
+ "display_name": "Hermes Studio",
+ "version": "v0.7.36-1",
+ "maintainer": "veenyi",
+ "distributor": "veenyi",
+ "distributor_url": "https://github.com/veenyi",
+ "platform": "all",
+ "source": "thirdparty",
+ "run_as": "package",
+ "desc": "飞牛原生 Hermes Studio：AI 智能体工作台，内置 fnOS Skill 技能系统与 trim-cli 工具链。",
+ "upstream": "https://github.com/veenyi/Fnos-Hermes-Studio",
+ "_note": "来自 veenyi/Fnos-Hermes-Studio release v0.7.36-1，sha256 取自 GitHub Release API digest，未下载 fpk"
+}
