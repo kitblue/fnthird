@@ -4,7 +4,7 @@
     "name": "fnthird",
     "author": "kitblue",
     "homepage": "https://github.com/kitblue/fnthird",
-    "description": "飞牛 fnOS 第三方应用源：收录原生 manifest 格式（无 fnpack.json）的第三方 app 项目，以及 FanTune 等独立应用条目，为其提供被第三方应用商店收录的路径。当前收录 65 个应用。"
+    "description": "飞牛 fnOS 第三方应用源：收录原生 manifest 格式（无 fnpack.json）的第三方 app 项目，以及独立应用条目，为其提供被第三方应用商店收录的路径。当前收录 65 个应用。"
   },
   "apps": {
     "clouddl": {

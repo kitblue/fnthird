@@ -6,9 +6,9 @@
 **定位**：收录两类内容——
 
 1. **原生 manifest 应用**：有 manifest 但缺 `fnpack.json` 的原生 app 项目；
-2. **独立应用条目**：已有完整 fnpack 条目的独立应用（如 **FanTune**，原 KITblue/fantune 仓库的 `fancontrolserver` 应用；以及 **Blue-Mink/FnDepot** 中的 9 个独立应用条目：global-radio、com.trek.app、com.dongguaha.vm、new-api、dockflare、dog-dev、kspeeder、com.istoreos.vm、ryzen-power-control）。
+2. **独立应用条目**：已有完整 fnpack 条目的独立应用（如 **Blue-Mink/FnDepot** 中的 9 个独立应用条目：global-radio、com.trek.app、com.dongguaha.vm、new-api、dockflare、dog-dev、kspeeder、com.istoreos.vm、ryzen-power-control）。
 
-其中 FanTune 等独立应用仅在本源以索引条目形式收录（条目 `_src` 保留 `KITblue/fantune` 溯源），原仓库本体不做转移，其索引收录由本源承接。
+独立应用以索引条目形式收录（条目 `_src` 保留上游仓库溯源），原仓库本体不做转移，其索引收录由本源承接。
 
 2026-10-17 扩充：新增 11 个单作者小仓库的 23 条 unique_valid 应用（RONGLINC93、jiaaom、BearHero520、lianhua、ZhangZsky、mayishidai、JaxSupero、maxsusu、yoqie、ccrabit、frankluise5220），均保留 `_src` 溯源至各自上游仓库。
 
@@ -16,7 +16,7 @@
 
 - 源名：`fnthird`
 - 源文件：`fnpack.json`（FnDepot V2 schema）
-- 收录应用：**66 条**（均为带 `_src` 溯源的上游应用条目，含承接的 FanTune 独立应用）
+- 收录应用：**65 条**（均为带 `_src` 溯源的上游应用条目）
 
 第三方应用商店添加本仓库为源后，即可安装其中收录的应用。
 
