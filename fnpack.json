@@ -209,12 +209,12 @@
       "is_docker": false,
       "service_port": "",
       "releases": {
-        "0.41.28": {
+        "0.41.32": {
           "packages": {
             "x86": {
-              "download_url": "https://github.com/AmigaMeow/micam/releases/download/v0.41.28/micam_0.41.28_amd64.fpk",
-              "sha256": "e0e34638b68a3e58b2c6e5d0a5fdca1b44f9213d5ee23c076a103d970e5d3443",
-              "size": 5273563
+              "download_url": "https://github.com/AmigaMeow/micam/releases/download/v0.41.32/micam_0.41.32_amd64.fpk",
+              "sha256": "6df6b50b87021165de212ad7a0cfa5432da6ed22ac549bf14179898cac0025af",
+              "size": 4995395
             }
           }
         }
@@ -397,17 +397,17 @@
       "is_docker": false,
       "service_port": "47860",
       "releases": {
-        "1.5.0": {
+        "1.5.1": {
           "packages": {
             "x86": {
-              "download_url": "https://github.com/techysy/CreditDaddy/releases/download/v1.5.0/CreditDaddy-FnOS-1.5.0-x86.fpk",
-              "sha256": "fb7e0dd4129e0c1a15f10f27f36073cbc3d0ee9110f000d118d1a4674a3ae617",
-              "size": 588073
+              "download_url": "https://github.com/techysy/CreditDaddy/releases/download/v1.5.1/CreditDaddy-FnOS-1.5.1-x86.fpk",
+              "sha256": "22c54041228d9967ef17d1f63a7b0018329db6f42dba9f617a7ead33c9c51c59",
+              "size": 598054
             },
             "arm": {
-              "download_url": "https://github.com/techysy/CreditDaddy/releases/download/v1.5.0/CreditDaddy-FnOS-1.5.0-arm.fpk",
-              "sha256": "8767390d624a9548e020d65bc57683692dce2166c7dab066e4cc18e76902a7b9",
-              "size": 588074
+              "download_url": "https://github.com/techysy/CreditDaddy/releases/download/v1.5.1/CreditDaddy-FnOS-1.5.1-arm.fpk",
+              "sha256": "4ddb6edf5cb633120e4b658eccbb26d20977efd8395e8f4f91cf4ba845b09bb2",
+              "size": 598029
             }
           }
         }
@@ -583,12 +583,12 @@
       "is_docker": false,
       "service_port": "",
       "releases": {
-        "0.22.2.05": {
+        "0.22.2.07": {
           "packages": {
             "all": {
-              "download_url": "https://github.com/haibo8023/fnos-hermes-agent/releases/download/v0.22.2.05/fnos-hermes-agent_v0.22.2.05.fpk",
-              "sha256": "d65d8dc89ed41ae8a47d87b43615ba89ef1aca81a4841fffa6668a299082af5f",
-              "size": 382957931
+              "download_url": "https://github.com/haibo8023/fnos-hermes-agent/releases/download/v0.22.2.07/fnos-hermes-agent_v0.22.2.07.fpk",
+              "sha256": "265ca17e5deeaf42a8c111a1d676dd59a6e16f76a1d304ec5f9aa495bf11f9de",
+              "size": 383036862
             }
           }
         }
@@ -870,12 +870,12 @@
       "is_docker": false,
       "service_port": "18096",
       "releases": {
-        "hyatlas-v4.7.3-2": {
+        "hyatlas-v4.9.1-1": {
           "packages": {
             "x86": {
-              "download_url": "https://github.com/Mike-hd123/FnDepot/releases/download/hyatlas-v4.7.3-2/hyatlas-4.7.3-2-x86.fpk",
-              "sha256": "9aceae366b02cbcb4f56c5353e9be6ebc623c04911239bfddb0315a7b2d60a22",
-              "size": 242654348
+              "download_url": "https://github.com/Mike-hd123/FnDepot/releases/download/hyatlas-v4.9.1-1/hyatlas-4.9.1-1-x86.fpk",
+              "sha256": "2d2550e9553ad642c36a8e17a91447101df6337cd3dfb52363077c66732727a8",
+              "size": 242768007
             }
           }
         }
@@ -2547,17 +2547,17 @@
       "is_docker": false,
       "service_port": "3082",
       "releases": {
-        "Router2API-2.0.9.6": {
+        "Router2API-2.1.0": {
           "packages": {
             "x86": {
-              "download_url": "https://github.com/yoqie/FFFFFFFFNNNN/releases/download/Router2API-2.0.9.6/Router2API_v2.0.9.6_amd64.fpk",
-              "sha256": "1e760f2cfb50034e9e771a013bae3ea9a1429ab1de32cf1efbe1025b3c2e153d",
-              "size": 71453482
+              "download_url": "https://github.com/yoqie/FFFFFFFFNNNN/releases/download/Router2API-2.1.0/Router2API_v2.1.0_amd64.fpk",
+              "sha256": "b75beef31f6fdf2391b0f59af56c8f22098fe8c468831bd21ecd2e4babeb4cb0",
+              "size": 71466528
             },
             "arm": {
-              "download_url": "https://github.com/yoqie/FFFFFFFFNNNN/releases/download/Router2API-2.0.9.6/Router2API_v2.0.9.6_arm64.fpk",
-              "sha256": "2d835bb0c1fd811593c8c9092e25c63022660222870a5b64533db48886a47039",
-              "size": 68728584
+              "download_url": "https://github.com/yoqie/FFFFFFFFNNNN/releases/download/Router2API-2.1.0/Router2API_v2.1.0_arm64.fpk",
+              "sha256": "0063b3f61f4f1d69439dfef031e49929a9b4dba7e82aff6fdcaaaa8be36e7843",
+              "size": 68733330
             }
           }
         }
