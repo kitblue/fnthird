@@ -437,12 +437,12 @@
       "is_docker": false,
       "service_port": "18600",
       "releases": {
-        "1.4.0": {
+        "1.4.6": {
           "packages": {
             "all": {
-              "download_url": "https://github.com/mickeyttsc/fpk-update/releases/download/v1.4.0/fpk-update-1.4.0.fpk",
-              "sha256": "1cc48c6b6e11f866780b7f26741e317c6f892ae58e0154d40fe0e13f8d6a3b38",
-              "size": 137318
+              "download_url": "https://github.com/mickeyttsc/fpk-update/releases/download/v1.4.6/fpk-update-1.4.6.fpk",
+              "sha256": "79c66c282ea5d27400c68f43f7f0e295a9cab28f7a9348582ef3e2714bc3ea24",
+              "size": 146309
             }
           }
         }
@@ -583,12 +583,12 @@
       "is_docker": false,
       "service_port": "",
       "releases": {
-        "0.22.2.07": {
+        "0.22.2.09": {
           "packages": {
             "all": {
-              "download_url": "https://github.com/haibo8023/fnos-hermes-agent/releases/download/v0.22.2.07/fnos-hermes-agent_v0.22.2.07.fpk",
-              "sha256": "265ca17e5deeaf42a8c111a1d676dd59a6e16f76a1d304ec5f9aa495bf11f9de",
-              "size": 383036862
+              "download_url": "https://github.com/haibo8023/fnos-hermes-agent/releases/download/v0.22.2.09/fnos-hermes-agent_v0.22.2.09.fpk",
+              "sha256": "8f1932812a073bb87eb427f14f45067c09f8a65c0e050a39d2edbf06f0e503d1",
+              "size": 383223271
             }
           }
         }
@@ -653,12 +653,12 @@
       "is_docker": false,
       "service_port": "",
       "releases": {
-        "v0.7.36-1": {
+        "0.7.37-1": {
           "packages": {
             "all": {
-              "download_url": "https://github.com/veenyi/Fnos-Hermes-Studio/releases/download/v0.7.36-1/fnos-hermes-studio_v0.7.36-1.fpk",
-              "sha256": "cc320614c5adc5bf9c1973a1433c8a63d8956b97c9e557cdd4564c5cc3b512b1",
-              "size": 363874710
+              "download_url": "https://github.com/veenyi/Fnos-Hermes-Studio/releases/download/v0.7.37-1/fnos-hermes-studio_v0.7.37-1.fpk",
+              "sha256": "f47590546997e64c8cfc100d0ad4effe2b6b0805eadfe36e982d85f8e8ff817c",
+              "size": 380016760
             }
           }
         }
@@ -724,17 +724,17 @@
       "is_docker": false,
       "service_port": "",
       "releases": {
-        "0.4.1": {
+        "0.4.2": {
           "packages": {
             "x86": {
-              "download_url": "https://github.com/yuexps/deepseek.harness.fnos/releases/download/v0.4.1/deepseek.harness-x86.fpk",
-              "sha256": "0c0c998075563a098fc25925a78400d352f8caa37feabf8c89cc352543c30804",
-              "size": 173720839
+              "download_url": "https://github.com/yuexps/deepseek.harness.fnos/releases/download/v0.4.2/deepseek.harness-x86.fpk",
+              "sha256": "d8c5cce601ba28ce40b3c63b699925621196de66ee068f76d5821e81787ce79c",
+              "size": 173742085
             },
             "arm": {
-              "download_url": "https://github.com/yuexps/deepseek.harness.fnos/releases/download/v0.4.1/deepseek.harness-arm.fpk",
-              "sha256": "415bc4959778cf9e341031092c16c2c9003d4bf1d5a63309513a3a3533973c8e",
-              "size": 175432866
+              "download_url": "https://github.com/yuexps/deepseek.harness.fnos/releases/download/v0.4.2/deepseek.harness-arm.fpk",
+              "sha256": "e118a1a289202f51456a9c3fea48654f6c78994018b5b58625e41175a19767f3",
+              "size": 175417510
             }
           }
         }
@@ -870,12 +870,12 @@
       "is_docker": false,
       "service_port": "18096",
       "releases": {
-        "hyatlas-v4.9.1-1": {
+        "hyatlas-v5.0.0-1": {
           "packages": {
             "x86": {
-              "download_url": "https://github.com/Mike-hd123/FnDepot/releases/download/hyatlas-v4.9.1-1/hyatlas-4.9.1-1-x86.fpk",
-              "sha256": "2d2550e9553ad642c36a8e17a91447101df6337cd3dfb52363077c66732727a8",
-              "size": 242768007
+              "download_url": "https://github.com/Mike-hd123/FnDepot/releases/download/hyatlas-v5.0.0-1/hyatlas-5.0.0-1-x86.fpk",
+              "sha256": "4ee0a69595b1f621e842d5aacc4f61680f558c62515b230219fba1a02f744835",
+              "size": 243464854
             }
           }
         }
@@ -1324,43 +1324,19 @@
       "is_docker": true,
       "service_port": "33000",
       "releases": {
-        "1.0.0-rc.37": {
+        "magpie-v1.1.6": {
           "packages": {
             "x86": {
-              "download_url": "https://github.com/Blue-Mink/FnDepot/releases/download/new-api-v1.0.0-rc.37/new-api-1.0.0-rc.37-fnos-amd64-root.fpk",
-              "sha256": "ff20733bd0492cad86ef0bd43f49eb9ccf52242bacf8c1d042e25896beaee296",
-              "size": 40339338
+              "download_url": "https://github.com/Blue-Mink/FnDepot/releases/download/magpie-v1.1.6/magpie-1.1.6-fnos-amd64.fpk",
+              "sha256": "8b239dbd2f8f7d40910d5abe0e4222bc0a21aa46e1134d9846871f8ad5f1894c",
+              "size": 19365821
             },
             "arm": {
-              "download_url": "https://github.com/Blue-Mink/FnDepot/releases/download/new-api-v1.0.0-rc.37/new-api-1.0.0-rc.37-fnos-arm64-root.fpk",
-              "sha256": "9d0a6137e29026436af4d87c5e06e1ee920e5f7086a1533b4927ab9c21d926d8",
-              "size": 38386094
+              "download_url": "https://github.com/Blue-Mink/FnDepot/releases/download/magpie-v1.1.6/magpie-1.1.6-fnos-amd64.fpk",
+              "sha256": "8b239dbd2f8f7d40910d5abe0e4222bc0a21aa46e1134d9846871f8ad5f1894c",
+              "size": 19365821
             }
-          },
-          "changelog": "基于 QuantumNous/new-api 官方 v1.0.0-rc.37 Linux 二进制构建；定价表达式编辑器（旧定价将弃用）、任务插件流式输出与市场增强、渠道创建编辑统一、通行密钥多域名；root 权限测试验证版（amd64 已在 fnOS x86_64 实机验证）；新增 arm64 架构包（未实机验证）；默认端口 33000，应用中心 iframe 入口",
-          "updated_at": "2026-09-11T17:37:30Z"
-        },
-        "1.0.0-rc.27": {
-          "packages": {
-            "x86": {
-              "download_url": "https://github.com/Blue-Mink/FnDepot/releases/download/new-api-v1.0.0-rc.27-fnos-amd64-root/new-api-1.0.0-rc.27-fnos-amd64-root.fpk",
-              "sha256": "65c6842986fdd18d1898e8dc883f42fb3773407244891ce83a8d88a180b27bb1",
-              "size": 38739311
-            }
-          },
-          "changelog": "new-api fnOS amd64 root 测试验证版。 SHA256: 65c6842986fdd18d1898e8dc883f42fb3773407244891ce83a8d88a180b27bb1 本版补齐 icon_64.png / icon_256.png 图标兼容文件。 保留旧版本 Release，本次仅替换同 tag 下 rc.27 root 包资产。",
-          "updated_at": "2026-08-30T16:49:26Z"
-        },
-        "1.0.0-rc.22": {
-          "packages": {
-            "x86": {
-              "download_url": "https://github.com/Blue-Mink/FnDepot/releases/download/v1.0.0-rc.22/new-api-v1.0.0-rc.22.fpk",
-              "sha256": "39ca600f61a94a308b25c1eb28c1b94e82770ed1f7a6fde8e629620cc2606580",
-              "size": 59231
-            }
-          },
-          "changelog": "## New API v1.0.0-rc.22 新一代大模型网关与AI资产管理系统，已打包为 fnOS FPK 应用。 ### 安装方式 ```bash appcenter-cli install-fpk new-api-v1.0.0-rc.22.fpk --volume 1 --env <(echo 'wizard_access_port=33000') ``` ### 更新说明 - 首发 fn…",
-          "updated_at": "2026-07-27T10:49:24Z"
+          }
         }
       },
       "_src": "Blue-Mink/FnDepot"
@@ -1462,49 +1438,14 @@
       "is_docker": false,
       "service_port": "5003",
       "releases": {
-        "0.8.2": {
+        "magpie-v1.1.6": {
           "packages": {
             "x86": {
-              "download_url": "https://github.com/Blue-Mink/FnDepot/releases/download/v0.8.2/kspeeder-0.8.2-fnos-amd64.fpk",
-              "sha256": "ec119de65dfe73cd0e4498ba4cba22d10a41ddfad0152995c2c21b65a57d5836",
-              "size": 6536779
+              "download_url": "https://github.com/Blue-Mink/FnDepot/releases/download/magpie-v1.1.6/magpie-1.1.6-fnos-amd64.fpk",
+              "sha256": "8b239dbd2f8f7d40910d5abe0e4222bc0a21aa46e1134d9846871f8ad5f1894c",
+              "size": 19365821
             }
-          },
-          "changelog": "同步引擎至 iStoreEnhance 0.8.2：blob 下载按 100MB 分段、多候选节点并行竞速，某节点传输中断（RST/520）时剩余分段自动换其他节点继续，修复内置节点偶发传输中断导致整层拉取失败的问题；端口、配置与数据目录均不变",
-          "updated_at": "2026-10-04T05:50:43Z"
-        },
-        "0.8.0": {
-          "packages": {
-            "x86": {
-              "download_url": "https://github.com/Blue-Mink/FnDepot/releases/download/v0.8.0/kspeeder-0.8.0-fnos-amd64.fpk",
-              "sha256": "e636bdb4c20e5c670c592f6e9ff7a4d311728c39710600dcfd497a4a66bc7201",
-              "size": 6527433
-            }
-          },
-          "changelog": "KSpeeder v0.8.0 for fnOS (fnos-amd64) - 引擎同步 iStoreEnhance / KSpeeder v0.8.0 (build 8664) - 新增 kspeeder download 命令与智能下载网关加速（含 Python/pip、Homebrew 加速） - 修复 docker manifest 镜像回源重试与 ghcr bottles 域名问题 - …",
-          "updated_at": "2026-09-11T15:40:07Z"
-        },
-        "0.7.17": {
-          "packages": {
-            "x86": {
-              "download_url": "https://github.com/Blue-Mink/FnDepot/releases/download/v0.7.17/kspeeder-0.7.17-fnos-amd64.fpk",
-              "sha256": "a1319b742076fd1fee95d31410abb3b2fb294293bea71ba8e9d9a2ba233498a1",
-              "size": 6430379
-            }
-          },
-          "changelog": "KSpeeder v0.7.17 for fnOS - Sync iStoreEnhance / KSpeeder v0.7.17 - Support configurable admin and Docker proxy ports in fnOS App Center - Fix App Center open entry after port changes - Fix service re…",
-          "updated_at": "2026-09-02T09:35:31Z"
-        },
-        "0.7.16": {
-          "packages": {
-            "x86": {
-              "download_url": "https://github.com/Blue-Mink/FnDepot/releases/download/v0.7.16/kspeeder-0.7.16-fnos-amd64.fpk",
-              "sha256": "2b61e2f905725886fc296c8aab954985d94fe428884dc4e19d350955f65d05a8",
-              "size": 7890904
-            }
-          },
-          "changelog": "KSpeeder v0.7.16 release - 首发 fnOS 版本 - 修复图标圆角显示问题 - 优化飞牛 fnOS 应用中心适配",
-          "updated_at": "2026-08-29T09:19:32Z"
+          }
         }
       },
       "_src": "Blue-Mink/FnDepot"
