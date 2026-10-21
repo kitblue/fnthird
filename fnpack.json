@@ -437,12 +437,12 @@
       "is_docker": false,
       "service_port": "18600",
       "releases": {
-        "1.4.6": {
+        "1.4.9": {
           "packages": {
             "all": {
-              "download_url": "https://github.com/mickeyttsc/fpk-update/releases/download/v1.4.6/fpk-update-1.4.6.fpk",
-              "sha256": "79c66c282ea5d27400c68f43f7f0e295a9cab28f7a9348582ef3e2714bc3ea24",
-              "size": 146309
+              "download_url": "https://github.com/mickeyttsc/fpk-update/releases/download/v1.4.9/fpk-update-1.4.9.fpk",
+              "sha256": "e064af870061470e5d05845e17c243d702a144a4db49a1c2a57f9392ee4c8c58",
+              "size": 147681
             }
           }
         }
@@ -583,12 +583,12 @@
       "is_docker": false,
       "service_port": "",
       "releases": {
-        "0.22.2.09": {
+        "0.22.2.11": {
           "packages": {
             "all": {
-              "download_url": "https://github.com/haibo8023/fnos-hermes-agent/releases/download/v0.22.2.09/fnos-hermes-agent_v0.22.2.09.fpk",
-              "sha256": "8f1932812a073bb87eb427f14f45067c09f8a65c0e050a39d2edbf06f0e503d1",
-              "size": 383223271
+              "download_url": "https://github.com/haibo8023/fnos-hermes-agent/releases/download/v0.22.2.11/fnos-hermes-agent_v0.22.2.11.fpk",
+              "sha256": "fece2b1e91383a8b43a69e5675c21d1faf69cfdbb36d2d72879a670d94b9442b",
+              "size": 384873908
             }
           }
         }
@@ -653,12 +653,12 @@
       "is_docker": false,
       "service_port": "",
       "releases": {
-        "0.7.37-1": {
+        "0.7.38-1": {
           "packages": {
             "all": {
-              "download_url": "https://github.com/veenyi/Fnos-Hermes-Studio/releases/download/v0.7.37-1/fnos-hermes-studio_v0.7.37-1.fpk",
-              "sha256": "f47590546997e64c8cfc100d0ad4effe2b6b0805eadfe36e982d85f8e8ff817c",
-              "size": 380016760
+              "download_url": "https://github.com/veenyi/Fnos-Hermes-Studio/releases/download/v0.7.38-1/fnos-hermes-studio_v0.7.38-1.fpk",
+              "sha256": "1f647d876a524ad314864679f2feb75cd2fcb0fbc445d642e2751df4d5843cc2",
+              "size": 380710148
             }
           }
         }
