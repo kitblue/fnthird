@@ -397,17 +397,17 @@
       "is_docker": false,
       "service_port": "47860",
       "releases": {
-        "1.5.1": {
+        "1.6.0": {
           "packages": {
             "x86": {
-              "download_url": "https://github.com/techysy/CreditDaddy/releases/download/v1.5.1/CreditDaddy-FnOS-1.5.1-x86.fpk",
-              "sha256": "22c54041228d9967ef17d1f63a7b0018329db6f42dba9f617a7ead33c9c51c59",
-              "size": 598054
+              "download_url": "https://github.com/techysy/CreditDaddy/releases/download/v1.6.0/CreditDaddy-FnOS-1.6.0-x86.fpk",
+              "sha256": "635c02304557873036cde1a557b3f097b13144697a0740483a86c79c2c0fcaf5",
+              "size": 606352
             },
             "arm": {
-              "download_url": "https://github.com/techysy/CreditDaddy/releases/download/v1.5.1/CreditDaddy-FnOS-1.5.1-arm.fpk",
-              "sha256": "4ddb6edf5cb633120e4b658eccbb26d20977efd8395e8f4f91cf4ba845b09bb2",
-              "size": 598029
+              "download_url": "https://github.com/techysy/CreditDaddy/releases/download/v1.6.0/CreditDaddy-FnOS-1.6.0-arm.fpk",
+              "sha256": "cdf8e1cb7356cacc9c3678ff539be3ff4f9ddee67ef76750b9fe9e8d8341f4c0",
+              "size": 606357
             }
           }
         }
@@ -583,12 +583,12 @@
       "is_docker": false,
       "service_port": "",
       "releases": {
-        "0.22.2.11": {
+        "0.22.3.1": {
           "packages": {
             "all": {
-              "download_url": "https://github.com/haibo8023/fnos-hermes-agent/releases/download/v0.22.2.11/fnos-hermes-agent_v0.22.2.11.fpk",
-              "sha256": "fece2b1e91383a8b43a69e5675c21d1faf69cfdbb36d2d72879a670d94b9442b",
-              "size": 384873908
+              "download_url": "https://github.com/haibo8023/fnos-hermes-agent/releases/download/v0.22.3.1/fnos-hermes-agent_v0.22.3.1.fpk",
+              "sha256": "47024515ffb0b33307062741558124fa48a813948d129b847760c311231cbf2d",
+              "size": 384865210
             }
           }
         }
@@ -653,12 +653,12 @@
       "is_docker": false,
       "service_port": "",
       "releases": {
-        "0.7.38-1": {
+        "0.7.38-3": {
           "packages": {
             "all": {
-              "download_url": "https://github.com/veenyi/Fnos-Hermes-Studio/releases/download/v0.7.38-1/fnos-hermes-studio_v0.7.38-1.fpk",
-              "sha256": "1f647d876a524ad314864679f2feb75cd2fcb0fbc445d642e2751df4d5843cc2",
-              "size": 380710148
+              "download_url": "https://github.com/veenyi/Fnos-Hermes-Studio/releases/download/v0.7.38-3/fnos-hermes-studio_v0.7.38-3.fpk",
+              "sha256": "2c0ed4cd31f891323380b621dddb9b455fe5b3abf89045841055fe1f7e0a5d52",
+              "size": 392580836
             }
           }
         }
