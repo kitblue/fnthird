@@ -1324,17 +1324,17 @@
       "is_docker": true,
       "service_port": "33000",
       "releases": {
-        "magpie-v1.1.6": {
+        "magpie-v1.1.8": {
           "packages": {
             "x86": {
-              "download_url": "https://github.com/Blue-Mink/FnDepot/releases/download/magpie-v1.1.6/magpie-1.1.6-fnos-amd64.fpk",
-              "sha256": "8b239dbd2f8f7d40910d5abe0e4222bc0a21aa46e1134d9846871f8ad5f1894c",
-              "size": 19365821
+              "download_url": "https://github.com/Blue-Mink/FnDepot/releases/download/magpie-v1.1.8/magpie-1.1.8-fnos-amd64.fpk",
+              "sha256": "d99093558aa031d215a7f895dc18d40ea714194cfc5eb3d7dd705882139f4205",
+              "size": 19780499
             },
             "arm": {
-              "download_url": "https://github.com/Blue-Mink/FnDepot/releases/download/magpie-v1.1.6/magpie-1.1.6-fnos-amd64.fpk",
-              "sha256": "8b239dbd2f8f7d40910d5abe0e4222bc0a21aa46e1134d9846871f8ad5f1894c",
-              "size": 19365821
+              "download_url": "https://github.com/Blue-Mink/FnDepot/releases/download/magpie-v1.1.8/magpie-1.1.8-fnos-amd64.fpk",
+              "sha256": "d99093558aa031d215a7f895dc18d40ea714194cfc5eb3d7dd705882139f4205",
+              "size": 19780499
             }
           }
         }
@@ -1438,12 +1438,12 @@
       "is_docker": false,
       "service_port": "5003",
       "releases": {
-        "magpie-v1.1.6": {
+        "magpie-v1.1.8": {
           "packages": {
             "x86": {
-              "download_url": "https://github.com/Blue-Mink/FnDepot/releases/download/magpie-v1.1.6/magpie-1.1.6-fnos-amd64.fpk",
-              "sha256": "8b239dbd2f8f7d40910d5abe0e4222bc0a21aa46e1134d9846871f8ad5f1894c",
-              "size": 19365821
+              "download_url": "https://github.com/Blue-Mink/FnDepot/releases/download/magpie-v1.1.8/magpie-1.1.8-fnos-amd64.fpk",
+              "sha256": "d99093558aa031d215a7f895dc18d40ea714194cfc5eb3d7dd705882139f4205",
+              "size": 19780499
             }
           }
         }
