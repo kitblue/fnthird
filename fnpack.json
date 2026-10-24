@@ -397,17 +397,17 @@
       "is_docker": false,
       "service_port": "47860",
       "releases": {
-        "1.6.0": {
+        "1.6.1": {
           "packages": {
             "x86": {
-              "download_url": "https://github.com/techysy/CreditDaddy/releases/download/v1.6.0/CreditDaddy-FnOS-1.6.0-x86.fpk",
-              "sha256": "635c02304557873036cde1a557b3f097b13144697a0740483a86c79c2c0fcaf5",
-              "size": 606352
+              "download_url": "https://github.com/techysy/CreditDaddy/releases/download/v1.6.1/CreditDaddy-FnOS-1.6.1-x86.fpk",
+              "sha256": "e890a623d297d30e42884fe97b134809adfe4619188d401c1ab9d4da5fcebf15",
+              "size": 609811
             },
             "arm": {
-              "download_url": "https://github.com/techysy/CreditDaddy/releases/download/v1.6.0/CreditDaddy-FnOS-1.6.0-arm.fpk",
-              "sha256": "cdf8e1cb7356cacc9c3678ff539be3ff4f9ddee67ef76750b9fe9e8d8341f4c0",
-              "size": 606357
+              "download_url": "https://github.com/techysy/CreditDaddy/releases/download/v1.6.1/CreditDaddy-FnOS-1.6.1-arm.fpk",
+              "sha256": "f1a19ea16f94d5da69b46fdc0926f3a63a6f14f0e28f6c1ac0ea5f57af958420",
+              "size": 609777
             }
           }
         }
@@ -583,12 +583,12 @@
       "is_docker": false,
       "service_port": "",
       "releases": {
-        "0.22.3.1": {
+        "0.22.5.03": {
           "packages": {
             "all": {
-              "download_url": "https://github.com/haibo8023/fnos-hermes-agent/releases/download/v0.22.3.1/fnos-hermes-agent_v0.22.3.1.fpk",
-              "sha256": "47024515ffb0b33307062741558124fa48a813948d129b847760c311231cbf2d",
-              "size": 384865210
+              "download_url": "https://github.com/haibo8023/fnos-hermes-agent/releases/download/v0.22.5.03/fnos-hermes-agent_v0.22.5.03.fpk",
+              "sha256": "36df4bf5ca3e7ba6c28b81d7a9549abc11b371d09edc6a23c11e717a3bb0b230",
+              "size": 385103956
             }
           }
         }
@@ -653,12 +653,12 @@
       "is_docker": false,
       "service_port": "",
       "releases": {
-        "0.7.38-3": {
+        "0.7.39-1": {
           "packages": {
             "all": {
-              "download_url": "https://github.com/veenyi/Fnos-Hermes-Studio/releases/download/v0.7.38-3/fnos-hermes-studio_v0.7.38-3.fpk",
-              "sha256": "2c0ed4cd31f891323380b621dddb9b455fe5b3abf89045841055fe1f7e0a5d52",
-              "size": 392580836
+              "download_url": "https://github.com/veenyi/Fnos-Hermes-Studio/releases/download/v0.7.39-1/fnos-hermes-studio_v0.7.39-1.fpk",
+              "sha256": "5878b955d850f928f0b27ea40c1dc62351b9558a732fc4c429ed8441038ba7ea",
+              "size": 378532602
             }
           }
         }
@@ -724,17 +724,17 @@
       "is_docker": false,
       "service_port": "",
       "releases": {
-        "0.4.2": {
+        "0.4.3": {
           "packages": {
             "x86": {
-              "download_url": "https://github.com/yuexps/deepseek.harness.fnos/releases/download/v0.4.2/deepseek.harness-x86.fpk",
-              "sha256": "d8c5cce601ba28ce40b3c63b699925621196de66ee068f76d5821e81787ce79c",
-              "size": 173742085
+              "download_url": "https://github.com/yuexps/deepseek.harness.fnos/releases/download/v0.4.3/deepseek.harness-x86.fpk",
+              "sha256": "a5d606ce966d0cff29e929a8707326bd3804402dab2093e67f62ab2ef12a52d0",
+              "size": 174446352
             },
             "arm": {
-              "download_url": "https://github.com/yuexps/deepseek.harness.fnos/releases/download/v0.4.2/deepseek.harness-arm.fpk",
-              "sha256": "e118a1a289202f51456a9c3fea48654f6c78994018b5b58625e41175a19767f3",
-              "size": 175417510
+              "download_url": "https://github.com/yuexps/deepseek.harness.fnos/releases/download/v0.4.3/deepseek.harness-arm.fpk",
+              "sha256": "5d75d61c381853b5e4c0c3ccbec20bc390cc5a262940a83bac051bd8a2312fb2",
+              "size": 176024689
             }
           }
         }
