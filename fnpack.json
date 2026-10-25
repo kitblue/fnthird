@@ -583,12 +583,12 @@
       "is_docker": false,
       "service_port": "",
       "releases": {
-        "0.22.5.03": {
+        "0.22.5.05": {
           "packages": {
             "all": {
-              "download_url": "https://github.com/haibo8023/fnos-hermes-agent/releases/download/v0.22.5.03/fnos-hermes-agent_v0.22.5.03.fpk",
-              "sha256": "36df4bf5ca3e7ba6c28b81d7a9549abc11b371d09edc6a23c11e717a3bb0b230",
-              "size": 385103956
+              "download_url": "https://github.com/haibo8023/fnos-hermes-agent/releases/download/v0.22.5.05/fnos-hermes-agent_v0.22.5.05.fpk",
+              "sha256": "3416c2d584c1b3e62759d5dc6ac78d46ca3942eee2ba3c8a37afe27d5d0a3982",
+              "size": 385103818
             }
           }
         }
@@ -2488,17 +2488,17 @@
       "is_docker": false,
       "service_port": "3082",
       "releases": {
-        "Router2API-2.1.0": {
+        "Router2API-2.1.2": {
           "packages": {
             "x86": {
-              "download_url": "https://github.com/yoqie/FFFFFFFFNNNN/releases/download/Router2API-2.1.0/Router2API_v2.1.0_amd64.fpk",
-              "sha256": "b75beef31f6fdf2391b0f59af56c8f22098fe8c468831bd21ecd2e4babeb4cb0",
-              "size": 71466528
+              "download_url": "https://github.com/yoqie/FFFFFFFFNNNN/releases/download/Router2API-2.1.2/Router2API_v2.1.2_amd64.fpk",
+              "sha256": "73af0d20ec2a3f0cf4830babe9466830b9cfa6d4b3caf2f6cc5eb8bc97d1252b",
+              "size": 73642854
             },
             "arm": {
-              "download_url": "https://github.com/yoqie/FFFFFFFFNNNN/releases/download/Router2API-2.1.0/Router2API_v2.1.0_arm64.fpk",
-              "sha256": "0063b3f61f4f1d69439dfef031e49929a9b4dba7e82aff6fdcaaaa8be36e7843",
-              "size": 68733330
+              "download_url": "https://github.com/yoqie/FFFFFFFFNNNN/releases/download/Router2API-2.1.2/Router2API_v2.1.2_arm64.fpk",
+              "sha256": "08c9473e52ee6da7547d73953fe71875c920e7f30d48b7cdfddb999cbd13fbe4",
+              "size": 70905550
             }
           }
         }
