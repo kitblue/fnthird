@@ -209,12 +209,12 @@
       "is_docker": false,
       "service_port": "",
       "releases": {
-        "0.41.32": {
+        "0.41.34": {
           "packages": {
             "x86": {
-              "download_url": "https://github.com/AmigaMeow/micam/releases/download/v0.41.32/micam_0.41.32_amd64.fpk",
-              "sha256": "6df6b50b87021165de212ad7a0cfa5432da6ed22ac549bf14179898cac0025af",
-              "size": 4995395
+              "download_url": "https://github.com/AmigaMeow/micam/releases/download/v0.41.34/micam_0.41.34_amd64.fpk",
+              "sha256": "0c32d9186d2a42d3a4258eaa91a8fcf336cc22f18a46380c728658f3f6538646",
+              "size": 5296097
             }
           }
         }
@@ -583,12 +583,12 @@
       "is_docker": false,
       "service_port": "",
       "releases": {
-        "0.22.5.05": {
+        "0.22.5.07": {
           "packages": {
             "all": {
-              "download_url": "https://github.com/haibo8023/fnos-hermes-agent/releases/download/v0.22.5.05/fnos-hermes-agent_v0.22.5.05.fpk",
-              "sha256": "3416c2d584c1b3e62759d5dc6ac78d46ca3942eee2ba3c8a37afe27d5d0a3982",
-              "size": 385103818
+              "download_url": "https://github.com/haibo8023/fnos-hermes-agent/releases/download/v0.22.5.07/fnos-hermes-agent_v0.22.5.07.fpk",
+              "sha256": "4c767cbd58c4a95ded6f55f98230c1a7544fb075d3c4ebf1df35627779336e5a",
+              "size": 385393987
             }
           }
         }
