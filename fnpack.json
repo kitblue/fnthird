@@ -583,12 +583,12 @@
       "is_docker": false,
       "service_port": "",
       "releases": {
-        "0.22.5.07": {
+        "0.22.5.09": {
           "packages": {
             "all": {
-              "download_url": "https://github.com/haibo8023/fnos-hermes-agent/releases/download/v0.22.5.07/fnos-hermes-agent_v0.22.5.07.fpk",
-              "sha256": "4c767cbd58c4a95ded6f55f98230c1a7544fb075d3c4ebf1df35627779336e5a",
-              "size": 385393987
+              "download_url": "https://github.com/haibo8023/fnos-hermes-agent/releases/download/v0.22.5.09/fnos-hermes-agent_v0.22.5.09.fpk",
+              "sha256": "6908b7985f2024367da75655ff0efb37057610cad9f7eb7557be920b631bb9bf",
+              "size": 385495464
             }
           }
         }
