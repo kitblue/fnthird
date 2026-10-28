@@ -209,12 +209,12 @@
       "is_docker": false,
       "service_port": "",
       "releases": {
-        "0.41.34": {
+        "0.41.36": {
           "packages": {
             "x86": {
-              "download_url": "https://github.com/AmigaMeow/micam/releases/download/v0.41.34/micam_0.41.34_amd64.fpk",
-              "sha256": "0c32d9186d2a42d3a4258eaa91a8fcf336cc22f18a46380c728658f3f6538646",
-              "size": 5296097
+              "download_url": "https://github.com/AmigaMeow/micam/releases/download/v0.41.36/micam_0.41.36_amd64.fpk",
+              "sha256": "11cf5d3ffb69521b0d013a75672b9d2101e69f66d4d7b5d404d7bd90977c0c14",
+              "size": 5029943
             }
           }
         }
@@ -397,17 +397,17 @@
       "is_docker": false,
       "service_port": "47860",
       "releases": {
-        "1.6.1": {
+        "1.6.2": {
           "packages": {
             "x86": {
-              "download_url": "https://github.com/techysy/CreditDaddy/releases/download/v1.6.1/CreditDaddy-FnOS-1.6.1-x86.fpk",
-              "sha256": "e890a623d297d30e42884fe97b134809adfe4619188d401c1ab9d4da5fcebf15",
-              "size": 609811
+              "download_url": "https://github.com/techysy/CreditDaddy/releases/download/v1.6.2/CreditDaddy-FnOS-1.6.2-x86.fpk",
+              "sha256": "946e4e1523037d0d06f5ca600b147a677f9f55dbb5d5b0a2a999462f8c3fb5b8",
+              "size": 625217
             },
             "arm": {
-              "download_url": "https://github.com/techysy/CreditDaddy/releases/download/v1.6.1/CreditDaddy-FnOS-1.6.1-arm.fpk",
-              "sha256": "f1a19ea16f94d5da69b46fdc0926f3a63a6f14f0e28f6c1ac0ea5f57af958420",
-              "size": 609777
+              "download_url": "https://github.com/techysy/CreditDaddy/releases/download/v1.6.2/CreditDaddy-FnOS-1.6.2-arm.fpk",
+              "sha256": "732ff7618efd47bcc1a38f4bcf2067c68a8eae96767ed0cf590cdf36689c9ca0",
+              "size": 625218
             }
           }
         }
@@ -583,12 +583,12 @@
       "is_docker": false,
       "service_port": "",
       "releases": {
-        "0.22.5.09": {
+        "0.22.5.11": {
           "packages": {
             "all": {
-              "download_url": "https://github.com/haibo8023/fnos-hermes-agent/releases/download/v0.22.5.09/fnos-hermes-agent_v0.22.5.09.fpk",
-              "sha256": "6908b7985f2024367da75655ff0efb37057610cad9f7eb7557be920b631bb9bf",
-              "size": 385495464
+              "download_url": "https://github.com/haibo8023/fnos-hermes-agent/releases/download/v0.22.5.11/fnos-hermes-agent_v0.22.5.11.fpk",
+              "sha256": "06b4866f801ad2dfd96481c981138983bf1b7e10eba66b0a93b51a42d92d7083",
+              "size": 385557170
             }
           }
         }
@@ -834,12 +834,12 @@
       "is_docker": false,
       "service_port": "1688",
       "releases": {
-        "1.1.10": {
+        "magpie-v1.1.14": {
           "packages": {
             "x86": {
-              "download_url": "https://github.com/Blue-Mink/FnDepot/releases/download/kms-activator-v1.1.10/KmsActivator-1.1.10-fnos-amd64.fpk",
-              "sha256": "df16210db4c01e68fc8d3becb85def14db482e2f81c1b0ac4a75254682ea6da0",
-              "size": 129769
+              "download_url": "https://github.com/Blue-Mink/FnDepot/releases/download/magpie-v1.1.14/magpie-1.1.14-fnos-amd64.fpk",
+              "sha256": "4f341601d255aebbf4c84b30a510fddb8b7fb9016c731986f2fbf3b86ead10f3",
+              "size": 21233810
             }
           }
         }
@@ -1324,17 +1324,17 @@
       "is_docker": true,
       "service_port": "33000",
       "releases": {
-        "magpie-v1.1.8": {
+        "magpie-v1.1.14": {
           "packages": {
             "x86": {
-              "download_url": "https://github.com/Blue-Mink/FnDepot/releases/download/magpie-v1.1.8/magpie-1.1.8-fnos-amd64.fpk",
-              "sha256": "d99093558aa031d215a7f895dc18d40ea714194cfc5eb3d7dd705882139f4205",
-              "size": 19780499
+              "download_url": "https://github.com/Blue-Mink/FnDepot/releases/download/magpie-v1.1.14/magpie-1.1.14-fnos-amd64.fpk",
+              "sha256": "4f341601d255aebbf4c84b30a510fddb8b7fb9016c731986f2fbf3b86ead10f3",
+              "size": 21233810
             },
             "arm": {
-              "download_url": "https://github.com/Blue-Mink/FnDepot/releases/download/magpie-v1.1.8/magpie-1.1.8-fnos-amd64.fpk",
-              "sha256": "d99093558aa031d215a7f895dc18d40ea714194cfc5eb3d7dd705882139f4205",
-              "size": 19780499
+              "download_url": "https://github.com/Blue-Mink/FnDepot/releases/download/magpie-v1.1.14/magpie-1.1.14-fnos-amd64.fpk",
+              "sha256": "4f341601d255aebbf4c84b30a510fddb8b7fb9016c731986f2fbf3b86ead10f3",
+              "size": 21233810
             }
           }
         }
@@ -1438,12 +1438,12 @@
       "is_docker": false,
       "service_port": "5003",
       "releases": {
-        "magpie-v1.1.8": {
+        "magpie-v1.1.14": {
           "packages": {
             "x86": {
-              "download_url": "https://github.com/Blue-Mink/FnDepot/releases/download/magpie-v1.1.8/magpie-1.1.8-fnos-amd64.fpk",
-              "sha256": "d99093558aa031d215a7f895dc18d40ea714194cfc5eb3d7dd705882139f4205",
-              "size": 19780499
+              "download_url": "https://github.com/Blue-Mink/FnDepot/releases/download/magpie-v1.1.14/magpie-1.1.14-fnos-amd64.fpk",
+              "sha256": "4f341601d255aebbf4c84b30a510fddb8b7fb9016c731986f2fbf3b86ead10f3",
+              "size": 21233810
             }
           }
         }
@@ -1471,27 +1471,14 @@
       "is_docker": false,
       "service_port": "36125",
       "releases": {
-        "1.1.10": {
+        "magpie-v1.1.14": {
           "packages": {
             "x86": {
-              "download_url": "https://github.com/Blue-Mink/FnDepot/releases/download/istoreos-v1.1.10/com.istoreos.vm-1.1.10-fnos-amd64.fpk",
-              "sha256": "f93f80d5dcb56126cb00b2ebaf6a695c28a31f466a4335da6a168d26a01846f6",
-              "size": 103090
+              "download_url": "https://github.com/Blue-Mink/FnDepot/releases/download/magpie-v1.1.14/magpie-1.1.14-fnos-amd64.fpk",
+              "sha256": "4f341601d255aebbf4c84b30a510fddb8b7fb9016c731986f2fbf3b86ead10f3",
+              "size": 21233810
             }
-          },
-          "changelog": "1.1.10: 入口开关机态实时校正——关机后「启动虚拟机」按钮即时出现（此前最长等20秒），刚开机数秒不再误报「DHCP没发地址」而显示「正在启动」，页面轮询5秒改3秒。1.1.x系列：停用/启用与虚拟机真正联动（修正checkport导致停用后启不来、开机后自动同步应用中心状态、ACPI优雅关机）；换版本自动生效并留档旧磁盘（版本记于磁盘侧），重装保盘且沿用同一MAC避免租约与网口识别错乱；新…",
-          "updated_at": "2026-09-14T06:45:36Z"
-        },
-        "1.0.5": {
-          "packages": {
-            "x86": {
-              "download_url": "https://github.com/Blue-Mink/FnDepot/releases/download/istoreos-v1.0.5/com.istoreos.vm-1.0.5-fnos-amd64.fpk",
-              "sha256": "ca270c76f85fcd217d968c6a165f75cf6c94c102dcb7c196f8019a675d4053f3",
-              "size": 607035
-            }
-          },
-          "changelog": "### iStoreOS fnOS v1.0.5（FnDepot，x86_64） 在飞牛 fnOS 上以虚拟机运行 iStoreOS（基于 OpenWrt）的 FPK 应用包。 - 向导三选一官方版本：**25.12.5 / 24.10.8 / 22.03.7**（x86-64 EFI），官方 CDN 下载 + SHA256 强校验 - 秒回安装模式：提交立即完成，镜像下载/网络预置/建机后台进行…",
-          "updated_at": "2026-09-13T05:04:03Z"
+          }
         }
       },
       "_src": "Blue-Mink/FnDepot"
