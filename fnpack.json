@@ -486,6 +486,20 @@
               "size": 35826361
             }
           }
+        },
+        "1.2.1": {
+          "packages": {
+            "x86": {
+              "download_url": "https://github.com/O96u/Fonu/releases/download/v1.2.1/fonu_1.2.1_amd64.fpk",
+              "sha256": "77029c90d1da0cdb2e0227ef3d0a6404343c031b7e43b3150a4e01919c8ea0f6",
+              "size": 36151156
+            },
+            "arm": {
+              "download_url": "https://github.com/O96u/Fonu/releases/download/v1.2.1/fonu_1.2.1_arm64.fpk",
+              "sha256": "0296789b0736c0bf50e1529d0aec51d1919e1190e7d1f74e504d5bd677ded20d",
+              "size": 34314024
+            }
+          }
         }
       },
       "appname": "fonu",
@@ -591,6 +605,15 @@
               "size": 385557170
             }
           }
+        },
+        "0.22.5.14": {
+          "packages": {
+            "all": {
+              "download_url": "https://github.com/haibo8023/fnos-hermes-agent/releases/download/v0.22.5.14/fnos-hermes-agent_v0.22.5.14.fpk",
+              "sha256": "a18513ce0064a62e093877fc866d5ebc3bebc4cdd7a8f6b00ed23ad43a079863",
+              "size": 385703451
+            }
+          }
         }
       },
       "appname": "hermes-agent",
@@ -624,6 +647,15 @@
               "download_url": "https://github.com/pigeonbox/fnos/releases/download/v2.0.2/pigeonbox.fpk",
               "sha256": "a2e0b954de5342186b980a24f07239206dc431f9d3890f87b2e27993ecad7caa",
               "size": 43532282
+            }
+          }
+        },
+        "4.0.7": {
+          "packages": {
+            "all": {
+              "download_url": "https://github.com/pigeonbox/fnos/releases/download/v4.0.7/pigeonbox.fpk",
+              "sha256": "8be770573c4402554b94417baf89cac9fa38fc6588dea782387017aca224cab4",
+              "size": 46817109
             }
           }
         }
@@ -694,6 +726,15 @@
               "download_url": "https://github.com/yuexps/QwenPaw-FNOS/releases/download/v26.9.11/qwenpaw_yuexps.fpk",
               "sha256": "9643abb9c657b3c7e1cd2a0981c94a4f513be19d9c9383733cea0941c7184735",
               "size": 35570503
+            }
+          }
+        },
+        "26.10.23": {
+          "packages": {
+            "all": {
+              "download_url": "https://github.com/yuexps/QwenPaw-FNOS/releases/download/v26.10.23/qwenpaw_yuexps.fpk",
+              "sha256": "f0feb11832a9776aa0ad6bf2c525600ef32908d15d25346ffca8c6e5ab87f0f0",
+              "size": 52627976
             }
           }
         }
