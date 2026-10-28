@@ -3,8 +3,13 @@
 
 读取本源 fnpack.json 中收录的每个 app（_src 指向上游 GitHub 仓库），
 检查上游 Releases 是否有比当前记录更新的版本；如有，则下载新资产并
-重新计算 sha256/size，更新 fnpack.json 的 releases 字段（只保留最新版本），
-最后通过 GitHub Contents API 推送（--push 时）。
+重新计算 sha256/size，把新版本**追加**进 fnpack.json 的 releases 字段
+（历史版本条目全部保留，绝不删除），最后通过 GitHub Contents API 推送。
+
+发布策略（本仓库为"内置源"性质的网址型源）：
+- 仅当上游官方软件发布新版本时，才同步写入新的 release 条目；
+- 本源自身不发布 GitHub Release / tag，源地址固定不变，只更新源信息；
+- 已发布的旧版本条目永久保留，商店侧仍可回滚安装。
 
 本地测试：python check_updates.py           # 仅检查并打印摘要，不写文件
           python check_updates.py --apply   # 写回本地 fnpack.json 但不推送
@@ -86,6 +91,23 @@ def match_asset_name(old_url, new_ver, assets):
     return best[0] if best else ""
 
 
+def _norm(s):
+    return re.sub(r"[^0-9a-z]+", "", str(s).lower())
+
+
+def asset_related(name, appname, old_url):
+    """资产必须与 appname 或旧资产名相关，避免同仓库多应用时抓错包。"""
+    import difflib
+    n = _norm(name)
+    a = _norm(appname)
+    if a and a in n:
+        return True
+    o = _norm(old_url.rstrip("/").split("/")[-1]) if old_url else ""
+    if o and difflib.SequenceMatcher(None, o, n).ratio() >= 0.75:
+        return True
+    return False
+
+
 def check_app(appname, entry, token):
     src = entry.get("_src") or ""
     if "/" not in src:
@@ -99,6 +121,10 @@ def check_app(appname, entry, token):
         return None, f"查询上游 releases 失败: {e}"
     tag = rel.get("tag_name") or ""
     new_ver = tag.lstrip("vV")
+    # 上游 tag 必须含点分版本号（1.2.1 / v26.10.23 / magpie-v1.1.14 均可），
+    # 纯中文说明式 tag（如「3-修复端口识别」）或无语义 tag 不入源
+    if not re.search(r"\d+(?:\.\d+)+", new_ver):
+        return None, f"上游最新 tag「{tag}」不是版本号格式，跳过"
     if version_key(new_ver) <= version_key(old_ver):
         return None, f"已是最新（{old_ver}）"
     assets = rel.get("assets") or []
@@ -114,24 +140,42 @@ def check_app(appname, entry, token):
             kw = {"x86_64": ["x86_64", "x86"], "arm64": ["arm64", "aarch64"], "arm": ["arm"], "x86": ["x86"]}.get(arch, [arch])
             cand = [n for n in names if any(k in n.lower() for k in kw)]
             if not cand:
+                # 兜底：资产名不含架构关键字时，取唯一的 .fpk 资产
+                fpk = [n for n in names if n.lower().endswith(".fpk")]
+                if len(fpk) == 1:
+                    cand = fpk
+            if not cand:
                 missing.append(arch)
                 continue
             name = cand[0]
-        asset = by_name[name]
-        try:
-            data = http_bytes(f"https://api.github.com/repos/{owner}/{repo}/releases/assets/{asset['id']}", token)
-        except Exception as e:
-            missing.append(f"{arch}(下载失败: {e})")
+        if not asset_related(name, appname, old_url):
+            missing.append(f"{arch}(资产与 appname 不匹配: {name})")
             continue
+        asset = by_name[name]
+        # 优先使用 GitHub 资产自带的 sha256 digest，避免逐个下载大包（数百 MB）
+        digest = (asset.get("digest") or "").strip()
+        sha256, size = "", asset.get("size") or 0
+        if digest.lower().startswith("sha256:"):
+            sha256 = digest.split(":", 1)[1].strip()
+        if not sha256:
+            try:
+                data = http_bytes(f"https://api.github.com/repos/{owner}/{repo}/releases/assets/{asset['id']}", token)
+            except Exception as e:
+                missing.append(f"{arch}(下载失败: {e})")
+                continue
+            sha256, size = hashlib.sha256(data).hexdigest(), len(data)
         new_packages[arch] = {
             "download_url": asset.get("browser_download_url") or f"https://github.com/{owner}/{repo}/releases/download/{tag}/{name}",
-            "sha256": hashlib.sha256(data).hexdigest(),
-            "size": len(data),
+            "sha256": sha256,
+            "size": size,
         }
     if not new_packages:
         return None, f"发现新版本 {new_ver} 但无法匹配资产: {missing}"
     new_entry = dict(entry)
-    new_entry["releases"] = {new_ver: {"packages": new_packages}}
+    # 保留全部历史版本，仅追加/覆盖当前新版本条目
+    merged = dict(releases)
+    merged[new_ver] = {"packages": new_packages}
+    new_entry["releases"] = merged
     return new_entry, f"{old_ver} -> {new_ver}" + (f"（{';'.join(missing)} 未匹配）" if missing else "")
 
 
@@ -189,7 +233,7 @@ def main():
         print("已写回本地 fnpack.json")
     if args.push:
         b64 = base64.b64encode(FNPACK.read_bytes()).decode("ascii")
-        msg = "chore: 自动更新收录 app 至最新版本\n\n- " + "；".join(f"{k} {v}" for k, v in changed.items())
+        msg = "chore: 同步上游官方新版本（保留历史版本，仅更新源信息）\n\n- " + "；".join(f"{k} {v}" for k, v in changed.items())
         sha = push_file(token, "fnpack.json", b64, msg)
         print(f"已推送 fnpack.json -> sha={sha}")
 
