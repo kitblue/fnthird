@@ -49,12 +49,22 @@ fnpack.json        # 源文件（商店收录入口）
 2. **独立应用**：直接在 `fnpack.json` 的 `apps` 中添加完整条目，保留 `_src` 溯源字段。
 3. 提交推送。
 
+## 版本发布策略
+
+本源属于"内置源"性质的**网址型源**：源地址固定为 `https://raw.githubusercontent.com/kitblue/fnthird/main/fnpack.json`，更新源信息不会改变该地址。因此：
+
+- **只在官方软件发版时才同步新版本**：上游（`_src` 指向的官方仓库）发布新 release 后，才把该版本写入 `fnpack.json`；
+- **不删除任何历史版本**：`releases` 为累积字典，新版本只做追加，旧版本条目永久保留，商店/用户侧仍可回退安装；
+- **本源自身不发布 GitHub Release / tag**：无需为源仓库新建版本号或发布包，源内容更新即生效；
+- 上游 tag 必须是含点分版本号的语义 tag（如 `1.2.1`、`v26.10.23`、`magpie-v1.1.14`），中文说明式或无语义 tag 不入源；资产名须与 appname 或原资产名匹配，防止同仓库多应用抓错包。
+
 ## 每日自动检查更新
 
 仓库内置 GitHub Actions（`.github/workflows/daily-update.yml`），每天自动检查已收录 app 的上游 GitHub Releases 是否有新版本：
 
-- 脚本：`scripts/check_updates.py`（依据 `fnpack.json` 中每个 app 的 `_src` 定位上游仓库，查询最新 release，重新下载资产并核算 sha256/size）
-- 发现新版本时自动更新 `fnpack.json` 的 releases 字段并推送（仅保留最新版本）
+- 脚本：`scripts/check_updates.py`（依据 `fnpack.json` 中每个 app 的 `_src` 定位上游仓库，查询最新 release）
+- 校验值优先取 GitHub Release 资产自带的 `sha256` digest 与 size，无需逐个下载 fpk（仅在上游未提供 digest 时回退下载核算）
+- 发现新版本时只把新版本**追加**进 `fnpack.json` 的 `releases` 并推送源信息（历史版本全部保留）
 - 可手动触发：Actions 页面 Run workflow
 *（内容由AI生成，仅供参考）*
 *（内容由AI生成，仅供参考）*
