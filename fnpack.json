@@ -614,6 +614,15 @@
               "size": 385703451
             }
           }
+        },
+        "0.22.5.17": {
+          "packages": {
+            "all": {
+              "download_url": "https://github.com/haibo8023/fnos-hermes-agent/releases/download/v0.22.5.17/fnos-hermes-agent_v0.22.5.17.fpk",
+              "sha256": "e1a2278ab309616062f72f6aad5778da569122818b7855e99847c2ec84b4fb51",
+              "size": 385689551
+            }
+          }
         }
       },
       "appname": "hermes-agent",
