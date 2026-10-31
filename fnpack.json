@@ -646,6 +646,15 @@
               "size": 385950837
             }
           }
+        },
+        "0.22.5.21": {
+          "packages": {
+            "all": {
+              "download_url": "https://github.com/haibo8023/fnos-hermes-agent/releases/download/v0.22.5.21/fnos-hermes-agent_v0.22.5.21.fpk",
+              "sha256": "702cf1343a53f5291eee4be66558b2c4481c14d9057cb3626388e154eff9aa52",
+              "size": 385981868
+            }
+          }
         }
       },
       "appname": "hermes-agent",
@@ -699,6 +708,15 @@
               "size": 47029939
             }
           }
+        },
+        "4.6.2": {
+          "packages": {
+            "all": {
+              "download_url": "https://github.com/pigeonbox/fnos/releases/download/v4.6.2/pigeonbox.fpk",
+              "sha256": "726b6fc15967925e85ac3e98c9b131d52cc311d574b13962fb93af1f17fd0a9b",
+              "size": 47080223
+            }
+          }
         }
       },
       "appname": "pigeonbox",
@@ -732,6 +750,15 @@
               "download_url": "https://github.com/veenyi/Fnos-Hermes-Studio/releases/download/v0.7.39-1/fnos-hermes-studio_v0.7.39-1.fpk",
               "sha256": "5878b955d850f928f0b27ea40c1dc62351b9558a732fc4c429ed8441038ba7ea",
               "size": 378532602
+            }
+          }
+        },
+        "0.8.0-1": {
+          "packages": {
+            "all": {
+              "download_url": "https://github.com/veenyi/Fnos-Hermes-Studio/releases/download/v0.8.0-1/fnos-hermes-studio_v0.8.0-1.fpk",
+              "sha256": "9c1e774c07137bca959035cc10576e80f9094094356587bc6efc52a68d708598",
+              "size": 437066951
             }
           }
         }
