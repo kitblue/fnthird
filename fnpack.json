@@ -217,6 +217,15 @@
               "size": 5029943
             }
           }
+        },
+        "0.41.38": {
+          "packages": {
+            "x86": {
+              "download_url": "https://github.com/AmigaMeow/micam/releases/download/v0.41.38/micam_0.41.38_amd64.fpk",
+              "sha256": "2164e269386f586c4b341e2712f77af01280c8c094984734d7a427f7fd4bf28a",
+              "size": 5035210
+            }
+          }
         }
       },
       "appname": "micam",
@@ -655,6 +664,15 @@
               "size": 385981868
             }
           }
+        },
+        "0.22.5.23": {
+          "packages": {
+            "all": {
+              "download_url": "https://github.com/haibo8023/fnos-hermes-agent/releases/download/v0.22.5.23/fnos-hermes-agent_v0.22.5.23.fpk",
+              "sha256": "07584bfa0eff64856c62bb99ddf37842e5f6e5ae460d2b2e65e4c04a808884fe",
+              "size": 386000730
+            }
+          }
         }
       },
       "appname": "hermes-agent",
@@ -717,6 +735,15 @@
               "size": 47080223
             }
           }
+        },
+        "4.6.6": {
+          "packages": {
+            "all": {
+              "download_url": "https://github.com/pigeonbox/fnos/releases/download/v4.6.6/pigeonbox.fpk",
+              "sha256": "6d71ebd55e68b8dca1db2208431ade67555ba7387520816b545d5d1eb8c7e837",
+              "size": 52242410
+            }
+          }
         }
       },
       "appname": "pigeonbox",
@@ -759,6 +786,15 @@
               "download_url": "https://github.com/veenyi/Fnos-Hermes-Studio/releases/download/v0.8.0-1/fnos-hermes-studio_v0.8.0-1.fpk",
               "sha256": "9c1e774c07137bca959035cc10576e80f9094094356587bc6efc52a68d708598",
               "size": 437066951
+            }
+          }
+        },
+        "0.8.11-1": {
+          "packages": {
+            "all": {
+              "download_url": "https://github.com/veenyi/Fnos-Hermes-Studio/releases/download/v0.8.11-1/fnos-hermes-studio_v0.8.11-1.fpk",
+              "sha256": "668de047183923dfc29a94504743153deb2aeb2896c5a09898bc6c455266f36d",
+              "size": 437106308
             }
           }
         }
@@ -1522,6 +1558,20 @@
           },
           "changelog": "品牌与署名更新：控制台标题去掉「加速器」后缀；关于页改为 Dog-dev 介绍（原作者 MisiteQ，发布者 Blue-Mink）；应用中心发布者（distributor）改为 Blue-Mink",
           "updated_at": "2026-10-04T06:15:16Z"
+        },
+        "dog-dev-v1.3.12": {
+          "packages": {
+            "x86": {
+              "download_url": "https://github.com/Blue-Mink/FnDepot/releases/download/dog-dev-v1.3.12/dog-dev-1.3.12-fnos-amd64.fpk",
+              "sha256": "af432b6eb37157a3b0b5d25cdc7bdb58de47ccd596fc2bf3bc9d58cf59fb7b9a",
+              "size": 4602442
+            },
+            "arm": {
+              "download_url": "https://github.com/Blue-Mink/FnDepot/releases/download/dog-dev-v1.3.12/dog-dev-1.3.12-fnos-arm64.fpk",
+              "sha256": "c5684e1fdc40d9435ac130c4ca6a1068a2722108fee99852b1a27fca6c708026",
+              "size": 4221216
+            }
+          }
         }
       },
       "_src": "Blue-Mink/FnDepot"
