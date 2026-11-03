@@ -433,6 +433,20 @@
               "size": 665988
             }
           }
+        },
+        "1.6.7": {
+          "packages": {
+            "x86": {
+              "download_url": "https://github.com/techysy/CreditDaddy/releases/download/v1.6.7/CreditDaddy-FnOS-1.6.7-x86.fpk",
+              "sha256": "ab5d1d13001aca5d93f851d37356133f1d01934f0c5fe86cd63f9f236c63e28d",
+              "size": 672843
+            },
+            "arm": {
+              "download_url": "https://github.com/techysy/CreditDaddy/releases/download/v1.6.7/CreditDaddy-FnOS-1.6.7-arm.fpk",
+              "sha256": "0a9355df9ef8ec8a9595e54c118446e2d7bc7fec0671dce42d512546c0e71286",
+              "size": 672834
+            }
+          }
         }
       },
       "appname": "creditdaddy",
@@ -549,6 +563,20 @@
               "download_url": "https://github.com/O96u/Fonu/releases/download/v1.3.0/fonu_1.3.0_arm64.fpk",
               "sha256": "965f5024334f4bf5eb078931c20abc3ea2d07470382a7ac52f3bfa152f04f502",
               "size": 33211165
+            }
+          }
+        },
+        "1.3.2": {
+          "packages": {
+            "x86": {
+              "download_url": "https://github.com/O96u/Fonu/releases/download/v1.3.2/fonu_1.3.2_amd64.fpk",
+              "sha256": "1a099df8c808a68fd9adda48803a543bcedd9c74bae306a9150bf373353d695d",
+              "size": 33978104
+            },
+            "arm": {
+              "download_url": "https://github.com/O96u/Fonu/releases/download/v1.3.2/fonu_1.3.2_arm64.fpk",
+              "sha256": "820ad685ed030a8faeca2839d07847440e64960f5906177df2d52ec06ca63074",
+              "size": 32116410
             }
           }
         }
@@ -710,6 +738,15 @@
               "size": 386047840
             }
           }
+        },
+        "0.22.6.1": {
+          "packages": {
+            "all": {
+              "download_url": "https://github.com/haibo8023/fnos-hermes-agent/releases/download/v0.22.6.1/fnos-hermes-agent_v0.22.6.1.fpk",
+              "sha256": "8b1ec9acf85e81f0d787b30652fafd22ef7ad9064015f5f37477f96ac239b3e1",
+              "size": 385604875
+            }
+          }
         }
       },
       "appname": "hermes-agent",
@@ -790,6 +827,15 @@
               "size": 52332556
             }
           }
+        },
+        "4.8.2": {
+          "packages": {
+            "all": {
+              "download_url": "https://github.com/pigeonbox/fnos/releases/download/v4.8.2/pigeonbox.fpk",
+              "sha256": "f4a2f41dbba732b94661a1dd231ab75a0c4c0e3f99238a6b3bb5284d920bfbff",
+              "size": 52838800
+            }
+          }
         }
       },
       "appname": "pigeonbox",
@@ -841,6 +887,15 @@
               "download_url": "https://github.com/veenyi/Fnos-Hermes-Studio/releases/download/v0.8.11-1/fnos-hermes-studio_v0.8.11-1.fpk",
               "sha256": "668de047183923dfc29a94504743153deb2aeb2896c5a09898bc6c455266f36d",
               "size": 437106308
+            }
+          }
+        },
+        "0.8.12-2": {
+          "packages": {
+            "all": {
+              "download_url": "https://github.com/veenyi/Fnos-Hermes-Studio/releases/download/v0.8.12-2/fnos-hermes-studio_v0.8.12-2.fpk",
+              "sha256": "532773e49d524054c7d40051c206aef7de590d8080f54e4d75926472281af7e6",
+              "size": 442476883
             }
           }
         }
