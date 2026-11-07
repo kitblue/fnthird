@@ -456,6 +456,20 @@
               "size": 672834
             }
           }
+        },
+        "1.7.0": {
+          "packages": {
+            "x86": {
+              "download_url": "https://github.com/techysy/CreditDaddy/releases/download/v1.7.0/CreditDaddy-FnOS-1.7.0-x86.fpk",
+              "sha256": "eae0083524418ca0cb701067a1a2413e2e6e5073d9aea48d0d1cfc6da06bb3c9",
+              "size": 858034
+            },
+            "arm": {
+              "download_url": "https://github.com/techysy/CreditDaddy/releases/download/v1.7.0/CreditDaddy-FnOS-1.7.0-arm.fpk",
+              "sha256": "93a1870454a08e16b99671d9a2fd4952a11b26586c2b876a52a724d12d96767c",
+              "size": 858031
+            }
+          }
         }
       },
       "appname": "creditdaddy",
@@ -616,6 +630,20 @@
               "size": 31275492
             }
           }
+        },
+        "1.3.7": {
+          "packages": {
+            "x86": {
+              "download_url": "https://github.com/O96u/Fonu/releases/download/v1.3.7/fonu_1.3.7_amd64.fpk",
+              "sha256": "fa58d498ddcfc00dfb15296dc00381855ac3a3419eecc9f5ac69fe63be69c5ba",
+              "size": 33064776
+            },
+            "arm": {
+              "download_url": "https://github.com/O96u/Fonu/releases/download/v1.3.7/fonu_1.3.7_arm64.fpk",
+              "sha256": "08fc0bdff4bc85f3b01d2d5a0ba98c01e7aa5f1d2b4b796fa3d8391c15bd4c43",
+              "size": 31282055
+            }
+          }
         }
       },
       "appname": "fonu",
@@ -649,6 +677,15 @@
               "download_url": "https://github.com/vincent-jia253/fnos-cmccyun/releases/download/v1.3.2/cmccyun-1.3.2.fpk",
               "sha256": "7c52c45805dc00347a744f213af709870a7deab7959f02f0f402e03d08b61994",
               "size": 6791237
+            }
+          }
+        },
+        "1.7.2": {
+          "packages": {
+            "all": {
+              "download_url": "https://github.com/vincent-jia253/fnos-cmccyun/releases/download/v1.7.2/cmccyun-1.7.2.fpk",
+              "sha256": "ee2ed32fffe81725f11b43c46e6c2de031caef3554220bee282c6f16ffeed58d",
+              "size": 7568845
             }
           }
         }
@@ -811,6 +848,15 @@
               "size": 385855065
             }
           }
+        },
+        "0.23.0.03": {
+          "packages": {
+            "all": {
+              "download_url": "https://github.com/haibo8023/fnos-hermes-agent/releases/download/v0.23.0.03/fnos-hermes-agent_v0.23.0.03.fpk",
+              "sha256": "760e4dc6e5f71ba5017f6fadbcef17639d7e55e9406909f5e708d265b5a6f869",
+              "size": 385946318
+            }
+          }
         }
       },
       "appname": "hermes-agent",
@@ -909,6 +955,15 @@
               "size": 52887445
             }
           }
+        },
+        "5.6.0": {
+          "packages": {
+            "all": {
+              "download_url": "https://github.com/pigeonbox/fnos/releases/download/v5.6.0/pigeonbox.fpk",
+              "sha256": "157a21e619daa50be34f56d4ced767d978e343b9f0474765238891a435c4b7a6",
+              "size": 53296801
+            }
+          }
         }
       },
       "appname": "pigeonbox",
@@ -996,6 +1051,15 @@
               "download_url": "https://github.com/veenyi/Fnos-Hermes-Studio/releases/download/v0.8.17-1/fnos-hermes-studio_v0.8.17-1.fpk",
               "sha256": "b12895a41cbfcc85cf7fe1af2b0b22a576eb4db322cc5ebb52cfc67b2a952854",
               "size": 443190750
+            }
+          }
+        },
+        "0.8.17-2": {
+          "packages": {
+            "all": {
+              "download_url": "https://github.com/veenyi/Fnos-Hermes-Studio/releases/download/v0.8.17-2/fnos-hermes-studio_v0.8.17-2.fpk",
+              "sha256": "180e1d64e14921629e41710dfede6d92bc42c260452dea33df62cd672145e886",
+              "size": 444187299
             }
           }
         }
@@ -2018,6 +2082,15 @@
           },
           "changelog": "飞牛 fnOS 安装包。应用版本 1.0.0。",
           "updated_at": "2026-09-27T13:35:47Z"
+        },
+        "ryzen-power-control-v1.0.9": {
+          "packages": {
+            "x86": {
+              "download_url": "https://github.com/Blue-Mink/FnDepot/releases/download/ryzen-power-control-v1.0.9/ryzen-power-control-1.0.9.fpk",
+              "sha256": "389b9edf67096cb5344e870ff3d37e8a54d85fb3444ddc16a321fe92d8f053c3",
+              "size": 241689
+            }
+          }
         }
       },
       "_src": "Blue-Mink/FnDepot"
@@ -2952,6 +3025,20 @@
               "download_url": "https://github.com/yoqie/FFFFFFFFNNNN/releases/download/Router2API-2.1.6/Router2API_v2.1.6_arm64.fpk",
               "sha256": "9219a00c84620284562608057d680f4baf75915f4f817fda338d7079685be5b4",
               "size": 70969668
+            }
+          }
+        },
+        "Router2API-2.1.8": {
+          "packages": {
+            "x86": {
+              "download_url": "https://github.com/yoqie/FFFFFFFFNNNN/releases/download/Router2API-2.1.8/Router2API_v2.1.8_amd64.fpk",
+              "sha256": "34207fbc2cc3d3912fc1d99583251df0c80d8eaa1a3aea40e8c44bc4c491d3fd",
+              "size": 73735985
+            },
+            "arm": {
+              "download_url": "https://github.com/yoqie/FFFFFFFFNNNN/releases/download/Router2API-2.1.8/Router2API_v2.1.8_arm64.fpk",
+              "sha256": "8c91a4501edcdc1638649b5ba8d488b05eac33719f20e032b8ad4244d9667251",
+              "size": 71009184
             }
           }
         }
