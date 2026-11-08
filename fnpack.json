@@ -470,6 +470,20 @@
               "size": 858031
             }
           }
+        },
+        "1.7.1": {
+          "packages": {
+            "x86": {
+              "download_url": "https://github.com/techysy/CreditDaddy/releases/download/v1.7.1/CreditDaddy-FnOS-1.7.1-x86.fpk",
+              "sha256": "4e2e50dfd09f5910e5bdf040f43e95b4f584f893309062f396bbd75002312ee9",
+              "size": 894478
+            },
+            "arm": {
+              "download_url": "https://github.com/techysy/CreditDaddy/releases/download/v1.7.1/CreditDaddy-FnOS-1.7.1-arm.fpk",
+              "sha256": "2e07ea78206ab826865fd434cdb0169e5d6369394b238a202a5b9ecbbcb462ae",
+              "size": 894475
+            }
+          }
         }
       },
       "appname": "creditdaddy",
@@ -688,6 +702,15 @@
               "size": 7568845
             }
           }
+        },
+        "2.2.0": {
+          "packages": {
+            "all": {
+              "download_url": "https://github.com/vincent-jia253/fnos-cmccyun/releases/download/v2.2.0/cmccyun-2.2.0.fpk",
+              "sha256": "fbec3cd4f6877c4957ad66fec674a41b7dc811c37745478aba5d64f6e0181386",
+              "size": 7686815
+            }
+          }
         }
       },
       "appname": "cmccyun",
@@ -855,6 +878,15 @@
               "download_url": "https://github.com/haibo8023/fnos-hermes-agent/releases/download/v0.23.0.03/fnos-hermes-agent_v0.23.0.03.fpk",
               "sha256": "760e4dc6e5f71ba5017f6fadbcef17639d7e55e9406909f5e708d265b5a6f869",
               "size": 385946318
+            }
+          }
+        },
+        "0.23.0.05": {
+          "packages": {
+            "all": {
+              "download_url": "https://github.com/haibo8023/fnos-hermes-agent/releases/download/v0.23.0.05/fnos-hermes-agent_v0.23.0.05.fpk",
+              "sha256": "52019f65a60de839dac315854dc1a53a383c1fc3d191cda823a9657aa2fb07f7",
+              "size": 386023306
             }
           }
         }
@@ -1062,6 +1094,15 @@
               "size": 444187299
             }
           }
+        },
+        "0.8.19-1": {
+          "packages": {
+            "all": {
+              "download_url": "https://github.com/veenyi/Fnos-Hermes-Studio/releases/download/v0.8.19-1/fnos-hermes-studio_v0.8.19-1.fpk",
+              "sha256": "3dd3116047e81fdf7dcf6db5dbc55d53d453161ca98d1239220a1af1d2d7313e",
+              "size": 444184255
+            }
+          }
         }
       },
       "appname": "hermes-studio",
@@ -1173,6 +1214,20 @@
               "download_url": "https://github.com/yuexps/deepseek.harness.fnos/releases/download/v0.4.5/deepseek.harness-arm.fpk",
               "sha256": "a677711d5fc06f21ac827ebe45572eb9c5b909565b47d1d47027fb754cbb830e",
               "size": 6338284
+            }
+          }
+        },
+        "0.4.6": {
+          "packages": {
+            "x86": {
+              "download_url": "https://github.com/yuexps/deepseek.harness.fnos/releases/download/v0.4.6/deepseek.harness-x86.fpk",
+              "sha256": "7b3ac27d723364dccb5f6243c7236f92925e1eddac6d7a7c23d942bf2ec2e0a1",
+              "size": 9883677
+            },
+            "arm": {
+              "download_url": "https://github.com/yuexps/deepseek.harness.fnos/releases/download/v0.4.6/deepseek.harness-arm.fpk",
+              "sha256": "3ee88368ce9e5176b0772e4243cd0ebb82fdd7fa5a7bdee6b9d17a75249123f3",
+              "size": 8978213
             }
           }
         }
@@ -3039,6 +3094,20 @@
               "download_url": "https://github.com/yoqie/FFFFFFFFNNNN/releases/download/Router2API-2.1.8/Router2API_v2.1.8_arm64.fpk",
               "sha256": "8c91a4501edcdc1638649b5ba8d488b05eac33719f20e032b8ad4244d9667251",
               "size": 71009184
+            }
+          }
+        },
+        "Router2API-2.1.9": {
+          "packages": {
+            "x86": {
+              "download_url": "https://github.com/yoqie/FFFFFFFFNNNN/releases/download/Router2API-2.1.9/Router2API_v2.1.9_amd64.fpk",
+              "sha256": "431ee1a79a42feddf0d50902232f4901b363ee5c3b60519900352c247e0c2dc5",
+              "size": 73734357
+            },
+            "arm": {
+              "download_url": "https://github.com/yoqie/FFFFFFFFNNNN/releases/download/Router2API-2.1.9/Router2API_v2.1.9_arm64.fpk",
+              "sha256": "2dc7f400470756ce230c6541b3c00a4e882d42263667b1c4fd9c57e1f38e34fc",
+              "size": 71010386
             }
           }
         }
