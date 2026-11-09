@@ -711,6 +711,15 @@
               "size": 7686815
             }
           }
+        },
+        "2.3.0": {
+          "packages": {
+            "all": {
+              "download_url": "https://github.com/vincent-jia253/fnos-cmccyun/releases/download/v2.3.0/cmccyun-2.3.0.fpk",
+              "sha256": "f5fb9e0ae98126434102e0f6086b90251d33170f49f5e91b639776f252ab4b2b",
+              "size": 7689833
+            }
+          }
         }
       },
       "appname": "cmccyun",
@@ -887,6 +896,15 @@
               "download_url": "https://github.com/haibo8023/fnos-hermes-agent/releases/download/v0.23.0.05/fnos-hermes-agent_v0.23.0.05.fpk",
               "sha256": "52019f65a60de839dac315854dc1a53a383c1fc3d191cda823a9657aa2fb07f7",
               "size": 386023306
+            }
+          }
+        },
+        "0.23.0.06": {
+          "packages": {
+            "all": {
+              "download_url": "https://github.com/haibo8023/fnos-hermes-agent/releases/download/v0.23.0.06/fnos-hermes-agent_v0.23.0.06.fpk",
+              "sha256": "f044308e21c6ffdd43c90d15cf7a70f6199bb621ed3fd7ce9c1fe3b9692ed3db",
+              "size": 386118038
             }
           }
         }
@@ -3108,6 +3126,20 @@
               "download_url": "https://github.com/yoqie/FFFFFFFFNNNN/releases/download/Router2API-2.1.9/Router2API_v2.1.9_arm64.fpk",
               "sha256": "2dc7f400470756ce230c6541b3c00a4e882d42263667b1c4fd9c57e1f38e34fc",
               "size": 71010386
+            }
+          }
+        },
+        "Router2API-2.2.0": {
+          "packages": {
+            "x86": {
+              "download_url": "https://github.com/yoqie/FFFFFFFFNNNN/releases/download/Router2API-2.2.0/Router2API_v2.2.0_amd64.fpk",
+              "sha256": "3cb3ca7dc2c13c3e15d6a31a3b13841677d6aca13675603a9158ff1cb9a8c04b",
+              "size": 73734850
+            },
+            "arm": {
+              "download_url": "https://github.com/yoqie/FFFFFFFFNNNN/releases/download/Router2API-2.2.0/Router2API_v2.2.0_arm64.fpk",
+              "sha256": "f5e39d4b05a72af53a0a4c9e0f9dfddf3a97531f15c4948f55bd2672f4720f56",
+              "size": 71012653
             }
           }
         }
