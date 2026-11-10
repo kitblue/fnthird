@@ -907,6 +907,15 @@
               "size": 386118038
             }
           }
+        },
+        "0.23.0.09": {
+          "packages": {
+            "all": {
+              "download_url": "https://github.com/haibo8023/fnos-hermes-agent/releases/download/v0.23.0.09/fnos-hermes-agent_v0.23.0.09.fpk",
+              "sha256": "a6477f859a61fbd326f5bf6c5ad8125c2ca747176b685deae62db32a112e06d2",
+              "size": 386264834
+            }
+          }
         }
       },
       "appname": "hermes-agent",
@@ -1014,6 +1023,15 @@
               "size": 53296801
             }
           }
+        },
+        "5.7.0": {
+          "packages": {
+            "all": {
+              "download_url": "https://github.com/pigeonbox/fnos/releases/download/v5.7.0/pigeonbox.fpk",
+              "sha256": "5f730b35f39e40112e6fb9095e177f9f743a4487f5fb0e19528a8a1629027b21",
+              "size": 53890743
+            }
+          }
         }
       },
       "appname": "pigeonbox",
@@ -1119,6 +1137,15 @@
               "download_url": "https://github.com/veenyi/Fnos-Hermes-Studio/releases/download/v0.8.19-1/fnos-hermes-studio_v0.8.19-1.fpk",
               "sha256": "3dd3116047e81fdf7dcf6db5dbc55d53d453161ca98d1239220a1af1d2d7313e",
               "size": 444184255
+            }
+          }
+        },
+        "0.8.20-1": {
+          "packages": {
+            "all": {
+              "download_url": "https://github.com/veenyi/Fnos-Hermes-Studio/releases/download/v0.8.20-1/fnos-hermes-studio_v0.8.20-1.fpk",
+              "sha256": "f3124fb4286762cd569d6f97781d03f83b11f5837a54a8e09e081c18f96d6b0c",
+              "size": 444190690
             }
           }
         }
@@ -3140,6 +3167,20 @@
               "download_url": "https://github.com/yoqie/FFFFFFFFNNNN/releases/download/Router2API-2.2.0/Router2API_v2.2.0_arm64.fpk",
               "sha256": "f5e39d4b05a72af53a0a4c9e0f9dfddf3a97531f15c4948f55bd2672f4720f56",
               "size": 71012653
+            }
+          }
+        },
+        "Router2API-2.2.1": {
+          "packages": {
+            "x86": {
+              "download_url": "https://github.com/yoqie/FFFFFFFFNNNN/releases/download/Router2API-2.2.1/Router2API_v2.2.1_amd64.fpk",
+              "sha256": "e5edc4d29b1aea1b6f2f319b8b2aee857c188f87969b151e837d1dae86ce3d9d",
+              "size": 73739608
+            },
+            "arm": {
+              "download_url": "https://github.com/yoqie/FFFFFFFFNNNN/releases/download/Router2API-2.2.1/Router2API_v2.2.1_arm64.fpk",
+              "sha256": "0eab27397571ca73c18fc1bf37ffdc6758f9811acafee22b5aeeaafb2fe2fb42",
+              "size": 71020954
             }
           }
         }
