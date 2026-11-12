@@ -484,6 +484,20 @@
               "size": 894475
             }
           }
+        },
+        "1.7.2": {
+          "packages": {
+            "x86": {
+              "download_url": "https://github.com/techysy/CreditDaddy/releases/download/v1.7.2/CreditDaddy-FnOS-1.7.2-x86.fpk",
+              "sha256": "bab5af8af732a8ee1a6e58566ed9a2ccee69117c4b934371cac2fffbdf0ed757",
+              "size": 913110
+            },
+            "arm": {
+              "download_url": "https://github.com/techysy/CreditDaddy/releases/download/v1.7.2/CreditDaddy-FnOS-1.7.2-arm.fpk",
+              "sha256": "e4eb33b817de89891e55fe4814b9f89109200fccae169e28a48adca024b052ce",
+              "size": 913102
+            }
+          }
         }
       },
       "appname": "creditdaddy",
@@ -939,6 +953,15 @@
               "size": 386312205
             }
           }
+        },
+        "0.23.1.04": {
+          "packages": {
+            "all": {
+              "download_url": "https://github.com/haibo8023/fnos-hermes-agent/releases/download/v0.23.1.04/fnos-hermes-agent_v0.23.1.04.fpk",
+              "sha256": "9d2a6687278b3a40b4328afddcbf29c7326f47557123e904ddd6754db90eb9ee",
+              "size": 386441658
+            }
+          }
         }
       },
       "appname": "hermes-agent",
@@ -1178,6 +1201,15 @@
               "download_url": "https://github.com/veenyi/Fnos-Hermes-Studio/releases/download/v0.8.20-2/fnos-hermes-studio_v0.8.20-2.fpk",
               "sha256": "a04e6b45b90a8469eeb033dac2cb3ce7bb0208730db58acd524e9d6ef8d110b7",
               "size": 415998692
+            }
+          }
+        },
+        "0.8.21-1": {
+          "packages": {
+            "all": {
+              "download_url": "https://github.com/veenyi/Fnos-Hermes-Studio/releases/download/v0.8.21-1/fnos-hermes-studio_v0.8.21-1.fpk",
+              "sha256": "5ea0f8ffaca37686b9dd0c1b9619a8824275996720e39ff03fd612146d516cf0",
+              "size": 416024883
             }
           }
         }
