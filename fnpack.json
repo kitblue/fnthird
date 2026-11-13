@@ -962,6 +962,15 @@
               "size": 386441658
             }
           }
+        },
+        "0.23.1.10": {
+          "packages": {
+            "all": {
+              "download_url": "https://github.com/haibo8023/fnos-hermes-agent/releases/download/v0.23.1.10/fnos-hermes-agent_v0.23.1.10.fpk",
+              "sha256": "b5a9e1a0fcc11b2f18802c85bf3d9306b0807f90071093a7fe91de26b347f844",
+              "size": 386620027
+            }
+          }
         }
       },
       "appname": "hermes-agent",
@@ -1076,6 +1085,15 @@
               "download_url": "https://github.com/pigeonbox/fnos/releases/download/v5.7.0/pigeonbox.fpk",
               "sha256": "5f730b35f39e40112e6fb9095e177f9f743a4487f5fb0e19528a8a1629027b21",
               "size": 53890743
+            }
+          }
+        },
+        "5.8.0": {
+          "packages": {
+            "all": {
+              "download_url": "https://github.com/pigeonbox/fnos/releases/download/v5.8.0/pigeonbox.fpk",
+              "sha256": "b5d017894d68ce5053c10259a60a7d2faf127a0335059f4fe65f45b702deb3ed",
+              "size": 54110271
             }
           }
         }
