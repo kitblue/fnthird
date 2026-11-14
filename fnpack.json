@@ -235,6 +235,15 @@
               "size": 5038538
             }
           }
+        },
+        "0.41.41": {
+          "packages": {
+            "x86": {
+              "download_url": "https://github.com/AmigaMeow/micam/releases/download/v0.41.41/micam_0.41.41_amd64.fpk",
+              "sha256": "602201f43362faa603fb39d39928fe72849430fc4b63fac61a0886a78cfe2108",
+              "size": 5113922
+            }
+          }
         }
       },
       "appname": "micam",
@@ -971,6 +980,15 @@
               "size": 386620027
             }
           }
+        },
+        "0.23.1.13": {
+          "packages": {
+            "all": {
+              "download_url": "https://github.com/haibo8023/fnos-hermes-agent/releases/download/v0.23.1.13/fnos-hermes-agent_v0.23.1.13.fpk",
+              "sha256": "122c7bdda903d2ec6410ecffe3203f9d19bacb5035b5f1432205ee33ef459d9d",
+              "size": 386763566
+            }
+          }
         }
       },
       "appname": "hermes-agent",
@@ -1228,6 +1246,15 @@
               "download_url": "https://github.com/veenyi/Fnos-Hermes-Studio/releases/download/v0.8.21-1/fnos-hermes-studio_v0.8.21-1.fpk",
               "sha256": "5ea0f8ffaca37686b9dd0c1b9619a8824275996720e39ff03fd612146d516cf0",
               "size": 416024883
+            }
+          }
+        },
+        "0.8.22-1": {
+          "packages": {
+            "all": {
+              "download_url": "https://github.com/veenyi/Fnos-Hermes-Studio/releases/download/v0.8.22-1/fnos-hermes-studio_v0.8.22-1.fpk",
+              "sha256": "8f138eeddf2a53af3396c36a1f29be2bcbd61ad5c5c162d01374f57b7922f0d0",
+              "size": 416433673
             }
           }
         }
