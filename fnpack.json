@@ -989,6 +989,15 @@
               "size": 386763566
             }
           }
+        },
+        "0.23.1.15": {
+          "packages": {
+            "all": {
+              "download_url": "https://github.com/haibo8023/fnos-hermes-agent/releases/download/v0.23.1.15/fnos-hermes-agent_v0.23.1.15.fpk",
+              "sha256": "1ff50078a393a57c6d759099eb3290f00d70ee259092290b0fd76251fedb1bf3",
+              "size": 387059016
+            }
+          }
         }
       },
       "appname": "hermes-agent",
@@ -1255,6 +1264,15 @@
               "download_url": "https://github.com/veenyi/Fnos-Hermes-Studio/releases/download/v0.8.22-1/fnos-hermes-studio_v0.8.22-1.fpk",
               "sha256": "8f138eeddf2a53af3396c36a1f29be2bcbd61ad5c5c162d01374f57b7922f0d0",
               "size": 416433673
+            }
+          }
+        },
+        "0.8.23-1": {
+          "packages": {
+            "all": {
+              "download_url": "https://github.com/veenyi/Fnos-Hermes-Studio/releases/download/v0.8.23-1/fnos-hermes-studio_v0.8.23-1.fpk",
+              "sha256": "5d70ff5b807490b965ef8c331d36ad056d6cc231d876f9ab1d9d677d2f5bfe2e",
+              "size": 416542870
             }
           }
         }
