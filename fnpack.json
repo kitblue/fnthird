@@ -244,6 +244,15 @@
               "size": 5113922
             }
           }
+        },
+        "0.41.42": {
+          "packages": {
+            "x86": {
+              "download_url": "https://github.com/AmigaMeow/micam/releases/download/v0.41.42/micam_0.41.42_amd64.fpk",
+              "sha256": "5f63a0dd4af30eeeb82cd9b2df804022fc3fc51d2ec78b8d7f7117590bfa7f19",
+              "size": 5120003
+            }
+          }
         }
       },
       "appname": "micam",
@@ -505,6 +514,20 @@
               "download_url": "https://github.com/techysy/CreditDaddy/releases/download/v1.7.2/CreditDaddy-FnOS-1.7.2-arm.fpk",
               "sha256": "e4eb33b817de89891e55fe4814b9f89109200fccae169e28a48adca024b052ce",
               "size": 913102
+            }
+          }
+        },
+        "1.8.0": {
+          "packages": {
+            "x86": {
+              "download_url": "https://github.com/techysy/CreditDaddy/releases/download/v1.8.0/CreditDaddy-FnOS-1.8.0-x86.fpk",
+              "sha256": "4d74be0bb68e3bb5b627456b97b1cea68d8b61369a497ce68bf67baa00ec5410",
+              "size": 1037004
+            },
+            "arm": {
+              "download_url": "https://github.com/techysy/CreditDaddy/releases/download/v1.8.0/CreditDaddy-FnOS-1.8.0-arm.fpk",
+              "sha256": "e403c7abf4402482a826e041953fdbf9bd6303b8de559735c50c29c47ddcb321",
+              "size": 1037250
             }
           }
         }
@@ -998,6 +1021,15 @@
               "size": 387059016
             }
           }
+        },
+        "0.23.1.17": {
+          "packages": {
+            "all": {
+              "download_url": "https://github.com/haibo8023/fnos-hermes-agent/releases/download/v0.23.1.17/fnos-hermes-agent_v0.23.1.17.fpk",
+              "sha256": "4343d7db60e5917989fc490026a587c4f60c8306594395c93ee88e4092abcac4",
+              "size": 387179740
+            }
+          }
         }
       },
       "appname": "hermes-agent",
@@ -1273,6 +1305,15 @@
               "download_url": "https://github.com/veenyi/Fnos-Hermes-Studio/releases/download/v0.8.23-1/fnos-hermes-studio_v0.8.23-1.fpk",
               "sha256": "5d70ff5b807490b965ef8c331d36ad056d6cc231d876f9ab1d9d677d2f5bfe2e",
               "size": 416542870
+            }
+          }
+        },
+        "0.8.24-1": {
+          "packages": {
+            "all": {
+              "download_url": "https://github.com/veenyi/Fnos-Hermes-Studio/releases/download/v0.8.24-1/fnos-hermes-studio_v0.8.24-1.fpk",
+              "sha256": "19d9aae547383d06b86dacfd09606d61842a3df199fced815e2d14094fefd0b4",
+              "size": 416492681
             }
           }
         }
