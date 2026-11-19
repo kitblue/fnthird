@@ -1219,6 +1219,15 @@
               "size": 56599054
             }
           }
+        },
+        "6.9.0": {
+          "packages": {
+            "all": {
+              "download_url": "https://github.com/pigeonbox/fnos/releases/download/v6.9.0/pigeonbox.fpk",
+              "sha256": "1082964d899034cab0ab96b9955ed5bf3824ad4a0ef4bca1c2b33f4b62dafb13",
+              "size": 56600253
+            }
+          }
         }
       },
       "appname": "pigeonbox",
@@ -1396,6 +1405,15 @@
               "download_url": "https://github.com/veenyi/Fnos-Hermes-Studio/releases/download/v0.8.27-1/fnos-hermes-studio_v0.8.27-1.fpk",
               "sha256": "48417e78d3b5238d05eb8485276e5add419843bc01320342df19566a7f73bc03",
               "size": 424166664
+            }
+          }
+        },
+        "0.8.28-1": {
+          "packages": {
+            "all": {
+              "download_url": "https://github.com/veenyi/Fnos-Hermes-Studio/releases/download/v0.8.28-1/fnos-hermes-studio_v0.8.28-1.fpk",
+              "sha256": "0138739c2ec417abf5d920a9c39bdf9019a33811a039498999f1962438befbb1",
+              "size": 424182840
             }
           }
         }
