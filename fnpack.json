@@ -544,6 +544,20 @@
               "size": 1068437
             }
           }
+        },
+        "1.8.2": {
+          "packages": {
+            "x86": {
+              "download_url": "https://github.com/techysy/CreditDaddy/releases/download/v1.8.2/CreditDaddy-FnOS-1.8.2-x86.fpk",
+              "sha256": "fe718acf68e48197c46453cbc18aabe045c94a7436a4a909b5a5c4835b0c756b",
+              "size": 1220776
+            },
+            "arm": {
+              "download_url": "https://github.com/techysy/CreditDaddy/releases/download/v1.8.2/CreditDaddy-FnOS-1.8.2-arm.fpk",
+              "sha256": "00ebbf48a5b871eddb4a2bd19d5ec177fcf816c2fc6153f28f2d000456c4e8a8",
+              "size": 1220782
+            }
+          }
         }
       },
       "appname": "creditdaddy",
@@ -1228,6 +1242,15 @@
               "size": 56600253
             }
           }
+        },
+        "6.10.0": {
+          "packages": {
+            "all": {
+              "download_url": "https://github.com/pigeonbox/fnos/releases/download/v6.10.0/pigeonbox.fpk",
+              "sha256": "fb75028c892a17278c752c8ea49199821fb963c99dca561b9ac6fa8e8414299f",
+              "size": 56605253
+            }
+          }
         }
       },
       "appname": "pigeonbox",
@@ -1467,6 +1490,15 @@
               "download_url": "https://github.com/yuexps/QwenPaw-FNOS/releases/download/v26.11.16/qwenpaw_yuexps.fpk",
               "sha256": "54b0ca94595297e5d8924a6df1a60f849a1545882443672431b9edb37f0d67a8",
               "size": 55069477
+            }
+          }
+        },
+        "26.11.20": {
+          "packages": {
+            "all": {
+              "download_url": "https://github.com/yuexps/QwenPaw-FNOS/releases/download/v26.11.20/qwenpaw_yuexps.fpk",
+              "sha256": "cdf003171855df4c3757d986a6af7732fbd970fd7d33930c73f1893ce157725d",
+              "size": 55955156
             }
           }
         }
