@@ -1439,6 +1439,15 @@
               "size": 424182840
             }
           }
+        },
+        "0.8.29-1": {
+          "packages": {
+            "all": {
+              "download_url": "https://github.com/veenyi/Fnos-Hermes-Studio/releases/download/v0.8.29-1/fnos-hermes-studio_v0.8.29-1.fpk",
+              "sha256": "29352b65dcb64d7ebe36ddde6e2ba3da4a58f16fb8362d9329cfa007d33c5573",
+              "size": 428118786
+            }
+          }
         }
       },
       "appname": "hermes-studio",
