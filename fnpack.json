@@ -558,6 +558,20 @@
               "size": 1220782
             }
           }
+        },
+        "1.8.3": {
+          "packages": {
+            "x86": {
+              "download_url": "https://github.com/techysy/CreditDaddy/releases/download/v1.8.3/CreditDaddy-FnOS-1.8.3-x86.fpk",
+              "sha256": "bbaa2183c0263b6acc8c14aef60c4160bb0648ce2d4585671e942bc395238e40",
+              "size": 1282575
+            },
+            "arm": {
+              "download_url": "https://github.com/techysy/CreditDaddy/releases/download/v1.8.3/CreditDaddy-FnOS-1.8.3-arm.fpk",
+              "sha256": "f109b2c2d6f22400ab43655a735eb34ad069b4295ad97c677261fefa636ad9b2",
+              "size": 1282580
+            }
+          }
         }
       },
       "appname": "creditdaddy",
@@ -1446,6 +1460,15 @@
               "download_url": "https://github.com/veenyi/Fnos-Hermes-Studio/releases/download/v0.8.29-1/fnos-hermes-studio_v0.8.29-1.fpk",
               "sha256": "29352b65dcb64d7ebe36ddde6e2ba3da4a58f16fb8362d9329cfa007d33c5573",
               "size": 428118786
+            }
+          }
+        },
+        "0.8.30-1": {
+          "packages": {
+            "all": {
+              "download_url": "https://github.com/veenyi/Fnos-Hermes-Studio/releases/download/v0.8.30-1/fnos-hermes-studio_v0.8.30-1.fpk",
+              "sha256": "67a743864724fe93c1f4705288f2ed3a58daab0777b9a585206daf4052e2b69f",
+              "size": 502268234
             }
           }
         }
