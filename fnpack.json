@@ -405,6 +405,20 @@
               "size": 2548136
             }
           }
+        },
+        "1.8.1": {
+          "packages": {
+            "x86": {
+              "download_url": "https://github.com/ffvz7850/caesium-fnos/releases/download/v1.8.1/caesium_1.8.1_x86_64.fpk",
+              "sha256": "6cb0d860d4948c76fca3fa9f6faf968f40721f055e7e1fa421419fa28e2f2692",
+              "size": 2725645
+            },
+            "arm": {
+              "download_url": "https://github.com/ffvz7850/caesium-fnos/releases/download/v1.8.1/caesium_1.8.1_arm64.fpk",
+              "sha256": "70336de3bd0853ca47fee3b239bb663e65bfd334e0f3567684ddf012af32d451",
+              "size": 2582077
+            }
+          }
         }
       },
       "appname": "caesium",
@@ -1469,6 +1483,15 @@
               "download_url": "https://github.com/veenyi/Fnos-Hermes-Studio/releases/download/v0.8.30-1/fnos-hermes-studio_v0.8.30-1.fpk",
               "sha256": "67a743864724fe93c1f4705288f2ed3a58daab0777b9a585206daf4052e2b69f",
               "size": 502268234
+            }
+          }
+        },
+        "0.8.31-1": {
+          "packages": {
+            "all": {
+              "download_url": "https://github.com/veenyi/Fnos-Hermes-Studio/releases/download/v0.8.31-1/fnos-hermes-studio_v0.8.31-1.fpk",
+              "sha256": "fddd8a5afca8eef8cb9d058630e9cbe21b11e34fee27e316f6ffbd70c52ac3ed",
+              "size": 430849912
             }
           }
         }
