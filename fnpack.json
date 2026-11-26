@@ -788,6 +788,20 @@
               "size": 32266458
             }
           }
+        },
+        "1.3.11": {
+          "packages": {
+            "x86": {
+              "download_url": "https://github.com/O96u/Fonu/releases/download/v1.3.11/fonu_1.3.11_amd64.fpk",
+              "sha256": "2f21a379587e69aa32d06b03d4258eff36c1be13eeb1d5e935c48a7846374fcd",
+              "size": 34407235
+            },
+            "arm": {
+              "download_url": "https://github.com/O96u/Fonu/releases/download/v1.3.11/fonu_1.3.11_arm64.fpk",
+              "sha256": "99762df17427fe4a6bb31b5c4e3fb0156ee071a7291494f77b74220f55aefc6d",
+              "size": 32509584
+            }
+          }
         }
       },
       "appname": "fonu",
