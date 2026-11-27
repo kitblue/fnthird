@@ -802,6 +802,20 @@
               "size": 32509584
             }
           }
+        },
+        "2.0.0": {
+          "packages": {
+            "x86": {
+              "download_url": "https://github.com/O96u/Fonu/releases/download/v2.0.0/fonu_2.0.0_amd64.fpk",
+              "sha256": "6a1a820a71d9c0b66a7a9fb6b7cafa36000b863efafc085fbdabb9a96f93d692",
+              "size": 35171715
+            },
+            "arm": {
+              "download_url": "https://github.com/O96u/Fonu/releases/download/v2.0.0/fonu_2.0.0_arm64.fpk",
+              "sha256": "a88d7f311c5cff7766367f1c4676b87e6ae1717f93f3075085fa282f463b9ae4",
+              "size": 33217760
+            }
+          }
         }
       },
       "appname": "fonu",
@@ -1506,6 +1520,15 @@
               "download_url": "https://github.com/veenyi/Fnos-Hermes-Studio/releases/download/v0.8.31-1/fnos-hermes-studio_v0.8.31-1.fpk",
               "sha256": "fddd8a5afca8eef8cb9d058630e9cbe21b11e34fee27e316f6ffbd70c52ac3ed",
               "size": 430849912
+            }
+          }
+        },
+        "0.8.32-1": {
+          "packages": {
+            "all": {
+              "download_url": "https://github.com/veenyi/Fnos-Hermes-Studio/releases/download/v0.8.32-1/fnos-hermes-studio_v0.8.32-1.fpk",
+              "sha256": "cd295ab6d47f58a244dd9ec67971099ddf67d9e361ff81e4998f132d4a9bdfd9",
+              "size": 430841964
             }
           }
         }
